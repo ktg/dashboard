@@ -16,9 +16,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `wordpress`
+-- Database: `dashboard`
 --
-
 -- --------------------------------------------------------
 
 --
@@ -46,7 +45,6 @@ INSERT INTO `wp_anythingpopup` (`pop_id`, `pop_width`, `pop_height`, `pop_header
 (1, 380, 260, '#4D4D4D', '#4D4D4D', '#FFFFFF', 'Anything Popup', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.', 'Click to open popup');
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `wp_commentmeta`
 --
@@ -180,8 +178,8 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://dashboard.markisonline.co.uk', 'no'),
-(2, 'blogname', 'wordpress', 'yes'),
-(3, 'blogdescription', 'Your Dashboard for your business', 'yes'),
+(2, 'blogname', 'dashboard', 'yes'),
+(3, 'blogdescription', 'local businesses in your community', 'yes'),
 (4, 'users_can_register', '1', 'yes'),
 (5, 'admin_email', '362531@gmail.com', 'yes'),
 (6, 'start_of_week', '1', 'yes'),
@@ -348,7 +346,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
-(1, 2, '_wp_page_template', 'add_services.php'),
+(1, 2, '_wp_page_template', 'dashboard.php'),
 (2, 2, '_edit_lock', '1367734933:1'),
 (3, 2, '_edit_last', '1'),
 (4, 6, '_edit_last', '1'),
@@ -376,7 +374,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (26, 12, '_wp_attachment_is_custom_header', 'twentytwelve'),
 (27, 13, '_edit_last', '1'),
 (28, 13, '_edit_lock', '1368250217:1'),
-(29, 13, '_wp_page_template', 'add_services_setup.php');
+(29, 13, '_wp_page_template', 'discover.php');
 
 -- --------------------------------------------------------
 
@@ -421,9 +419,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2013-05-04 17:16:05', '2013-05-04 17:16:05', 'Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!', 'Hello world!', '', 'publish', 'open', 'open', '', 'hello-world', '', '', '2013-05-04 17:16:05', '2013-05-04 17:16:05', '', 0, 'http://dashboard.markisonline.co.uk/?p=1', 0, 'post', '', 1),
-(2, 1, '2013-05-04 17:16:05', '2013-05-04 17:16:05', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n\r\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\r\n\r\n...or something like this:\r\n\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\n\r\nAs a new WordPress user, you should go to <a href="http://dashboard.markisonline.co.uk/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Add Services', '', 'publish', 'open', 'open', '', 'add-services', '', '', '2013-05-05 05:55:33', '2013-05-05 05:55:33', '', 0, 'http://dashboard.markisonline.co.uk/?page_id=2', 0, 'page', '', 0),
 (4, 1, '2013-05-04 17:16:05', '2013-05-04 17:16:05', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href="http://dashboard.markisonline.co.uk/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'inherit', 'open', 'open', '', '2-revision', '', '', '2013-05-04 17:16:05', '2013-05-04 17:16:05', '', 2, 'http://dashboard.markisonline.co.uk/2-revision/', 0, 'revision', '', 0),
-(5, 1, '2013-05-04 17:17:53', '2013-05-04 17:17:53', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n\r\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\r\n\r\n...or something like this:\r\n\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\n\r\nAs a new WordPress user, you should go to <a href="http://dashboard.markisonline.co.uk/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Add Services', '', 'inherit', 'open', 'open', '', '2-revision-2', '', '', '2013-05-04 17:17:53', '2013-05-04 17:17:53', '', 2, 'http://dashboard.markisonline.co.uk/2-revision-2/', 0, 'revision', '', 0),
 (6, 1, '2013-05-10 16:57:45', '2013-05-10 16:57:45', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2013-05-10 16:57:45', '2013-05-10 16:57:45', '', 0, 'http://dashboard.markisonline.co.uk/?page_id=6', 0, 'page', '', 0),
 (7, 1, '2013-05-10 16:57:39', '2013-05-10 16:57:39', '', 'Home', '', 'inherit', 'open', 'open', '', '6-revision', '', '', '2013-05-10 16:57:39', '2013-05-10 16:57:39', '', 6, 'http://dashboard.markisonline.co.uk/6-revision/', 0, 'revision', '', 0),
 (8, 1, '2013-05-11 04:10:39', '2013-05-11 04:10:39', 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/benevolence.jpg', 'benevolence.jpg', '', 'inherit', 'closed', 'open', '', 'benevolence-jpg', '', '', '2013-05-11 04:10:39', '2013-05-11 04:10:39', '', 0, 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/benevolence.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -431,19 +427,14 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (10, 1, '2013-05-11 04:16:28', '2013-05-11 04:16:28', 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/wordpress_header_www_v2.jpg', 'wordpress_header_www_v2.jpg', '', 'inherit', 'closed', 'open', '', 'wordpress_header_www_v2-jpg', '', '', '2013-05-11 04:16:28', '2013-05-11 04:16:28', '', 0, 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/wordpress_header_www_v2.jpg', 0, 'attachment', 'image/jpeg', 0),
 (11, 1, '2013-05-11 04:17:59', '2013-05-11 04:17:59', 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/cropped-wordpress_header_www_v21.jpg', 'cropped-wordpress_header_www_v21.jpg', '', 'inherit', 'closed', 'open', '', 'cropped-wordpress_header_www_v21-jpg', '', '', '2013-05-11 04:17:59', '2013-05-11 04:17:59', '', 0, 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/cropped-wordpress_header_www_v21.jpg', 0, 'attachment', 'image/jpeg', 0),
 (12, 1, '2013-05-11 04:23:01', '2013-05-11 04:23:01', 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/cropped-wordpress_header_www_v211.jpg', 'cropped-wordpress_header_www_v211.jpg', '', 'inherit', 'closed', 'open', '', 'cropped-wordpress_header_www_v211-jpg', '', '', '2013-05-11 04:23:01', '2013-05-11 04:23:01', '', 0, 'http://dashboard.markisonline.co.uk/wp-content/uploads/2013/05/cropped-wordpress_header_www_v211.jpg', 0, 'attachment', 'image/jpeg', 0),
-(13, 1, '2013-05-11 05:11:26', '2013-05-11 05:11:26', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nNullam sagittis tellus ac ipsum faucibus egestas. Fusce\r\nvolutpat tempor elit sed faucibus. Fusce gravida turpis non\r\nnisi volutpat posuere. In in risus sem, non porta est.\r\nCurabitur eget ultrices enim. Phasellus ut leo eu nibh\r\nconsectetur facilisis a sit amet eros. Praesent a velit non\r\nturpis porttitor egestas nec ut diam. Sed sed nisl dui, sed\r\nauctor lectus. Nunc diam lacus, accumsan eu elementum\r\neget, porta sit amet urna.', 'Add services Setup', '', 'publish', 'open', 'open', '', 'add-services-setup', '', '', '2013-05-11 05:17:42', '2013-05-11 05:17:42', '', 0, 'http://dashboard.markisonline.co.uk/?page_id=13', 0, 'page', '', 0),
-(14, 1, '2013-05-11 05:10:48', '2013-05-11 05:10:48', '', 'Add services Setup', '', 'inherit', 'open', 'open', '', '13-revision', '', '', '2013-05-11 05:10:48', '2013-05-11 05:10:48', '', 13, 'http://dashboard.markisonline.co.uk/13-revision/', 0, 'revision', '', 0),
-(15, 1, '2013-05-11 05:11:26', '2013-05-11 05:11:26', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nNullam sagittis tellus ac ipsum faucibus egestas. Fusce\r\nvolutpat tempor elit sed faucibus. Fusce gravida turpis non\r\nnisi volutpat posuere. In in risus sem, non porta est.\r\nCurabitur eget ultrices enim. Phasellus ut leo eu nibh\r\nconsectetur facilisis a sit amet eros. Praesent a velit non\r\nturpis porttitor egestas nec ut diam. Sed sed nisl dui, sed\r\nauctor lectus. Nunc diam lacus, accumsan eu elementum\r\neget, porta sit amet urna.', 'Add services Setup', '', 'inherit', 'open', 'open', '', '13-revision-2', '', '', '2013-05-11 05:11:26', '2013-05-11 05:11:26', '', 13, 'http://dashboard.markisonline.co.uk/13-revision-2/', 0, 'revision', '', 0),
-(16, 1, '2013-05-11 05:11:58', '2013-05-11 05:11:58', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nNullam sagittis tellus ac ipsum faucibus egestas. Fusce\r\nvolutpat tempor elit sed faucibus. Fusce gravida turpis non\r\nnisi volutpat posuere. In in risus sem, non porta est.\r\nCurabitur eget ultrices enim. Phasellus ut leo eu nibh\r\nconsectetur facilisis a sit amet eros. Praesent a velit non\r\nturpis porttitor egestas nec ut diam. Sed sed nisl dui, sed\r\nauctor lectus. Nunc diam lacus, accumsan eu elementum\r\neget, porta sit amet urna.', 'Add services Setup', '', 'inherit', 'open', 'open', '', '13-revision-3', '', '', '2013-05-11 05:11:58', '2013-05-11 05:11:58', '', 13, 'http://dashboard.markisonline.co.uk/13-revision-3/', 0, 'revision', '', 0),
-(17, 1, '2013-05-11 05:13:04', '2013-05-11 05:13:04', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nNullam sagittis tellus ac ipsum faucibus egestas. Fusce\r\nvolutpat tempor elit sed faucibus. Fusce gravida turpis non\r\nnisi volutpat posuere. In in risus sem, non porta est.\r\nCurabitur eget ultrices enim. Phasellus ut leo eu nibh\r\nconsectetur facilisis a sit amet eros. Praesent a velit non\r\nturpis porttitor egestas nec ut diam. Sed sed nisl dui, sed\r\nauctor lectus. Nunc diam lacus, accumsan eu elementum\r\neget, porta sit amet urna.', 'Add services Setup', '', 'inherit', 'open', 'open', '', '13-revision-4', '', '', '2013-05-11 05:13:04', '2013-05-11 05:13:04', '', 13, 'http://dashboard.markisonline.co.uk/13-revision-4/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_services`
+-- Table structure for table `wp_users_services`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_services` (
+CREATE TABLE IF NOT EXISTS `wp_users_services` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `service_id` int(11) NOT NULL DEFAULT '0',
   `user_id` int(11) NOT NULL DEFAULT '0',
@@ -454,39 +445,45 @@ CREATE TABLE IF NOT EXISTS `wp_services` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `wp_services`
+-- Dumping data for table `wp_users_services`
 --
-
+INSERT INTO `wp_users_services` (`id`, `service_id`, `user_id`, `link`, `date`, 'status') VALUES
+(1, '3', '1', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_services_master`
+-- Table structure for table `wp_services`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_services_master` (
+CREATE TABLE IF NOT EXISTS `wp_services` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `key` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
-  `icon_offline` varchar(255) NOT NULL,
-  `icon_online` varchar(255) NOT NULL,
+  `icon_inactive` varchar(255) NOT NULL,
+  `icon_active` varchar(255) NOT NULL,
+  `list_icon` varchar(255) NOT NULL,
+  `list_description` varchar(255) NOT NULL,
+  `tutorial_url` varchar(255) NOT NULL, 
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `wp_services_master`
+-- Dumping data for table `wp_services`
 --
 
-INSERT INTO `wp_services_master` (`id`, `key`, `title`, `icon_offline`, `icon_online`) VALUES
-(1, 'my_website', 'My website', 'icon-website-offline.jpg', 'icon-website.jpg'),
-(2, 'google_places', 'Google places', 'icon-google-offline.jpg', 'icon-google.jpg'),
-(3, 'facebook_page', 'Facebook Page', 'icon-facebook-offline.jpg', 'icon-facebook.jpg'),
-(4, 'twitter ', 'Twitter', 'icon-twitter-offline.jpg', 'icon-twitter.jpg'),
-(5, 'yell', 'Yell', 'icon-yell-offline.jpg', 'icon-yell.jpg'),
-(6, 'trip_advisor', 'Trip Advisor', 'icon-tripadvisor-offline.jpg', 'icon-tripadvisor.jpg'),
-(7, 'youtube', 'Youtube', 'icon-youtube-offline.jpg', 'icon-youtube.jpg'),
-(8, 'instagram', 'Instagram', 'icon-instagram-offline.jpg', 'icon-instagram.jpg'),
-(9, 'flickr', 'Flickr', 'icon-flickr-offline.jpg', 'icon-flickr.jpg');
+INSERT INTO `wp_services` (`id`, `key`, `title`, `icon_inactive`, `icon_active`, 'list_icon', 'list_description', 'tutorial_url') VALUES
+(1, 'my_website', 'My Website', 'website_inactive_icon.png', 'website_icon.png', 'icon_website.png', 'Add and manage your own website with the dashboard or if you have not got a website, you might be interested in viewing a tutorial on how to build one.', 'www.thesitewizard.com/gettingstarted/startwebsite.shtml'),
+(2, 'google_places', 'Google places', 'googleplaces_inactive_icon.png', 'googleplaces_icon.png', 'icon_googleplaces.png', 'Google Places gets your business on Google Search, Maps, Google+ and mobile. This service is very useful for allowing customers to find you. ', 'www.youtube.com/watch?v=S3v_EVhfPAA'),
+(3, 'facebook_page', 'Facebook Page', 'facebook_inactive_icon.png', 'facebook_icon.png', 'icon_facebook.png', 'Facebook Pages is a powerful tool for creating an online web page to connect with a community of customers.', 'www.facebook.com/business/build'),
+(4, 'twitter ', 'Twitter', 'twitter_inactive_icon.png', 'twitter_icon.png', 'icon_twitter.png', 'Twitter allows fast communication with your audience through 140 characters.', 'www.youtube.com/watch?v=gcjvIgGGMnA'),
+(5, 'yell', 'Yell', 'yell_inactive_icon.png', 'yell_icon.png', 'icon_yell.png', 'Yell is a popular online business directory, allowing customers to search and find you through the Yell search engine.', 'www.yell.com/help/yourbusiness/optimise1.html'),
+(6, 'trip_advisor', 'Trip Advisor', 'tripadvisor_inactive_icon.png', 'tripadvisor_icon.png', 'icon_tripadvisor.png', 'Trip Advisor is a very popular service, which lists businesses by customer reviews and location. It allows customers to find, review and recommend your businesses. ', 'www.tripadvisor.co.uk/Owners'),
+(7, 'youtube', 'Youtube', 'youtube_inactive_icon.png', 'youtube_icon.png', 'icon_youtube.png', 'YouTube is the most popular video sharing service on the Internet, allowing you to upload and share videos within communities and people in the world. It also allows you to create your own channel where users subscribe to your videos.', 'www.teachertrainingvideos.com/youTube/'),
+(8, 'instagram', 'Instagram', 'instagram_inactive_icon.png', 'instagram_icon.png', 'icon_instagram.png', 'Instagram is a mobile application for taking and sharing photos. It is also a social network allowing you to create photo communities.', 'www.wikihow.com/Use-Instagram'),
+(9, 'flickr', 'Flickr', 'flickr_inactive_icon.png', 'flickr_icon.png', 'icon_flickr.png', 'Flickr is an online photo management and photo sharing service. It also allows you to build an online photo sharing community.', 'www.youtube.com/watch?v=dVeZhYhmLzc'),
+(10, 'ebay', 'Ebay', 'ebay_inactive_icon.png', 'ebay_icon.png', 'icon_ebay.png', 'Ebay is an e-commerce website, allowing you to sell and buy items online.', 'pages.ebay.com/help/account/gettingstarted.html'),
+(11, 'etsy', 'Etsy', 'etsy_inactive_icon.png', 'etsy_icon.png', 'icon_etsy.png', 'Etsy is an e-commerce website, allowing you to sell and buy hand-made and vintage items online.', 'www.grovo.com/etsy');
 
 -- --------------------------------------------------------
 
@@ -623,6 +620,45 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BsqQRpNXwEoly9VnXYXGeyCXMIOqnN.', 'admin', '362531@gmail.com', '', '2013-05-04 17:16:05', '', 0, 'admin');
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_profile`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_profile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `business_name` varchar(25) NOT NULL,
+  `business_type` varchar(25) NOT NULL,
+  `business_description` varchar(255) NOT NULL,
+  `business_image_path` varchar(255) NOT NULL,
+  `business_street` varchar(50) NOT NULL,
+  `business_city` varchar(25) NOT NULL,
+  `business_county` varchar(25) NOT NULL,
+  `business_postcode` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_users_profile`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_users_profile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `profile_id` int(11) NOT NULL DEFAULT '0',
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `link` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
