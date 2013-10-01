@@ -1,0 +1,268 @@
+* { padding: 0; margin: 0; outline: 0; }
+
+body {
+font-size: 14px;
+line-height: 18px;
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+background-image: url(../images/homepage/bg_homepage.png) ;
+background-color: #e2e8ec;
+margin: 0 auto;
+height: 100%;
+width: 100%;
+background-repeat:repeat-x;
+text-align:center;
+}
+
+#container{
+	margin: 0 auto;
+	height: 100%;
+	width: 960px;
+    min-height:100%;
+	padding 20px,20px,0px,20px;
+
+}
+
+
+h1{
+font-family:"Times New Roman", Times, serif;
+color: #2e2e2e;
+font-size:28px;
+margin-left:80px;
+}
+
+h2{
+font-family:Impact, Charcoal, sans-serif;
+color: #2e2e2e;
+font-size:16px;
+}
+
+p{
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+color: #2e2e2e;
+font-size:12px;
+}
+
+/**************** HOMEPAGE **************/
+
+#header{
+	height:150px;
+	width:960px;
+}
+
+#logo{
+	position:absolute;
+	float:left;
+	margin-top:20px;
+}
+
+/* LOGIN SECTION */
+
+
+#login_section{
+	position:relative;
+	float: right;
+	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#4d4d4d;
+	margin-top:74px;
+}
+
+#login_section input{
+	margin-top:0px;
+	/*float: right;
+	position:relative;*/
+	margin-right:10px;
+	
+}
+
+.login_button{
+	background: url(../images/homepage/btn_login_homepage.png) no-repeat;
+	cursor:pointer;
+	width:60px;
+	height:25px;
+	border:none;
+}
+
+/* HOME PAGE BANNER	*/
+
+#homepage_banner{
+	position:relative;
+	height:307px;
+	width:960px;
+}
+
+
+
+/* BUSINESS AND CONSUMER SECTIONS */
+#sign_up_container{
+	position:relative;
+	margin-top:80px;
+	height: 450px;
+	width:960px;
+}
+.business{
+	float:left;
+	margin-left:40px;
+	height:436px;
+	width:403px;
+	background-image:url(../images/homepage/box_business1.png);
+	
+}
+
+.business p{
+	color: #4d4d4d;
+	margin-left:30px;
+	padding: 60px 30px 0px 0;
+	text-align:left;
+	width: 345px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+
+.business form{
+	margin-left:10px; /*30 */
+	margin-top:10px;
+	padding: 20px 30px 0px 0;
+	text-align:left;
+	
+}
+
+
+.signup_form{
+margin: 0 auto;
+width 400px;
+padding: 14px;	
+}
+
+/* ----------- sign_up ----------- */
+#signup{
+
+}
+#signup label{
+display:block;
+font-weight:medium;
+color:#4d4d4d;
+text-align:right;
+width:140px;
+float:left;
+}
+#signup .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#signup input{
+float:left; /*left */
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#signup .pass{
+color:#666666;
+font-size:11px;
+font-weight:normal;
+padding-left:10px;
+padding-top:20px;
+
+}
+
+#signup button{
+clear:both;
+margin-left:150px;
+margin-top:10px;
+width:125px;
+height:31px;
+background:#84dfe3;
+text-align:center;
+cursor:pointer;
+line-height:31px;
+color: #4d4d4d;
+font-size:11px;
+font-weight:bold;
+border:none;
+}
+
+
+.signup_button{
+clear:both;
+margin-left:130px;
+width:125px;
+height:31px;
+background:#84dfe3;
+text-align:center;
+cursor:pointer;
+line-height:31px;
+color: #4d4d4d;
+font-size:11px;
+font-weight:bold;
+border:none;
+}
+
+.err{
+color: #bc4a4a;	
+font-size:12;
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+text-align:left;
+margin-left:130px;
+
+}
+
+.consumer{
+	float:right;
+	margin-right:40px;
+	height:264px;
+	width:403px;
+	background-image:url(../images/homepage/box_consumer.png);
+
+}
+
+.consumer p{
+	color: #4d4d4d;
+	margin-left:30px;
+	padding: 60px 30px 0px 0;
+	text-align:left;
+	width: 355px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.consumer img{
+	margin-top:15px;
+	width:163px;
+	height:108px;
+	display:inline-block;
+	padding:5px;
+}
+
+
+#footer{
+	position:absolute;
+	background:#778695;
+	bottom:0%;
+	width:960px;
+	height:30px;
+}
+
+#footer p{
+	color: #445b72;
+	font-size:9px;;
+	
+	}
+
+
+#clear{
+	clear:both;
+}
+
+
+
+
+
+/**************** END OF HOMEPAGE **************/

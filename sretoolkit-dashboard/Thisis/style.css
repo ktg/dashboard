@@ -1,0 +1,604 @@
+/*
+Theme Name: 	This is..
+Description: 	Theme for a local community based system called 'This is..' for the project 'Scaling the Rural Enterprise'
+Version: 		1.0
+Author: 		Mark Davies
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "../Thisis/css/reset.css";
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+
+* { padding: 0; margin: 0; outline: 0; }
+
+body {
+font-size: 14px;
+line-height: 18px;
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+background-color: #a3ccd4;
+margin: 0 auto;
+height: 100%;
+width: 960px;
+background-repeat:repeat-x;
+text-align:center;
+padding 20px,20px,0px,20px;
+
+}
+
+h1{
+font-family:"Times New Roman", Times, serif;
+color: #2e2e2e;
+font-size:28px;
+margin-left:80px;
+}
+
+h2{
+font-family:Impact, Charcoal, sans-serif;
+color: #2e2e2e;
+font-size:16px;
+display:none;
+}
+
+p{
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+color: #2e2e2e;
+font-size:12px;
+}
+
+.entry-title {
+	display: none;
+}
+
+<!-- Homepage -->
+
+#homepage_body{
+	
+font-size: 14px;
+line-height: 18px;
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+background-image:url(../Thisis/images/homepage/bg_homepage.png);
+background-color: #e2e8ec;
+margin: 0 auto;
+height: 100%;
+width: 100%;
+background-repeat:repeat-x;
+text-align:center;
+	
+}
+
+#container{
+	margin: 0 auto;
+	height: 100%;
+	width: 960px;
+    min-height:100%;
+	padding 20px,20px,0px,20px;
+	background-image:url(../Thisis/images/homepage/bg_homepage.png);
+
+
+}
+
+#homepage_header{
+	height:150px;
+	width:960px;
+	background-color: #d4e5f5;
+
+}
+
+#homepage_logo{
+	position:absolute;
+	float:left;
+	margin-top:20px;
+}
+
+
+#login_section{
+	position:relative;
+	float: right;
+	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#4d4d4d;
+	margin-top:74px;
+}
+
+#login_section input{
+	margin-top:0px;
+	/*float: right;
+	position:relative;*/
+	margin-right:10px;
+	
+}
+
+.login_button{
+	background: url(../Thisis/images/homepage/btn_login_homepage.png) no-repeat;
+	cursor:pointer;
+	width:60px;
+	height:25px;
+	border:none;
+}
+
+/* HOME PAGE BANNER	*/
+
+#homepage_banner{
+	position:relative;
+	height:307px;
+	width:960px;
+}
+
+
+
+/* BUSINESS AND CONSUMER SECTIONS */
+#sign_up_container{
+	position:relative;
+	margin-top:80px;
+	height: 400px;
+	width:960px;
+}
+.business{
+	float:left;
+	margin-left:40px;
+	height:366px;
+	width:403px;
+	background-image:url(../Thisis/images/homepage/box_business.png);
+	
+}
+
+.business p{
+	color: #4d4d4d;
+	margin-left:30px;
+	padding: 60px 30px 0px 0;
+	text-align:left;
+	width: 390px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.business form{
+	margin-left:30px;
+	padding: 20px 30px 0px 0;
+	text-align:left;
+	
+}
+
+
+.signup_form{
+margin: 0 auto;
+width 400px;
+padding: 14px;	
+}
+
+/* ----------- sign_up ----------- */
+#signup{
+
+}
+#signup label{
+display:block;
+font-weight:medium;
+color:#4d4d4d;
+text-align:right;
+width:120px;
+float:left;
+}
+#signup .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:120px;
+}
+#signup input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#signup .pass{
+color:#666666;
+font-size:11px;
+font-weight:normal;
+padding-left:10px;
+padding-top:20px;
+
+}
+
+#signup button{
+clear:both;
+margin-left:130px;
+width:125px;
+height:31px;
+background:#84dfe3;
+text-align:center;
+cursor:pointer;
+line-height:31px;
+color: #4d4d4d;
+font-size:11px;
+font-weight:bold;
+border:none;
+}
+
+
+.consumer{
+	float:right;
+	margin-right:40px;
+	height:264px;
+	width:403px;
+	background-image:url(../Thisis/images/homepage/box_consumer.png);
+
+}
+
+.consumer p{
+	color: #4d4d4d;
+	margin-left:30px;
+	padding: 60px 30px 0px 0;
+	text-align:left;
+	width: 390px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.consumer img{
+	margin-top:15px;
+	width:163px;
+	height:108px;
+	display:inline-block;
+	padding:5px;
+}
+
+
+<!-- End of Homepage -->
+
+
+<!-- CSS for Backend Interfaces -->
+
+
+#default_container{
+	height: 100%;
+	width: 903px;
+    min-height:100%;
+	background-color:#eaeaea;
+
+}
+
+
+#header{
+	height:115px;
+	width:903px;
+}
+
+#logo{
+	position:absolute;
+	float:left;
+	/*margin-top:30px;*/
+}
+
+/* LOGIN SECTION */
+
+
+#logout_section{
+	position:relative;
+	float: right;
+	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#4d4d4d;
+	margin-top:45px;/*74px;*/
+}
+
+/* Navigation Bar */
+
+#nav{
+	margin-top: -100px;/*-80px;*/
+	padding:0;
+	background-image:url(../Thisis/images/navigation_bar.png);
+	width: 903px;
+	height: 48px;
+	float:left;
+	border:none;
+    list-style:none;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#nav ul{
+	padding:0;
+	margin:0;
+	list-style-type:none; 
+	text-align: center; 
+}
+
+#nav li{
+	display:inline;
+	float:left;
+	text-align: center
+}
+
+#nav li a {
+	display: block;
+	padding: 17px 25px;
+	text-decoration: none;
+	color: #fff;	
+}
+	
+#nav li a:hover {
+	color: #fff;
+
+}
+
+#nav li.active {
+	background-image:url(../Thisis/images/navigation_selected.png);
+	background-repeat:repeat-x;
+	width:128px;
+	height:57px;
+	color: #fff;
+	pointer-events: none;
+	cursor: default;
+	margin-top:-5px;
+
+}
+
+
+
+/* Dashboard */
+
+#dashboard{
+	position:relative;
+	margin-top:80px;
+	height:947px;
+	width:903px;
+	padding:0;
+
+}
+
+#services_container{
+	display:inline;
+	height:636px;
+	max-width:374px;
+	text-align:left;
+	float:left;
+	
+}
+
+.dashboard_icon{
+	height:116;
+	width:116px;
+	display:inline-block;
+	
+}
+
+#dashboard_icon_a{
+	height:116;
+	width:116px;
+	display:inline-block;
+	
+}
+
+
+#display_view{
+	display:inline;
+	float:right;
+	/*height:925px;*/
+	height:100%;
+	width:494px;
+	background-color:#eaeaea;
+	
+}
+
+
+/* Discover */
+
+#discover_container{
+	position:relative;
+	/*margin-top:90px;*/
+	margin-top:80px;
+	height:947px;
+	width:903px;
+	background-image:url(../Thisis/images/discover/bg2.png);
+}
+
+#information_bar{
+	position: absolute;
+	margin-top: 70px;
+	margin-left:31px;
+	width:840px;
+	height:35px;
+	background-image:url(../Thisis/images/discover/information_bar.png);
+	
+}
+
+#information_bar p{
+	
+	width:840px;
+	padding: 10px 0px 00px 0px;
+	margin-left:20px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#fff;
+	
+}
+
+#service_added_notification{
+text-align:center;
+color:#4b4b4b;
+font-weight:bold;
+	
+}
+
+#list_of_services{
+	position:absolute;
+	width:840px;
+	height:770px;	
+	background:#e4e3e3;
+	margin-top:140px;
+	margin-left:32px;
+	
+}
+
+#list_of_services ul{
+	padding: 10px 0px 00px 0px;
+	margin-left:31px;
+	margin:top:2px;
+	list-style-type::disc; 
+	text-align: left; 
+	width: 840px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#4d4d4d;
+}
+
+#list_of_services li{
+	
+	font-weight:medium;
+	width: 770px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#4d4d4d;
+	border:1px solid black;
+	height:65px;
+
+}
+
+
+#list_of_services li p{
+	width: 420px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#4d4d4d;
+	height: 65px;
+	position:absolute;
+	margin-left:180px;
+	margin-top:-50px;
+}
+
+
+#list_of_services li img{
+	
+	width: 73px;
+	height:73px;
+
+}
+
+
+
+#list_of_services input{
+	width:55px;
+	height:30px;
+	color:#4d4d4d;
+	background-color:#CCC;
+	text-align:center;
+	font-size:10px;
+	float:right;
+	margin-top: 20px;
+	margin-right:20px;
+	
+}
+
+#list_of_services a{
+	width:55px;
+	height:30px;
+	color:#4d4d4d;
+	background-color:#CCC;
+	text-align:center;
+	font-size:10px;
+	float:right;
+	margin-top: 20px;
+	margin-right:20px;
+	text-decoration:none;
+	vertical-align: middle;
+	top:50%;
+	
+}
+
+<!-- End of CSS for Backend Interfaces -->
+
+
+
+#footer{
+	position:absolute;
+	background:#778695;
+	bottom:0%;
+	width:960px;
+	height:30px;
+}
+
+#footer p{
+	color: #445b72;
+	font-size:9px;;
+	
+	}
+
+
+#clear{
+	clear:both;
+}
+
+
