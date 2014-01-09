@@ -4,7 +4,7 @@ body {
 font-size: 14px;
 line-height: 18px;
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-color: #fff;
+background-color: #eaeaea;
 margin: 0 auto;
 height: 100%;
 width: 100%;
@@ -14,7 +14,7 @@ text-align:center;
 
 #container{
 	margin: 0 auto;
-	height: 800px;;
+	height: 100%;
 	width: 494px;
     min-height:100%;
 	background-color: #eaeaea;
@@ -81,6 +81,15 @@ font-size:12px;
 #delete p a{
 	text-decoration:none;
 	color:#e64a36;
+}
+
+#concept{
+	
+	margin-top:20px;
+	background-image:url(../images/website_concept.png);
+	width:468px;
+	height:833px;
+	
 }
 
 

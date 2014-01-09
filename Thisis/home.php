@@ -14,7 +14,7 @@
 $current_user = wp_get_current_user();
 $user_id = isset($current_user->ID)?$current_user->ID:0;
 if($user_id >0){
-	wp_redirect(esc_url( site_url('dashboard')));
+	wp_redirect(esc_url( site_url('discover')));
 }
  
  $redirect = $_GET['redirect'];
@@ -27,9 +27,9 @@ $success = '';
 global $wpdb, $PasswordHash;
  
 if(isset($_POST['task']) && $_POST['task'] == 'register' ) {
-    $pwd1 = $wpdb->escape(trim($_POST['pwd1']));
-    $pwd2 = $wpdb->escape(trim($_POST['pwd2']));
-    $email = $wpdb->escape(trim($_POST['email']));
+    $pwd1 = $wpdb->escape(trim($_POST['pwd1_reg']));
+    $pwd2 = $wpdb->escape(trim($_POST['pwd2_reg']));
+    $email = $wpdb->escape(trim($_POST['email_reg']));
     $username = $wpdb->escape(trim($_POST['username']));
  
     if( $email == "" || $pwd1 == "" || $pwd2 == "" || $username == "") {
@@ -54,7 +54,7 @@ if(isset($_POST['task']) && $_POST['task'] == 'register' ) {
 			 wp_set_current_user( $user_ID, $current_user );
  
 			  do_action('set_current_user');
-    $redirect_to = site_url('dashboard');
+    $redirect_to = site_url('discover');
  
     wp_safe_redirect($redirect_to);
  
@@ -71,22 +71,27 @@ get_header( 'wide' );
 
 
   <div id="container">
-          <div id="homepage_banner">
-                <img src=<?php bloginfo('template_directory') ?>/images/homepage/banner_homepage.png  alt="Homepage banner" />
-          </div>
-            
-            
-            
-          
-                    
+         
+          <img src=<?php bloginfo('template_directory') ?>/images/homepage/homepage_logo.png  alt="Dashboard" height="68px" width="263px" />
+           
+       
+      
           <div id="sign_up_container">
-                    <div class="business">
+                    
+                    <div id="signup_text">
+                    <h1>It's free to sign up</h1>
                         <p>
-                            Sign up <b> for free </b> to 'This is' and make your business a part of your community.
+						'Dashboard' is a prototype developed by the University of Nottingham for the
+RCUK funded project 'Scaling the Rural Divide'. 
                         </p>
+                        <p>
+                        Sign up to the 'Dashboard' for <b> free </b> and connect your business to the world wide web.
+                        </p>
+                        </div>
                         
-                        
-                        
+                        <div id="center">
+							<hr />                        
+                 		</div>
                  
                         <div id="signup" class"signup_form">                                  
                  
@@ -101,46 +106,36 @@ get_header( 'wide' );
                                 <label for="userEmail"><?php _e('Email*') ?>
                                 <span class="small">Add a valid email address</span>
                                 </label>
-                                <input type="text" name="email" id="email" value="" size="20"/>
+                                <input type="text" name="email_reg" id="email_reg" value="" size="20"/>
+                               
+                                
                                 
                                 <label for="userPassword"><?php _e('Password*') ?>
                                 <span class="small">Choose a password</span>
                                 </label>
-                                <input type="password" name="pwd1" id="pwd1" value=""/>
+                                <input type="password" name="pwd1_reg" id="pwd1_reg" value=""/>
                                 
                                 <label for="userPasswordReenter"><?php _e('Confirm Password*') ?>
                                 <span class="small">Re-enter password</span>
                                 </label>
-                                <input type="password" name="pwd2" id="pwd2" value=""/>
+                                <input type="password" name="pwd2_reg" id="pwd2_reg" value=""/>
                                 
                                 <div class=err>
                                 	<?php if($success != "") { echo $success; } ?> <?php if($err != "") { echo $err; } ?>
         						</div>
 
-
-
+                            
                          <!-- <span class="pass"> (A password will be emailed to you) </span> -->
 						<!--   <input type="hidden" name="redirect_to" value="" /> -->
                             <!--<button type="submit" >Sign up</button>-->
-                            
-                            <button type="submit" name="btnregister"> Sign up </button>
+                            <button type="submit" name="btnregister"> Create My Account </button>
                             <input type="hidden" name="task" value="register" />
                                 <div class="spacer"></div>    
                             </form>
                         </div>                                                   
   
-                      <!--  <p>Not sure about signing up? Take a <a href="">tour </a> to find out more. </p>  -->            
-          </div>
           
-          
-               
-          
-          
-          <div class="consumer">
-              <p>Search for a business in a community by postcode or by your current location.</p>
-              <a href=""> <img src=<?php bloginfo('template_directory') ?>/images/homepage/btn_search_postcode.png alt="search by postcode" /></a>
-              <a href=""> <img src=<?php bloginfo('template_directory') ?>/images/homepage/btn_search_current.png alt="search by location" /> </a>
-          </div>
+         
   </div>
 
 <?php get_sidebar(); ?>

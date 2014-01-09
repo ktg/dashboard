@@ -4,7 +4,7 @@ body {
 font-size: 14px;
 line-height: 18px;
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-color: #fff;
+background-image:url(images/bg.jpg)
 margin: 0 auto;
 height: 100%;
 width: 100%;
@@ -14,12 +14,9 @@ text-align:center;
 
 #container{
 	margin: 0 auto;
-	height: 800px;;
-	width: 494px;
+	height: 1312px;;
+	width: 960px;
     min-height:100%;
-	background-color: #eaeaea;
-/*	padding 20px,20px,0px,20px; */ 
-
 }
 
 
@@ -63,12 +60,12 @@ font-size:12px;
 
 #delete{
 	float:right;
-	margin-top:40px;
+	margin-top:24px;
 	display:inline;	
-	margin-right:140px;
-	background-image:url(../images/delete.png);
-	width:19px;
-	height:19px;
+	margin-right: 20px;/*140px;*/
+	background-image:url(../images/unlink.png);
+	width:68px;
+	height:33px;
 
 }
 
@@ -83,6 +80,44 @@ font-size:12px;
 	color:#e64a36;
 }
 
+
+
+#concept{
+	position:relative;
+	margin-top:20px;
+	margin-right:20px;
+	background-image:url(../images/facebook_concept.png);
+	width:468px;
+	height:833px;
+	
+}
+
+#profile_pic{
+	float:left;
+}
+
+#name_section{
+	margin-top:16px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	color: #2e2e2e;
+	font-size:15px;
+	
+}
+
+#description_section{
+	margin-top:20px;
+	font-family:"Times New Roman", Times, serif;
+	color: #2e2e2e;
+	font-size:4px;
+
+}
+
+#likes_section{
+	margin-top:10px;
+	font-size:28px;
+	
+}
 
 /* Navigation Bar */
 

@@ -83,8 +83,8 @@ body {
 font-size: 14px;
 line-height: 18px;
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-color: #a3ccd4;
-margin: 0 auto;
+background-color: #3c3c3c;/*#a3ccd4;*/
+margin: 0px auto;
 height: 100%;
 width: 960px;
 background-repeat:repeat-x;
@@ -107,6 +107,12 @@ font-size:16px;
 display:none;
 }
 
+h3{
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+display:none;
+}
+
 p{
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 color: #2e2e2e;
@@ -124,8 +130,7 @@ font-size:12px;
 font-size: 14px;
 line-height: 18px;
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-image:url(../Thisis/images/homepage/bg_homepage.png);
-background-color: #e2e8ec;
+background-color: #4188a7;/*#e2e8ec;*/
 margin: 0 auto;
 height: 100%;
 width: 100%;
@@ -140,7 +145,6 @@ text-align:center;
 	width: 960px;
     min-height:100%;
 	padding 20px,20px,0px,20px;
-	background-image:url(../Thisis/images/homepage/bg_homepage.png);
 
 
 }
@@ -148,13 +152,13 @@ text-align:center;
 #homepage_header{
 	height:150px;
 	width:960px;
-	background-color: #d4e5f5;
+	background-color: #4188a7;
 
 }
 
 #homepage_logo{
 	position:absolute;
-	float:left;
+	text-align:center;
 	margin-top:20px;
 }
 
@@ -198,8 +202,11 @@ text-align:center;
 #sign_up_container{
 	position:relative;
 	margin-top:80px;
-	height: 400px;
-	width:960px;
+	height: 535px;
+	width:483px;
+	background-color:#eaeaea;
+	
+	
 }
 .business{
 	float:left;
@@ -234,6 +241,8 @@ width 400px;
 padding: 14px;	
 }
 
+
+
 /* ----------- sign_up ----------- */
 #signup{
 
@@ -261,6 +270,7 @@ padding:4px 2px;
 border:solid 1px #aacfe4;
 width:200px;
 margin:2px 0 20px 10px;
+
 }
 
 #signup .pass{
@@ -288,32 +298,6 @@ border:none;
 }
 
 
-.consumer{
-	float:right;
-	margin-right:40px;
-	height:264px;
-	width:403px;
-	background-image:url(../Thisis/images/homepage/box_consumer.png);
-
-}
-
-.consumer p{
-	color: #4d4d4d;
-	margin-left:30px;
-	padding: 60px 30px 0px 0;
-	text-align:left;
-	width: 390px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-}
-
-.consumer img{
-	margin-top:15px;
-	width:163px;
-	height:108px;
-	display:inline-block;
-	padding:5px;
-}
 
 
 <!-- End of Homepage -->
@@ -323,10 +307,11 @@ border:none;
 
 
 #default_container{
-	height: 100%;
+	height: 947px;/*100%;*/
 	width: 903px;
     min-height:100%;
 	background-color:#eaeaea;
+	/*margin-top:20px;*/
 
 }
 
@@ -334,12 +319,14 @@ border:none;
 #header{
 	height:115px;
 	width:903px;
+	background-color:#4188a7;
 }
 
 #logo{
 	position:absolute;
 	float:left;
-	/*margin-top:30px;*/
+	margin-top:30px;
+	margin-left:20px;
 }
 
 /* LOGIN SECTION */
@@ -350,19 +337,26 @@ border:none;
 	float: right;
 	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color:#4d4d4d;
-	margin-top:45px;/*74px;*/
+	color:#c2c2c2;/*#4d4d4d;*/
+	margin-top:75px;/*74px;*/
+	margin-right:20px;
+}
+
+#logout_section a{
+	color: #ffffff;
 }
 
 /* Navigation Bar */
 
 #nav{
-	margin-top: -100px;/*-80px;*/
-	padding:0;
+	/*margin-top: -100px;*/
+	/*padding:0;*/
+	margin-top:1px;
+	position:relative;
 	background-image:url(../Thisis/images/navigation_bar.png);
 	width: 903px;
 	height: 48px;
-	float:left;
+	/*float:left;*/
 	border:none;
     list-style:none;
 	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
@@ -384,7 +378,7 @@ border:none;
 
 #nav li a {
 	display: block;
-	padding: 17px 25px;
+	padding: 17px 25px 17px 30px;;
 	text-decoration: none;
 	color: #fff;	
 }
@@ -397,13 +391,29 @@ border:none;
 #nav li.active {
 	background-image:url(../Thisis/images/navigation_selected.png);
 	background-repeat:repeat-x;
-	width:128px;
-	height:57px;
+	width:178px;
+	height:48px;
 	color: #fff;
 	pointer-events: none;
 	cursor: default;
-	margin-top:-5px;
+	/*margin-top:-5px;*/
 
+}
+
+
+#turn_inside_out{
+	position:relative;
+	width:374px;/*374px;*/
+	height:40px;
+	padding:0;
+
+}
+
+#turn_inside_out img{
+	width:221px;
+	height:35px;
+	text-align:right;
+	float:left;
 }
 
 
@@ -411,15 +421,16 @@ border:none;
 /* Dashboard */
 
 #dashboard{
-	position:relative;
-	margin-top:80px;
+	margin-top:20px;
 	height:947px;
 	width:903px;
 	padding:0;
 
 }
 
+
 #services_container{
+	position:relative;
 	display:inline;
 	height:636px;
 	max-width:374px;
@@ -454,15 +465,15 @@ border:none;
 }
 
 
-/* Discover */
+/*  Services */
 
-#discover_container{
+#listofservices_container{
 	position:relative;
 	/*margin-top:90px;*/
 	margin-top:80px;
 	height:947px;
 	width:903px;
-	background-image:url(../Thisis/images/discover/bg2.png);
+	background-image:url(../Thisis/images/services/bg2.png);
 }
 
 #information_bar{
@@ -471,7 +482,7 @@ border:none;
 	margin-left:31px;
 	width:840px;
 	height:35px;
-	background-image:url(../Thisis/images/discover/information_bar.png);
+	background-image:url(../Thisis/images/services/information_bar.png);
 	
 }
 
@@ -488,7 +499,7 @@ border:none;
 
 #service_added_notification{
 text-align:center;
-color:#4b4b4b;
+color:#65904d;
 font-weight:bold;
 	
 }
@@ -577,6 +588,196 @@ font-weight:bold;
 	top:50%;
 	
 }
+
+
+#default_container2{
+	height: 1300px;
+	width: 903px;
+    min-height:100%;
+	background-color:#eaeaea;
+
+}
+
+#discover_container{
+	position:relative;
+	/*margin-top:80px;/*
+	height:100%; /*947px;*/
+	width:903px;
+	padding:0;
+	background-color:#eaeaea;
+	text-align:center;
+	height: 1300px;
+
+}
+
+.discover_title{
+	width: 270px;
+	height: 48px;
+	float:left;
+	margin-top:20px;
+	margin-left:-325px;
+		
+}
+
+#steps_container{
+	position:absolute;
+	margin-top: 50px;
+	width:903px;
+	margin-left:30px;
+	
+}
+
+
+
+#step{
+	float:left;
+	width:400px;	
+	margin-top:50px;
+}
+
+#step_detail{
+	width:400px;
+}
+
+#step_detail img{
+float:left;
+	
+}
+
+
+#step_detail p{
+float:right;
+margin-top:20px;
+color:#505461;	
+width: 280px;
+text-align:left;
+
+}
+
+
+.learnmore_button {
+
+height:32px;
+width:119px;
+float:right;
+
+}
+
+
+<!--  Market Your Business  -->
+
+
+#market_container{
+	position:relative;
+	/*margin-top:90px;*/
+	margin-top:80px;
+	height:947px;
+	width:903px;
+	background-color:#eaeaea;
+	/*padding:0;*/
+}
+
+
+
+#default_container3{
+	position:relative;
+	height: 947px;
+	width: 903px;
+    min-height:100%;
+	background-color:#eaeaea;
+	/*margin-top:80px;*/
+
+
+}
+
+
+.service_title{
+	width: 314px;
+	height: 48px;
+	float:left;
+	margin-top:10px;
+	position:relative;
+	margin-left:-325px;
+	margin-top:20px;
+}
+
+#service_area{
+	position:absolute;
+	width: 903px;
+	height 100%;
+	margin-top 20px;
+	
+}
+
+
+#service_box{
+	max-width:213px;
+	margin-top:120px;
+	padding: 10px;
+	display:inline;
+	float:left;
+	margin-left:10px;
+	position:relative;
+	
+	
+}
+
+#service_box h1{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+    width: 194px;
+	color:#505461;
+}
+
+#service_box p{
+	margin-top:10px;
+	color:#505461;
+	text-align: justify;
+    width: 194px;
+	height:120px;
+	
+}
+
+.service_icon{
+	width:194px;
+	height:116px;
+	display:inline-block;
+    /*margin: 0 auto;*/
+}
+
+.btn_service_tutorial{
+	color:#505461;
+	background-color:#d9d9d9;
+	width:73px;
+	height:22px;
+	font-size:11px;
+	text-decoration: none;
+	margin-top:10px;
+
+}
+
+.btn_service_add{
+	color:#505461;
+	background-color:#d9d9d9;
+	width:115px;
+	height: 22px;
+	font-size:11px;
+	text-decoration: none;
+	margin-top:10px;
+
+}
+
+#notification{
+text-align:center;
+color:#65904d;
+font-weight:bold;
+	
+}
+
+
+
 
 <!-- End of CSS for Backend Interfaces -->
 

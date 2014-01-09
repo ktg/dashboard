@@ -14,12 +14,30 @@ text-align:center;
 
 #container{
 	margin: 0 auto;
-	height: 800px;;
+	height: 925px;;
 	width: 494px;
     min-height:100%;
-	background-color: #eaeaea;
+	background-image:url(../html_images/concept0.png);
 /*	padding 20px,20px,0px,20px; */ 
 
+}
+
+
+#container1{
+	margin: 0 auto;
+	height: 925px;;
+	width: 494px;
+    min-height:100%;
+	background-image:url(../html_images/concept.png);
+/*	padding 20px,20px,0px,20px; */ 
+
+}
+
+#containter1 a{
+	
+	width:40px;
+	height:20px;
+	
 }
 
 
@@ -54,7 +72,7 @@ font-size:12px;
 #heading{
 	float:left;
 	margin-top:10px;
-	background-image:url(../images/servicetitle_twitter.png);
+	background-image:url(../html_images/servicetitle_twitter.png);
 	width:269px;
 	height:48px;
 	display:inline;
@@ -66,7 +84,7 @@ font-size:12px;
 	margin-top:40px;
 	display:inline;	
 	margin-right:140px;
-	background-image:url(../images/delete.png);
+	background-image:url(../html_images/delete.png);
 	width:19px;
 	height:19px;
 
@@ -89,7 +107,7 @@ font-size:12px;
 #nav{
 	margin:0;
 	padding:0;
-	background-image:url(../images/navigation_bar.png);
+	background-image:url(../html_images/navigation_bar.png);
 	width: 903px;
 	height: 48px;
 	float:left;
@@ -125,7 +143,7 @@ font-size:12px;
 }
 
 #nav li.active {
-	background-image:url(../images/navigation_selected.png);
+	background-image:url(../html_images/navigation_selected.png);
 	background-repeat:repeat-x;
 	width:128px;
 	height:57px;

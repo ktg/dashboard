@@ -14,10 +14,10 @@ text-align:center;
 
 #container{
 	margin: 0 auto;
-	height: 800px;;
+	height: 925px;;
 	width: 494px;
     min-height:100%;
-	background-color: #eaeaea;
+	background-image:url(../images/concept.png);
 /*	padding 20px,20px,0px,20px; */ 
 
 }

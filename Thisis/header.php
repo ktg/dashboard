@@ -24,7 +24,7 @@ $current_user = wp_get_current_user();
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title>This is..{micro-businesses in your community}</title>	
+	<title>Dashboard</title>	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -38,7 +38,7 @@ $current_user = wp_get_current_user();
     			
                 <div id="header">	
                     <div id="logo">
-                        <img src=<?php bloginfo('template_directory') ?>/images/logo.png  alt="This is.. logo" height="71px" width="292px" />
+                        <img src=<?php bloginfo('template_directory') ?>/images/logo.png  alt="Dashboard" height="68px" width="263px" />
                     </div>
                                 
     

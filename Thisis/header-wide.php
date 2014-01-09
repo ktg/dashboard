@@ -21,7 +21,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title>This is..{micro-businesses in your community}</title>	
+	<title>Dashboard</title>	
 	<link rel="stylesheet" href=<?php bloginfo('template_directory') ?>/css/homepage.css type="text/css"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -37,12 +37,6 @@
               <div id="container">
                 <div id="header">	
                 
-                	<div id="logo">                        
-                        <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                        <img src=<?php bloginfo('template_directory') ?>/images/homepage/logo_homepage.png  alt="This is.. logo" height="85px" width="333px" />
-                        </a>
-                    </div>
-    
                     <div id="login_section">
                             
                          <!--   
@@ -87,7 +81,7 @@
 						<label for="user_pass">Password:</label>
 						<input type="password" size="15" value="" class="input p0 mr5" id="user_pass" name="pwd">
 					
-						<input type="submit" value="Log In" class="button-primary p0" id="submitLogin" name="wp-submit">
+						<input type="submit" value="  Log In  " class="button-primary p0" id="submitLogin" name="wp-submit">
 						<input type="hidden" value="<?php echo esc_url( $args['redirect'] );?>" name="redirect_to"> <b>|</b>
 						<?php echo $forgot_password_link;?>
 					</p>

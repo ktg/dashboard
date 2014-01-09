@@ -4,8 +4,7 @@ body {
 font-size: 14px;
 line-height: 18px;
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-image: url(../images/homepage/bg_homepage.png) ;
-background-color: #e2e8ec;
+background-color: #4188a7;
 margin: 0 auto;
 height: 100%;
 width: 100%;
@@ -24,10 +23,11 @@ text-align:center;
 
 
 h1{
-font-family:"Times New Roman", Times, serif;
-color: #2e2e2e;
-font-size:28px;
-margin-left:80px;
+font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+color: #15526d;
+font-size:16px;
+text-align:left;
+
 }
 
 h2{
@@ -40,6 +40,9 @@ p{
 font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 color: #2e2e2e;
 font-size:12px;
+text-align:left;
+margin-top:10px;
+
 }
 
 /**************** HOMEPAGE **************/
@@ -50,8 +53,9 @@ font-size:12px;
 }
 
 #logo{
+	margin: 0 auto;
+	text-align:center;
 	position:absolute;
-	float:left;
 	margin-top:20px;
 }
 
@@ -63,17 +67,35 @@ font-size:12px;
 	float: right;
 	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color:#4d4d4d;
+	color:#4188a7;
 	margin-top:74px;
+	
 }
+
+
+#login_section a
+{
+color: #15526d;
+}
+
+#login_section p
+{
+color:#ffffff;
+text-align:left;
+}
+
 
 #login_section input{
 	margin-top:0px;
 	/*float: right;
 	position:relative;*/
 	margin-right:10px;
+	background-color:#eaeaea;
+	
 	
 }
+
+
 
 .login_button{
 	background: url(../images/homepage/btn_login_homepage.png) no-repeat;
@@ -97,8 +119,13 @@ font-size:12px;
 #sign_up_container{
 	position:relative;
 	margin-top:80px;
-	height: 450px;
-	width:960px;
+	height: 535px;
+	width:483px;
+	background-color:#ffffff;
+	margin: 0 auto;
+text-align:center;
+	
+	
 }
 .business{
 	float:left;
@@ -135,10 +162,30 @@ width 400px;
 padding: 14px;	
 }
 
-/* ----------- sign_up ----------- */
 #signup{
+	margin-top:30px;
 
 }
+
+/* ----------- sign_up ----------- */
+#signup_text{
+width: 463px;
+padding: 20px 20px;
+}
+
+#signup_text h1{
+
+color:ffffff;
+
+}
+#signup_text p{
+
+
+}
+
+
+
+
 #signup label{
 display:block;
 font-weight:medium;
@@ -162,6 +209,8 @@ padding:4px 2px;
 border:solid 1px #aacfe4;
 width:200px;
 margin:2px 0 20px 10px;
+background-color:#eaeaea;
+
 }
 
 #signup .pass{
@@ -175,35 +224,40 @@ padding-top:20px;
 
 #signup button{
 clear:both;
-margin-left:150px;
-margin-top:10px;
-width:125px;
-height:31px;
-background:#84dfe3;
+/*margin-left:150px; */
+/*position:relative;*/
+/*margin-top:40px;*/
+width:195px;
+height:47px;
+background:#15526d;
 text-align:center;
 cursor:pointer;
 line-height:31px;
-color: #4d4d4d;
-font-size:11px;
+color: #ffffff;
+font-size:12px;
 font-weight:bold;
 border:none;
+margin: 0 auto;
+
 }
 
 
 .signup_button{
 clear:both;
 margin-left:130px;
-width:125px;
-height:31px;
-background:#84dfe3;
+width:195px;
+height:47px;
+background:#15526d;
 text-align:center;
 cursor:pointer;
 line-height:31px;
 color: #4d4d4d;
-font-size:11px;
+font-size:12px;
 font-weight:bold;
 border:none;
 }
+
+
 
 .err{
 color: #bc4a4a;	
@@ -259,6 +313,12 @@ margin-left:130px;
 
 #clear{
 	clear:both;
+}
+
+
+#center{
+	margin-left: 5em;
+	margin-right: 5em;
 }
 
 
