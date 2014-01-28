@@ -18,20 +18,35 @@ CONTENTS:
 /* ---------------------------------------------------------------------------------------------------------- 
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-
 @import "../Thisis/css/reset.css";
 
-div,
-article,
-section,
-header,
-footer,
-nav,
-li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
-.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
-body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
-::-moz-selection 	{ background:#ff0; color:#333; }
-::selection 		{ background:#ff0; color:#333; }
+div,article,section,header,footer,nav,li {
+	position: relative;
+	/* For absolutely positioning elements within containers (add more to the list if need be) */
+}
+
+.group:after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: ".";
+	visibility: hidden; /* For clearing */
+}
+
+body {
+	background: #fff;
+	/* Don't forget to style your body to avoid user overrides */
+}
+
+::-moz-selection {
+	background: #ff0;
+	color: #333;
+}
+
+::selection {
+	background: #ff0;
+	color: #333;
+}
 
 /* ---------------------------------------------------------------------------------------------------------- 
 02 Typography -----------------------------------------------------------------------------------------------
@@ -46,17 +61,15 @@ body 				{ background:#fff; /* Don't forget to style your body to avoid user ove
 30 / 16 = 		1.875em 		(30px equivalent)
 
 */
+body,input,textarea {
+	/* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
+	
+}
 
-body,
-input,
-textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	/* This helps to identify headings at the initial build stage, but you should write something more precise later on */
+}
 
 /* ---------------------------------------------------------------------------------------------------------- 
 03 Media queries (using a mobile-first approach) ------------------------------------------------------------
@@ -64,315 +77,272 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 
 /* 400 and up */
 @media screen and (min-width:400px) {
-
-					{ /* Place your styles here for all widths greater than 400px */ }
+	{ /* Place your styles here for all widths greater than 400px */
+}
 
 }
 
 /* Retina Display */
 @media screen and (-webkit-min-device-pixel-ratio:2) {
-
-					{ /* Place your styles here for all 'Retina' screens */ }
-
+	{ /* Place your styles here for all 'Retina' screens */
 }
 
-
-* { padding: 0; margin: 0; outline: 0; }
+}
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
 
 body {
-font-size: 14px;
-line-height: 18px;
-font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-color: #3c3c3c;/*#a3ccd4;*/
-margin: 0px auto;
-height: 100%;
-width: 960px;
-background-repeat:repeat-x;
-text-align:center;
-padding 20px,20px,0px,20px;
-
+	font-size: 14px;
+	font-family: 'Roboto', Lucida "Lucida Sans Unicode", "Lucida Grande",
+		sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	background-color: #3c3c3c; /*#a3ccd4;*/
+	margin: 0px auto;
+	height: 100%;
+	width: 960px;
+	padding
+	20px;
 }
 
-h1{
-font-family:"Times New Roman", Times, serif;
-color: #2e2e2e;
-font-size:28px;
-margin-left:80px;
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	color: #2e2e2e;
+	font-size: 28px;
+	margin-left: 80px;
 }
 
-h2{
-font-family:Impact, Charcoal, sans-serif;
-color: #2e2e2e;
-font-size:16px;
-display:none;
+h2 {
+	font-family: Impact, Charcoal, sans-serif;
+	color: #2e2e2e;
+	font-size: 16px;
+	display: none;
 }
 
-h3{
-font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-font-size:12px;
-display:none;
+h3 {
+	font-size: 12px;
+	display: none;
 }
 
-p{
-font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-color: #2e2e2e;
-font-size:12px;
+p {
+	color: #2e2e2e;
+	font-size: 12px;
 }
 
 .entry-title {
 	display: none;
 }
 
-<!-- Homepage -->
-
-#homepage_body{
-	
-font-size: 14px;
-line-height: 18px;
-font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-background-color: #4188a7;/*#e2e8ec;*/
-margin: 0 auto;
-height: 100%;
-width: 100%;
-background-repeat:repeat-x;
-text-align:center;
-	
+<!--
+Homepage -->#homepage_body {
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #4188a7; /*#e2e8ec;*/
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	background-repeat: repeat-x;
+	text-align: center;
 }
 
-#container{
+#container {
 	margin: 0 auto;
 	height: 100%;
 	width: 960px;
-    min-height:100%;
-	padding 20px,20px,0px,20px;
-
-
+	min-height: 100%;
+	padding
+	20px,20px,0px,20px;
 }
 
-#homepage_header{
-	height:150px;
-	width:960px;
+#homepage_header {
+	height: 150px;
+	width: 960px;
 	background-color: #4188a7;
-
 }
 
-#homepage_logo{
-	position:absolute;
-	text-align:center;
-	margin-top:20px;
+#homepage_logo {
+	position: absolute;
+	text-align: center;
+	margin-top: 20px;
 }
 
-
-#login_section{
-	position:relative;
+#login_section {
 	float: right;
-	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color:#4d4d4d;
-	margin-top:74px;
+	color: #4d4d4d;
+	margin-top: 74px;
 }
 
-#login_section input{
-	margin-top:0px;
-	/*float: right;
-	position:relative;*/
-	margin-right:10px;
-	
+#login_section input {
+	margin-top: 0px;
+	margin-right: 10px;
 }
 
-.login_button{
-	background: url(../Thisis/images/homepage/btn_login_homepage.png) no-repeat;
-	cursor:pointer;
-	width:60px;
-	height:25px;
-	border:none;
+.login_button {
+	background: url(../Thisis/images/homepage/btn_login_homepage.png)
+		no-repeat;
+	cursor: pointer;
+	width: 60px;
+	height: 25px;
+	border: none;
 }
 
 /* HOME PAGE BANNER	*/
-
-#homepage_banner{
-	position:relative;
-	height:307px;
-	width:960px;
+#homepage_banner {
+	height: 307px;
+	width: 960px;
 }
-
-
 
 /* BUSINESS AND CONSUMER SECTIONS */
-#sign_up_container{
-	position:relative;
-	margin-top:80px;
+#sign_up_container {
+	margin-top: 80px;
 	height: 535px;
-	width:483px;
-	background-color:#eaeaea;
-	
-	
-}
-.business{
-	float:left;
-	margin-left:40px;
-	height:366px;
-	width:403px;
-	background-image:url(../Thisis/images/homepage/box_business.png);
-	
+	width: 483px;
+	background-color: #eaeaea;
 }
 
-.business p{
+.business {
+	float: left;
+	margin-left: 40px;
+	height: 366px;
+	width: 403px;
+	background-image: url(../Thisis/images/homepage/box_business.png);
+}
+
+.business p {
 	color: #4d4d4d;
-	margin-left:30px;
+	margin-left: 30px;
 	padding: 60px 30px 0px 0;
-	text-align:left;
+	text-align: left;
 	width: 390px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size: 12px;
 }
 
-.business form{
-	margin-left:30px;
+.business form {
+	margin-left: 30px;
 	padding: 20px 30px 0px 0;
-	text-align:left;
-	
+	text-align: left;
 }
 
-
-.signup_form{
-margin: 0 auto;
-width 400px;
-padding: 14px;	
+.signup_form {
+	margin: 0 auto; width 400px;
+	padding: 14px;
 }
-
-
 
 /* ----------- sign_up ----------- */
-#signup{
-
-}
-#signup label{
-display:block;
-font-weight:medium;
-color:#4d4d4d;
-text-align:right;
-width:120px;
-float:left;
-}
-#signup .small{
-color:#666666;
-display:block;
-font-size:11px;
-font-weight:normal;
-text-align:right;
-width:120px;
-}
-#signup input{
-float:left;
-font-size:12px;
-padding:4px 2px;
-border:solid 1px #aacfe4;
-width:200px;
-margin:2px 0 20px 10px;
-
+#signup {
+	
 }
 
-#signup .pass{
-color:#666666;
-font-size:11px;
-font-weight:normal;
-padding-left:10px;
-padding-top:20px;
-
+#signup label {
+	display: block;
+	font-weight: medium;
+	color: #4d4d4d;
+	text-align: right;
+	width: 120px;
+	float: left;
 }
 
-#signup button{
-clear:both;
-margin-left:130px;
-width:125px;
-height:31px;
-background:#84dfe3;
-text-align:center;
-cursor:pointer;
-line-height:31px;
-color: #4d4d4d;
-font-size:11px;
-font-weight:bold;
-border:none;
+#signup .small {
+	color: #666666;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	width: 120px;
 }
 
+#signup input {
+	float: left;
+	font-size: 12px;
+	padding: 4px 2px;
+	border: solid 1px #aacfe4;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
 
+#signup .pass {
+	color: #666666;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 10px;
+	padding-top: 20px;
+}
 
+#signup button {
+	clear: both;
+	margin-left: 130px;
+	width: 125px;
+	height: 31px;
+	background: #84dfe3;
+	text-align: center;
+	cursor: pointer;
+	line-height: 31px;
+	color: #4d4d4d;
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
+}
 
-<!-- End of Homepage -->
-
-
-<!-- CSS for Backend Interfaces -->
-
-
-#default_container{
-	height: 947px;/*100%;*/
+<!--
+End of Homepage --><!--CSS for Backend Interfaces -->#default_container
+	{
+	height: 947px; /*100%;*/
 	width: 903px;
-    min-height:100%;
-	background-color:#eaeaea;
+	min-height: 100%;
+	background-color: #eaeaea;
 	/*margin-top:20px;*/
-
 }
 
-
-#header{
-	height:115px;
-	width:903px;
-	background-color:#4188a7;
+#header {
+	height: 115px;
+	width: 903px;
+	background-color: #4188a7;
 }
 
-#logo{
-	position:absolute;
-	float:left;
-	margin-top:30px;
-	margin-left:20px;
+#logo {
+	position: absolute;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	color: #EEE;
+	text-align: left;
 }
 
 /* LOGIN SECTION */
-
-
-#logout_section{
-	position:relative;
+#logout_section {
 	float: right;
-	font-family: font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color:#c2c2c2;/*#4d4d4d;*/
-	margin-top:75px;/*74px;*/
-	margin-right:20px;
+	color: #c2c2c2; /*#4d4d4d;*/
+	margin-top: 75px; /*74px;*/
+	margin-right: 20px;
 }
 
-#logout_section a{
+#logout_section a {
 	color: #ffffff;
 }
 
 /* Navigation Bar */
-
-#nav{
-	/*margin-top: -100px;*/
-	/*padding:0;*/
-	margin-top:1px;
-	position:relative;
-	background-image:url(../Thisis/images/navigation_bar.png);
+#nav {
+	background: #15526D;
 	width: 903px;
 	height: 48px;
-	/*float:left;*/
-	border:none;
-    list-style:none;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:14px;
+	border: none;
+	list-style: none;
+	font-size: 14px;
 }
 
-#nav ul{
-	padding:0;
-	margin:0;
-	list-style-type:none; 
-	text-align: center; 
+#nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
 }
 
-#nav li{
-	display:inline;
-	float:left;
+#nav li {
+	display: inline;
+	float: left;
 	text-align: center
 }
 
@@ -380,426 +350,364 @@ border:none;
 	display: block;
 	padding: 17px 25px 17px 30px;;
 	text-decoration: none;
-	color: #fff;	
+	color: #fff;
 }
-	
+
 #nav li a:hover {
 	color: #fff;
-
 }
 
 #nav li.active {
-	background-image:url(../Thisis/images/navigation_selected.png);
-	background-repeat:repeat-x;
-	width:178px;
-	height:48px;
+	background-image: url(../Thisis/images/navigation_selected.png);
+	background-repeat: repeat-x;
+	width: 178px;
+	height: 48px;
 	color: #fff;
 	pointer-events: none;
 	cursor: default;
 	/*margin-top:-5px;*/
-
 }
 
-
-#turn_inside_out{
-	position:relative;
-	width:374px;/*374px;*/
-	height:40px;
-	padding:0;
-
+#turn_inside_out {
+	width: 374px; /*374px;*/
+	height: 40px;
+	padding: 0;
 }
 
-#turn_inside_out img{
-	width:221px;
-	height:35px;
-	text-align:right;
-	float:left;
+#turn_inside_out img {
+	width: 221px;
+	height: 35px;
+	text-align: right;
+	float: left;
 }
-
-
 
 /* Dashboard */
-
-#dashboard{
-	margin-top:20px;
-	height:947px;
-	width:903px;
-	padding:0;
-
+#dashboard {
+	margin-top: 20px;
+	height: 947px;
+	width: 903px;
+	padding: 0;
 }
 
-
-#services_container{
-	position:relative;
-	display:inline;
-	height:636px;
-	max-width:374px;
-	text-align:left;
-	float:left;
-	
+#services_container {
+	display: inline;
+	height: 636px;
+	max-width: 374px;
+	text-align: left;
+	float: left;
 }
 
-.dashboard_icon{
-	height:116;
-	width:116px;
-	display:inline-block;
-	
+.dashboard_icon {
+	height: 116;
+	width: 116px;
+	display: inline-block;
 }
 
-#dashboard_icon_a{
-	height:116;
-	width:116px;
-	display:inline-block;
-	
+#dashboard_icon_a {
+	height: 116;
+	width: 116px;
+	display: inline-block;
 }
 
-
-#display_view{
-	display:inline;
-	float:right;
+#display_view {
+	display: inline;
+	float: right;
 	/*height:925px;*/
-	height:100%;
-	width:494px;
-	background-color:#eaeaea;
-	
+	height: 100%;
+	width: 494px;
+	background-color: #eaeaea;
 }
-
 
 /*  Services */
-
-#listofservices_container{
-	position:relative;
-	/*margin-top:90px;*/
-	margin-top:80px;
-	height:947px;
-	width:903px;
-	background-image:url(../Thisis/images/services/bg2.png);
+#listofservices_container {
+	margin-top: 80px;
+	height: 947px;
+	width: 903px;
 }
 
-#information_bar{
+#information_bar {
 	position: absolute;
 	margin-top: 70px;
-	margin-left:31px;
-	width:840px;
-	height:35px;
-	background-image:url(../Thisis/images/services/information_bar.png);
-	
-}
-
-#information_bar p{
-	
-	width:840px;
-	padding: 10px 0px 00px 0px;
-	margin-left:20px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#fff;
-	
-}
-
-#service_added_notification{
-text-align:center;
-color:#65904d;
-font-weight:bold;
-	
-}
-
-#list_of_services{
-	position:absolute;
-	width:840px;
-	height:770px;	
-	background:#e4e3e3;
-	margin-top:140px;
-	margin-left:32px;
-	
-}
-
-#list_of_services ul{
-	padding: 10px 0px 00px 0px;
-	margin-left:31px;
-	margin:top:2px;
-	list-style-type::disc; 
-	text-align: left; 
+	margin-left: 31px;
 	width: 840px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#4d4d4d;
+	height: 35px;
+	background-image: url(../Thisis/images/services/information_bar.png);
 }
 
-#list_of_services li{
-	
-	font-weight:medium;
+#information_bar p {
+	width: 840px;
+	padding: 10px 0px 00px 0px;
+	margin-left: 20px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
+		Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fff;
+}
+
+#service_added_notification {
+	text-align: center;
+	color: #65904d;
+	font-weight: bold;
+}
+
+#list_of_services {
+	position: absolute;
+	width: 840px;
+	height: 770px;
+	background: #e4e3e3;
+	margin-top: 140px;
+	margin-left: 32px;
+}
+
+#list_of_services ul {
+	padding: 10px 0px 00px 0px;
+	margin-left: 31px;
+	margin: top:2px;
+	list-style-type: :disc;
+	text-align: left;
+	width: 840px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
+		Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4d4d4d;
+}
+
+#list_of_services li {
+	font-weight: medium;
 	width: 770px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#4d4d4d;
-	border:1px solid black;
-	height:65px;
-
-}
-
-
-#list_of_services li p{
-	width: 420px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
-	color:#4d4d4d;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
+		Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4d4d4d;
+	border: 1px solid black;
 	height: 65px;
-	position:absolute;
-	margin-left:180px;
-	margin-top:-50px;
 }
 
+#list_of_services li p {
+	width: 420px;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
+		Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #4d4d4d;
+	height: 65px;
+	position: absolute;
+	margin-left: 180px;
+	margin-top: -50px;
+}
 
-#list_of_services li img{
-	
+#list_of_services li img {
 	width: 73px;
-	height:73px;
-
+	height: 73px;
 }
 
-
-
-#list_of_services input{
-	width:55px;
-	height:30px;
-	color:#4d4d4d;
-	background-color:#CCC;
-	text-align:center;
-	font-size:10px;
-	float:right;
+#list_of_services input {
+	width: 55px;
+	height: 30px;
+	color: #4d4d4d;
+	background-color: #CCC;
+	text-align: center;
+	font-size: 10px;
+	float: right;
 	margin-top: 20px;
-	margin-right:20px;
-	
+	margin-right: 20px;
 }
 
-#list_of_services a{
-	width:55px;
-	height:30px;
-	color:#4d4d4d;
-	background-color:#CCC;
-	text-align:center;
-	font-size:10px;
-	float:right;
+#list_of_services a {
+	width: 55px;
+	height: 30px;
+	color: #4d4d4d;
+	background-color: #CCC;
+	text-align: center;
+	font-size: 10px;
+	float: right;
 	margin-top: 20px;
-	margin-right:20px;
-	text-decoration:none;
+	margin-right: 20px;
+	text-decoration: none;
 	vertical-align: middle;
-	top:50%;
-	
+	top: 50%;
 }
 
-
-#default_container2{
+#default_container2 {
 	height: 1300px;
 	width: 903px;
-    min-height:100%;
-	background-color:#eaeaea;
-
+	min-height: 100%;
+	background-color: #eaeaea;
 }
 
-#discover_container{
-	position:relative;
+#discover_container {
+	position: relative;
 	/*margin-top:80px;/*
 	height:100%; /*947px;*/
-	width:903px;
-	padding:0;
-	background-color:#eaeaea;
-	text-align:center;
+	width: 903px;
+	padding: 0;
+	background-color: #eaeaea;
+	text-align: center;
 	height: 1300px;
-
 }
 
-.discover_title{
+.discover_title {
 	width: 270px;
 	height: 48px;
-	float:left;
-	margin-top:20px;
-	margin-left:-325px;
-		
+	float: left;
+	margin-top: 20px;
+	margin-left: -325px;
 }
 
-#steps_container{
-	position:absolute;
+#steps_container {
+	position: absolute;
+	margin : 50px 30px;
+	width: 843px;
+	margin: 50px 30px;
+	display: -webkit-flex;	
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;	
+}
+
+#step {
+	float: left;
+	width: 400px;
 	margin-top: 50px;
-	width:903px;
-	margin-left:30px;
-	
 }
 
-
-
-#step{
-	float:left;
-	width:400px;	
-	margin-top:50px;
+#step_detail {
+	width: 400px;
 }
 
-#step_detail{
-	width:400px;
+#step_detail img {
+	float: left;
 }
 
-#step_detail img{
-float:left;
-	
+#step_detail div {
+	font-size: 12px;
+	float: right;
+	color: #505461;
+	width: 280px;
+	text-align: justify;
 }
 
-
-#step_detail p{
-float:right;
-margin-top:20px;
-color:#505461;	
-width: 280px;
-text-align:left;
-
+.findmore {
+	background-color: #D9D9D9;
+	padding: 7px 20px;
+	text-decoration: none;
+	color: #555;
+	display: inline-block;
 }
 
-
-.learnmore_button {
-
-height:32px;
-width:119px;
-float:right;
-
-}
-
-
-<!--  Market Your Business  -->
-
-
-#market_container{
-	position:relative;
+<!--
+Market Your Business  -->#market_container {
+	position: relative;
 	/*margin-top:90px;*/
-	margin-top:80px;
-	height:947px;
-	width:903px;
-	background-color:#eaeaea;
+	margin-top: 80px;
+	height: 947px;
+	width: 903px;
+	background-color: #eaeaea;
 	/*padding:0;*/
 }
 
-
-
-#default_container3{
-	position:relative;
+#default_container3 {
+	position: relative;
 	height: 947px;
 	width: 903px;
-    min-height:100%;
-	background-color:#eaeaea;
+	min-height: 100%;
+	background-color: #eaeaea;
 	/*margin-top:80px;*/
-
-
 }
 
-
-.service_title{
+.service_title {
 	width: 314px;
 	height: 48px;
-	float:left;
-	margin-top:10px;
-	position:relative;
-	margin-left:-325px;
-	margin-top:20px;
+	float: left;
+	margin-top: 10px;
+	position: relative;
+	margin-left: -325px;
+	margin-top: 20px;
 }
 
-#service_area{
-	position:absolute;
+#service_area {
+	position: absolute;
 	width: 903px;
-	height 100%;
-	margin-top 20px;
-	
+	height
+	100%;
+	margin-top
+	20px;
 }
 
-
-#service_box{
-	max-width:213px;
-	margin-top:120px;
+#service_box {
+	max-width: 213px;
+	margin-top: 120px;
 	padding: 10px;
-	display:inline;
-	float:left;
-	margin-left:10px;
-	position:relative;
-	
-	
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	position: relative;
 }
 
-#service_box h1{
-	font-size:12px;
-	font-weight:bold;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+#service_box h1 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
+		Verdana, Arial, Helvetica, sans-serif;
 	text-align: justify;
-    width: 194px;
-	color:#505461;
+	width: 194px;
+	color: #505461;
 }
 
-#service_box p{
-	margin-top:10px;
-	color:#505461;
+#service_box p {
+	margin-top: 10px;
+	color: #505461;
 	text-align: justify;
-    width: 194px;
-	height:120px;
-	
+	width: 194px;
+	height: 120px;
 }
 
-.service_icon{
-	width:194px;
-	height:116px;
-	display:inline-block;
-    /*margin: 0 auto;*/
+.service_icon {
+	width: 194px;
+	height: 116px;
+	display: inline-block;
+	/*margin: 0 auto;*/
 }
 
-.btn_service_tutorial{
-	color:#505461;
-	background-color:#d9d9d9;
-	width:73px;
-	height:22px;
-	font-size:11px;
-	text-decoration: none;
-	margin-top:10px;
-
-}
-
-.btn_service_add{
-	color:#505461;
-	background-color:#d9d9d9;
-	width:115px;
+.btn_service_tutorial {
+	color: #505461;
+	background-color: #d9d9d9;
+	width: 73px;
 	height: 22px;
-	font-size:11px;
+	font-size: 11px;
 	text-decoration: none;
-	margin-top:10px;
-
+	margin-top: 10px;
 }
 
-#notification{
-text-align:center;
-color:#65904d;
-font-weight:bold;
-	
+.btn_service_add {
+	color: #505461;
+	background-color: #d9d9d9;
+	width: 115px;
+	height: 22px;
+	font-size: 11px;
+	text-decoration: none;
+	margin-top: 10px;
 }
 
-
-
-
-<!-- End of CSS for Backend Interfaces -->
-
-
-
-#footer{
-	position:absolute;
-	background:#778695;
-	bottom:0%;
-	width:960px;
-	height:30px;
+#notification {
+	text-align: center;
+	color: #65904d;
+	font-weight: bold;
 }
 
-#footer p{
+<!--
+End of CSS for Backend Interfaces -->#footer {
+	position: absolute;
+	background: #778695;
+	bottom: 0%;
+	width: 960px;
+	height: 30px;
+}
+
+#footer p {
 	color: #445b72;
-	font-size:9px;;
-	
-	}
-
-
-#clear{
-	clear:both;
+	font-size: 9px;;
 }
 
-
+#clear {
+	clear: both;
+}

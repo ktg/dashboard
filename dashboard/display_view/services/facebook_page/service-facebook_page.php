@@ -119,7 +119,7 @@ $user_services = $wpdb->get_results($query);
 </p>
 <p>
 (This is the name that appears after the '/' in the Facebook URL e.g www.facebook.com/<b>pagename</b>
-</p
+</p>
 
 <p><input type="submit" value="Display my Facebook Page" /></p>
 </form>

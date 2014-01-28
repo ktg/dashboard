@@ -10,7 +10,7 @@
  *
  * @var bool
  */
-define('WP_USE_THEMES', true);
+//define('WP_USE_THEMES', true);
 
 get_header(); ?>
 

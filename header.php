@@ -27,6 +27,7 @@ $current_user = wp_get_current_user();
 	<title>Dashboard</title>	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -36,11 +37,11 @@ $current_user = wp_get_current_user();
 
 <body <?php body_class(); ?>>
     			
-                <div id="header">	
-                    <div id="logo">
-                        <img src=<?php bloginfo('template_directory') ?>/images/logo.png  alt="Dashboard" height="68px" width="263px" />
-                    </div>
-                                
+                <div id="header">
+                	<div id="logo">
+                		<div style="font-size: 30px; font-family: Arial;">Dashboard</div>
+                		<div>{your online content all in one place}</div>
+                    </div>                              
     
                     <div id="logout_section">
                			 <?php
