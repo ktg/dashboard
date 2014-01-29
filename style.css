@@ -359,20 +359,18 @@ Homepage -->#homepage_body {
 }
 
 .dashboard_icon {
-	height: 116;
-	width: 116px;
 	display: inline-block;
-	opacity: 0.5;
 }
 
-.dashboard_icon:HOVER {
+.dashboard_icon_a:HOVER {
 	opacity: 1.0;
 }
 
 .dashboard_icon_a {
-	height: 116;
+	height: 116px;
 	width: 116px;
 	display: inline-block;
+	opacity: 0.2;
 }
 
 #display_view {
