@@ -68,17 +68,13 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 					foreach ( $services as $service )
 					{
 						if ($us->service_id == $service->id)
-						{
-							$icon_inactive = trim ( $service->icon_offline );
-							$icon_active = trim ( $service->icon_online );
-							// echo "icon name = " .$icon_name;
-							$icon_in = $icon_path . $icon_inactive;
-							$icon_ac = $icon_path . $icon_active;
+						{				
+							$icon = $icon_path . $service->key . "icon.png";
+							$service_page = $service_page_path . $service->key . "/page.php";
 							?>
 
-			<a href="#" id="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service->id; ?>')">
-				<img class="dashboard_icon"	src="<?php echo $icon_in;?>" alt="<?php echo $service->title;?>" onmouseover="this.src='<?php echo $icon_ac ?>'"
-				onmouseout="this.src='<?php echo $icon_in ?>'" onclick="this.src='<?php echo $icon_ac ?>'" />
+			<a href="#" id="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service_page; ?>')">
+				<img class="dashboard_icon"	src="<?php echo $icon;?>" alt="<?php echo $service->title;?>" />
 			</a>
  			<?php
 						}
@@ -101,76 +97,11 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 
 <script type="text/javascript">
-var page=0;
-
 function LoadIFrame(pg)
 {
-    var ifr;
-    ifr = document.getElementById("ifr");
-    ifr.style.display="block";
-    console.log("Page == " + pg);
-    switch(pg)
-    {
-    	case 1:
-        	ifr.src="<?php echo $service_page_path;?>website/service-website.html";
-			break;
-		case 2:
-        	ifr.src="<?php echo $service_page_path;?>google_places/service-googleplaces.html";
-    		break;
-    	case 3:
-        	ifr.src="<?php echo $service_page_path;?>facebook/service-facebook.php";
-			break;
-		case 4:
-        	ifr.src="<?php echo $service_page_path;?>twitter/connect.php";
-			break;
-		case 5:
-        	ifr.src="<?php echo $service_page_path;?>yell/service-yell.html";
-			break;
-		case 6:
-	        ifr.src="<?php echo $service_page_path;?>trip_advisor/service-tripadvisor.html";
-			break;
-		case 7:
-	        ifr.src="<?php echo $service_page_path;?>youtube/service-youtube.html";
-			break;
-		case 8:
-		    ifr.src="<?php echo $service_page_path;?>instagram/service-instagram.html";
-			break;
-		case 9:
-	        ifr.src="<?php echo $service_page_path;?>flickr/service-flickr.html";
-			break;
-		case 10:
-	        ifr.src="<?php echo $service_page_path;?>ebay/service-ebay.html";
-			break;
-		case 11:
-	        ifr.src="<?php echo $service_page_path;?>etsy/service-etsy.html";	
-			break;
-		case 12:
-	        ifr.src="<?php echo $service_page_path;?>paypal/service-paypal.html";
-			break;
-		case 13:
-	        ifr.src="<?php echo $service_page_path;?>collectplus/service-collectplus.html";
-			break;
-		case 14:
-	        ifr.src="<?php echo $service_page_path;?>email/service-email.html";	
-			break;
-		case 15:
-	        ifr.src="<?php echo $service_page_path;?>analytics/service-analytics.html";
-			break;
-		case 16:
-	        ifr.src="<?php echo $service_page_path;?>credly/service-credly.html";
-			break;
-		case 17:
-	        ifr.src="<?php echo $service_page_path;?>customer_base/service-customerbase.html";
-			break;
-		case 18:
-			console.log("Load page");
-	        ifr.src="<?php echo $service_page_path;?>facebook_page/service-facebook_page.php";
-	        break;	
-    }
-	page = pg;
-    return false;
+	var ifr = document.getElementById("ifr");
+    ifr.src = pg;
 }
-
 
 function TurnInsideOut()
 {	
@@ -186,10 +117,5 @@ function TurnInsideOutTwice()
     ifr = document.getElementById("ifr");
     ifr.style.display="block";
 	ifr.src="<?php echo $service_page_path;?>dash-website/dash-website.html";
-}
-
-function onLoad()
-{
-
 }
 </script>
