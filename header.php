@@ -51,11 +51,11 @@ $current_user = wp_get_current_user ();
 				<li><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
 				<li class="active"><a href="">Dashboard</a></li>		
 				<?php elseif($post->post_parent): ?>
-				<li class="active"><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
+				<li><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
 				<li class="active"><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
 				<?php else: ?>				
 				<li class="active"><a href="">Getting Started</a></li>
-				<li class="active"><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
+				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
 				<?php endif; ?>
 			</ul>
 		</div>		

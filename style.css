@@ -291,14 +291,14 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 	height: 947px; /*100%;*/
 	width: 903px;
 	min-height: 100%;
-	background-color: #eaeaea;
+	background: #eee;
 	/*margin-top:20px;*/
 }
 
 #header {
 	height: 115px;
 	width: 903px;
-	background-color: #4188a7;
+	background: #4188a7;
 }
 
 #logo {
@@ -358,13 +358,11 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 }
 
 #nav li.active {
-	background-image: url(../Thisis/images/navigation_selected.png);
-	background-repeat: repeat-x;
 	width: 178px;
 	height: 48px;
 	color: #fff;
 	pointer-events: none;
-	cursor: default;
+	background: #4188a7;
 	/*margin-top:-5px;*/
 }
 
