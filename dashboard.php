@@ -69,11 +69,11 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 					{
 						if ($us->service_id == $service->id)
 						{				
-							$icon = $icon_path . $service->key . "icon.png";
+							$icon = $icon_path . $service->key . "_icon.png";
 							$service_page = $service_page_path . $service->key . "/page.php";
 							?>
 
-			<a href="#" id="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service_page; ?>')">
+			<a href="#" class="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service_page; ?>')">
 				<img class="dashboard_icon"	src="<?php echo $icon;?>" alt="<?php echo $service->title;?>" />
 			</a>
  			<?php

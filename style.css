@@ -401,9 +401,14 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 	height: 116;
 	width: 116px;
 	display: inline-block;
+	opacity: 0.5;
 }
 
-#dashboard_icon_a {
+.dashboard_icon:HOVER {
+	opacity: 1.0;
+}
+
+.dashboard_icon_a {
 	height: 116;
 	width: 116px;
 	display: inline-block;
