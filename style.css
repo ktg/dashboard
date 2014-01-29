@@ -291,26 +291,20 @@ Homepage -->#homepage_body {
 }
 
 #header {
-	height: 115px;
 	background: #4188a7;
+	padding: 30px 25px;
 }
 
 #logo {
-	position: absolute;
-	float: left;
-	margin-top: 30px;
-	margin-left: 20px;
-	color: #EEE;
-	text-align: left;
+	margin-top: 20px;
+	color: #eee;
 }
 
 /* LOGIN SECTION */
 #logout_section {
-	float: right;
 	font-size: 12px;
-	color: #c2c2c2; /*#4d4d4d;*/
-	margin-top: 75px; /*74px;*/
-	margin-right: 20px;
+	color: #ccc;
+	text-align: right;
 }
 
 #logout_section a {
@@ -330,7 +324,7 @@ Homepage -->#homepage_body {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-	padding: 5px 15px;
+	padding: 15px 35px;
 }
 
 #nav .active {
@@ -353,8 +347,6 @@ Homepage -->#homepage_body {
 /* Dashboard */
 #dashboard {
 	margin-top: 20px;
-	height: 947px;
-	width: 903px;
 	padding: 0;
 }
 
@@ -396,7 +388,6 @@ Homepage -->#homepage_body {
 #listofservices_container {
 	margin-top: 80px;
 	height: 947px;
-	width: 903px;
 }
 
 #information_bar {
@@ -502,17 +493,12 @@ Homepage -->#homepage_body {
 }
 
 #default_container2 {
-	height: 1300px;
-	width: 903px;
 	min-height: 100%;
 	background-color: #eaeaea;
 }
 
 #discover_container {
 	position: relative;
-	/*margin-top:80px;/*
-	height:100%; /*947px;*/
-	width: 903px;
 	padding: 0;
 	background-color: #eaeaea;
 	text-align: center;
@@ -568,15 +554,10 @@ Homepage -->#homepage_body {
 	display: inline-block;
 }
 
-<!--
-Market Your Business  -->#market_container {
+#market_container {
 	position: relative;
-	/*margin-top:90px;*/
 	margin-top: 80px;
-	height: 947px;
-	width: 903px;
 	background-color: #eaeaea;
-	/*padding:0;*/
 }
 
 #default_container3 {
@@ -585,7 +566,6 @@ Market Your Business  -->#market_container {
 	width: 903px;
 	min-height: 100%;
 	background-color: #eaeaea;
-	/*margin-top:80px;*/
 }
 
 .service_title {
