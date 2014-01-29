@@ -343,25 +343,19 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 #nav li {
 	display: inline;
 	float: left;
-	text-align: center
+	text-align: center;
+	color: #fff;
 }
 
 #nav li a {
 	display: block;
 	padding: 17px 25px 17px 30px;;
 	text-decoration: none;
-	color: #fff;
-}
-
-#nav li a:hover {
-	color: #fff;
 }
 
 #nav li.active {
 	width: 178px;
 	height: 48px;
-	color: #fff;
-	pointer-events: none;
 	background: #4188a7;
 	/*margin-top:-5px;*/
 }
