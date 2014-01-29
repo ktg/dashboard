@@ -46,8 +46,7 @@ add_filter( 'show_admin_bar', '__return_false' );
 			<div>{your online content all in one place}</div>
 		</div>
 
-		<div id="logout_section">
-			logged in as &quot;<?php echo $current_user->display_name; ?>&quot;&nbsp;
+		<div id="logout_section">logged in as &quot;<?php echo $current_user->display_name; ?>&quot;&nbsp;
 			<a href="<?php echo wp_logout_url(home)?>" title="Logout">Logout</a>
 		</div>
 	</div>
@@ -91,3 +90,7 @@ if(isset($_POST['wp-submit']) && $_POST['wp-submit']=='Add to Dashboard' && $use
 	$results = $wpdb->query($query);
 }
 ?>		
+
+<?php if(!is_page(dashboard)): ?>
+<div><?php echo $pagename ?></div>
+<?php endif; ?>

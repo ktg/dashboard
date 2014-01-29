@@ -563,7 +563,6 @@ Homepage -->#homepage_body {
 #default_container3 {
 	position: relative;
 	height: 947px;
-	width: 903px;
 	min-height: 100%;
 	background-color: #eaeaea;
 }
@@ -580,11 +579,7 @@ Homepage -->#homepage_body {
 
 #service_area {
 	position: absolute;
-	width: 903px;
-	height
-	100%;
-	margin-top
-	20px;
+	margin-top: 20px;
 }
 
 #service_box {
@@ -648,8 +643,7 @@ Homepage -->#homepage_body {
 	font-weight: bold;
 }
 
-<!--
-End of CSS for Backend Interfaces -->#footer {
+#footer {
 	position: absolute;
 	background: #778695;
 	bottom: 0%;
