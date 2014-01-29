@@ -29,14 +29,6 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 ?>
 
-<!-- Navigation Bar -->
-<div id="nav">
-	<ul>
-		<li><a href="<?php echo get_page_link( get_page_by_title(discover)->ID ); ?>">Getting Started</a></li>
-		<li class="active"><a href="">Dashboard</a></li>
-	</ul>
-</div>
-
 <div id="default_container">
 	<div id="dashboard">
 		<div id="turn_inside_out">

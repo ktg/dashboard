@@ -75,14 +75,6 @@ get_header ();
 
 ?>
 
-<!-- Navigation Bar -->
-<div id="nav">
-	<ul>
-		<li class="active">Getting Started</li>
-		<li><a href="<?php echo get_page_link( get_page_by_title(dashboard)->ID ); ?>">Dashboard</a></li>
-	</ul>
-</div>
-
 <!-- <div id="default_container2">  -->
 <div id="discover_container">
 
