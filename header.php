@@ -1,6 +1,5 @@
 <?php
-
-$current_user = wp_get_current_user();
+$current_user = wp_get_current_user ();
 
 /**
  * The Header for our theme.
@@ -11,7 +10,8 @@ $current_user = wp_get_current_user();
  * @subpackage Twenty_Thirteen
  * @since Twenty Thirteen 1.0
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->
@@ -22,35 +22,31 @@ $current_user = wp_get_current_user();
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<title>Dashboard</title>	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"/>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>	
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width">
+<title>Dashboard</title>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    			
-                <div id="header">
-                	<div id="logo">
-                		<div style="font-size: 30px; font-family: Arial;">Dashboard</div>
-                		<div>{your online content all in one place}</div>
-                    </div>                              
-    
-                    <div id="logout_section">
-               			 <?php
-                        	echo "logged in as &quot;$current_user->display_name&quot;&nbsp;";
-							echo '<a href="'.wp_logout_url(home).'" title="Logout">Logout</a>';
-  						 ?>
-                    </div>
-                </div>
-        
-               
 
-		<div id="main" class="site-main">
+	<div id="header">
+		<div id="logo">
+			<div style="font-size: 30px; font-family: Arial;">Dashboard</div>
+			<div>{your online content all in one place}</div>
+		</div>
+
+		<div id="logout_section">
+			logged in as &quot;<?php echo $current_user->display_name; ?>&quot;&nbsp;
+			<a href="<?php echo wp_logout_url(home)?>" title="Logout">Logout</a>
+		</div>
+	</div>
+
+	<div id="main" class="site-main">
