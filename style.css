@@ -345,12 +345,13 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 	float: left;
 	text-align: center;
 	color: #fff;
+	padding: 17px 25px 17px 30px;;	
 }
 
 #nav li a {
 	display: block;
-	padding: 17px 25px 17px 30px;;
 	text-decoration: none;
+	color: #fff;
 }
 
 #nav li.active {

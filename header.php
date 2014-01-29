@@ -58,12 +58,12 @@ add_filter( 'show_admin_bar', '__return_false' );
 			<ul>
 				<?php if(is_page(dashboard)): ?>
 				<li><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
-				<li class="active"><a href="">Dashboard</a></li>		
+				<li class="active">Dashboard</li>		
 				<?php elseif($post->post_parent): ?>
 				<li class="active"><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
 				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
 				<?php else: ?>				
-				<li class="active"><a href="">Getting Started</a></li>
+				<li class="active">Getting Started</li>
 				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
 				<?php endif; ?>
 			</ul>
