@@ -24,8 +24,7 @@ $query = $wpdb->prepare ( "Select * From " . $wpdb->prefix . "users_services WHE
 $user_services = $wpdb->get_results ( $query );
 
 $theme = get_template ();
-$icon_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashboard_view/service_icons/' );
-$service_page_path = site_url ( 'wp-content/themes/' . $theme . '/dashboard/display_view/services/' );
+$services_path = site_url ( 'wp-content/themes/' . $theme . '/services/' );
 $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashboard_view/' );
 
 ?>
@@ -63,14 +62,15 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 			<?php
 			if ($user_services)
 			{
-				foreach ( $user_services as $us )
+				foreach ($user_services as $us)
 				{
-					foreach ( $services as $service )
+					foreach ($services as $service)
 					{
 						if ($us->service_id == $service->id)
 						{				
-							$icon = $icon_path . $service->key . "_icon.png";
-							$service_page = $service_page_path . $service->key . "/page.php";
+							$service_path = $services_path . $service->key . "/";
+							$icon = $service_path . "images/icon.png";
+							$service_page = $service_path . "page.php";
 							?>
 
 			<a href="#" class="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service_page; ?>')">
