@@ -55,18 +55,16 @@ add_filter( 'show_admin_bar', '__return_false' );
 	<div id="main" class="site-main">
 	
 		<div id="nav">
-			<ul>
-				<?php if(is_page(dashboard)): ?>
-				<li><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
-				<li class="active">Dashboard</li>		
-				<?php elseif($post->post_parent): ?>
-				<li class="active"><a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a></li>
-				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
-				<?php else: ?>				
-				<li class="active">Getting Started</li>
-				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
-				<?php endif; ?>
-			</ul>
+			<?php if(is_page(dashboard)): ?>
+			<a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a>
+			<a class="active">Dashboard</a>		
+			<?php elseif($post->post_parent): ?>
+			<a class="active" href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a>
+			<a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a>
+			<?php else: ?>				
+			<a class="active">Getting Started</a>
+			<a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a>
+			<?php endif; ?>
 		</div>	
 
 <?php

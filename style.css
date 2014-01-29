@@ -285,19 +285,13 @@ Homepage -->#homepage_body {
 	border: none;
 }
 
-<!--
-End of Homepage --><!--CSS for Backend Interfaces -->#default_container
-	{
-	height: 947px; /*100%;*/
-	width: 903px;
+#default_container {
 	min-height: 100%;
 	background: #eee;
-	/*margin-top:20px;*/
 }
 
 #header {
 	height: 115px;
-	width: 903px;
 	background: #4188a7;
 }
 
@@ -326,39 +320,21 @@ End of Homepage --><!--CSS for Backend Interfaces -->#default_container
 /* Navigation Bar */
 #nav {
 	background: #15526D;
-	width: 903px;
-	height: 48px;
-	border: none;
-	list-style: none;
 	font-size: 14px;
-}
-
-#nav ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	text-align: center;
-}
-
-#nav li {
-	display: inline;
-	float: left;
-	text-align: center;
+	display: -webkit-flex;	
+	display: flex;
 	color: #fff;
-	padding: 17px 25px 17px 30px;;	
 }
 
-#nav li a {
-	display: block;
+#nav a {
+	display: inline-block;
 	text-decoration: none;
 	color: #fff;
+	padding: 5px 15px;
 }
 
-#nav li.active {
-	width: 178px;
-	height: 48px;
+#nav .active {
 	background: #4188a7;
-	/*margin-top:-5px;*/
 }
 
 #turn_inside_out {
