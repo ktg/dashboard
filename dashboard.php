@@ -76,8 +76,8 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 							$icon_ac = $icon_path . $icon_active;
 							?>
 
-			<a href="#" id="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service->id; ?>')"> <img class="dashboard_icon"
-				src="<?php echo $icon_in;?>" alt="<?php echo $service->title;?>" onmouseover="this.src='<?php echo $icon_ac ?>'"
+			<a href="#" id="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service->id; ?>')">
+				<img class="dashboard_icon"	src="<?php echo $icon_in;?>" alt="<?php echo $service->title;?>" onmouseover="this.src='<?php echo $icon_ac ?>'"
 				onmouseout="this.src='<?php echo $icon_in ?>'" onclick="this.src='<?php echo $icon_ac ?>'" />
 			</a>
  			<?php
@@ -163,7 +163,9 @@ function LoadIFrame(pg)
 	        ifr.src="<?php echo $service_page_path;?>customer_base/service-customerbase.html";
 			break;
 		case 18:
-	        ifr.src="<?php echo $service_page_path;?>facebook_page/service-facebook_page.php";	
+			console.log("Load page");
+	        ifr.src="<?php echo $service_page_path;?>facebook_page/service-facebook_page.php";
+	        break;	
     }
 	page = pg;
     return false;
