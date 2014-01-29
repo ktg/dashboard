@@ -108,6 +108,7 @@ function LoadIFrame(pg)
     var ifr;
     ifr = document.getElementById("ifr");
     ifr.style.display="block";
+    console.log("Page == " + pg);
     switch(pg)
     {
     	case 1:
