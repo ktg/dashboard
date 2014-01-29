@@ -6,50 +6,9 @@
  */
 $current_user = wp_get_current_user ();
 $user_id = isset ( $current_user->ID ) ? $current_user->ID : 0;
-if (! $user_id > 0)
-{
-	wp_redirect ( esc_url ( site_url ( 'home' ) ) );
-}
+
 require (dirname ( dirname ( dirname ( dirname ( __FILE__ ) ) ) ) . '/wp-load.php');
 global $wpdb, $current_site, $current_user;
-
-add_filter ( 'show_admin_bar', '__return_false' );
-
-if (isset ( $_POST ['wp-submit'] ) && $_POST ['wp-submit'] == 'Add' && $user_id > 0)
-{
-	$service_id = $_POST ['service_id'];
-	$service_title = $_POST ['service_title'];
-	
-	/* Need to check what services a user has and to not allow them to add services that they already have in their dashboard */
-	$us_query = $wpdb->prepare ( "Select * From " . $wpdb->prefix . "users_services WHERE user_id= $user_id AND service_id = $service_id" );
-	$user_services_check = $wpdb->get_results ( $us_query );
-	// echo "wp-submit post loop";
-	// echo " service id = $service_id";
-	// echo " user id = $user_id";
-	
-	if ($user_services_check)
-	{
-		// already got the service added into your dashboard
-		// echo " You already have the service: $service_id in your dashboard!" ;
-	}
-	else
-	{
-		// add the service to your dashboard
-		$query = $wpdb->prepare ( "
-			INSERT INTO " . $wpdb->prefix . "users_services 
-			(service_id, user_id)
-			VALUES ($service_id,$user_id)
-			" );
-		
-		?>
-<div id="service_added_notification">
-			<?php echo "$service_title has been added to your dashboard"; ?>
-			</div>
-<?php
-	}
-	$results = $wpdb->query ( $query );
-	// echo "the result = $results";
-}
 
 $theme = get_template ();
 $title_path = site_url ( 'wp-content/themes/' . $theme . '/images/discover/' );
@@ -97,7 +56,6 @@ get_header ();
 		</div>
 
 
-
 		<div id="step">
 			<a href=""><img width='365px' height='53px' src="<?php echo $title_path; ?>4.png"></a>
 			<div id="step_detail">
@@ -110,7 +68,6 @@ get_header ();
 				</div>
 			</div>
 		</div>
-
 
 
 		<div id="step">
@@ -127,7 +84,6 @@ get_header ();
 		</div>
 
 
-
 		<div id="step">
 			<a href=""><img width='365px' height='53px' src="<?php echo $title_path; ?>3.png"></a>
 			<div id="step_detail">
@@ -140,7 +96,6 @@ get_header ();
 				</div>
 			</div>
 		</div>
-
 
 
 		<div id="step">
@@ -156,7 +111,6 @@ get_header ();
 		</div>
 
 
-
 		<div id="step">
 			<a href=""><img width='365px' height='53px' src="<?php echo $title_path; ?>6.png"></a>
 			<div id="step_detail">
@@ -168,7 +122,6 @@ get_header ();
 				</div>
 			</div>
 		</div>
-
 
 
 		<div id="step">

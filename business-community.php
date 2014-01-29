@@ -8,7 +8,8 @@
 
 $current_user = wp_get_current_user();
 $user_id = isset($current_user->ID)?$current_user->ID:0;
-if(!$user_id >0){
+if($user_id == 0)
+{
 	wp_redirect(esc_url( site_url('home')));
 }
 
@@ -16,42 +17,30 @@ add_filter( 'show_admin_bar', '__return_false' );
 
 
 
- if(isset($_POST['wp-submit']) && $_POST['wp-submit']=='Add to Dashboard' && $user_id > 0){
-		$service_id=$_POST['service_id'];
-		$service_title=$_POST['service_title'];
+if(isset($_POST['wp-submit']) && $_POST['wp-submit']=='Add to Dashboard' && $user_id > 0)
+{
+	$service_id=$_POST['service_id'];
+	$service_title=$_POST['service_title'];
 	
-		/* Need to check what services a user has and to not allow them to add services that they already have in their dashboard */
-		$us_query = $wpdb->prepare("Select * From ".$wpdb->prefix."users_services WHERE user_id= $user_id AND service_id = $service_id");
-		$user_services_check = $wpdb->get_results($us_query);	
-		//echo "wp-submit post loop";
-		//echo " service id =  $service_id";
-		//echo " user id = $user_id";
+	/* Need to check what services a user has and to not allow them to add services that they already have in their dashboard */
+	$us_query = $wpdb->prepare("Select * From ".$wpdb->prefix."users_services WHERE user_id= $user_id AND service_id = $service_id");
+	$user_services_check = $wpdb->get_results($us_query);	
 		
-		if($user_services_check){
-			//already got the service added into your dashboard
-			//echo " You already have the service: $service_id in your dashboard!" ;
-		}else{
-			//add the service to your dashboard
-			$query = $wpdb->prepare("
-			INSERT INTO ".$wpdb->prefix."users_services 
-			(service_id, user_id)
-			VALUES ($service_id,$user_id)
-			");
+	if(!$user_services_check)
+	{
+		//add the service to your dashboard
+		$query = $wpdb->prepare("INSERT INTO ".$wpdb->prefix."users_services (service_id, user_id) VALUES ($service_id,$user_id)");
 			
-			?>
-			<div id="notification">
+?>
+		<div id="notification">
 			<?php echo "$service_title has been added to your dashboard"; ?>
-			</div>
-            <?php
-		}	
-		$results = $wpdb->query($query);
-		//echo "the result =   $results";
-
-        
- }
+		</div>
+<?php
+	}	
+	$results = $wpdb->query($query);
+}
 
 get_header(); 
-
 
 $query = $wpdb->prepare("Select * From ".$wpdb->prefix."services WHERE category = 'business_community'");
 //$results = $wpdb->query($query);
@@ -66,15 +55,6 @@ $theme=get_template();
 $image_path=site_url('wp-content/themes/'.$theme.'/images/discover/business_community/');
 
 ?>
-
-<!-- Navigation Bar -->
-<div id="nav">
- <ul>
-   <li class="active"><a href="">1. Getting Started</a></li>
-   <li><a href="<?php echo get_page_link( get_page_by_title(dashboard)->ID ); ?>">2. Dashboard</a></li>
-  
- </ul>
-</div>
 
     <div id="default_container3">
 

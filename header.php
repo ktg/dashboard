@@ -4,6 +4,15 @@ $current_user = wp_get_current_user ();
  * @package WordPress
  * @subpackage Dashboard
  */
+
+$user_id = isset($current_user->ID)?$current_user->ID:0;
+if($user_id == 0)
+{
+	wp_redirect(esc_url( site_url('home')));
+}
+
+add_filter( 'show_admin_bar', '__return_false' );
+
 ?>
 <!DOCTYPE html>
 <!--[if IE 7]>
@@ -58,4 +67,29 @@ $current_user = wp_get_current_user ();
 				<li><a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a></li>
 				<?php endif; ?>
 			</ul>
-		</div>		
+		</div>	
+
+<?php
+if(isset($_POST['wp-submit']) && $_POST['wp-submit']=='Add to Dashboard' && $user_id > 0)
+{
+	$service_id=$_POST['service_id'];
+	$service_title=$_POST['service_title'];
+	
+	/* Need to check what services a user has and to not allow them to add services that they already have in their dashboard */
+	$us_query = $wpdb->prepare("SELECT * FROM ".$wpdb->prefix."users_services WHERE user_id= $user_id AND service_id = $service_id");
+	$user_services_check = $wpdb->get_results($us_query);	
+		
+	if(!$user_services_check)
+	{
+		//add the service to your dashboard
+		$query = $wpdb->prepare("INSERT INTO ".$wpdb->prefix."users_services (service_id, user_id) VALUES ($service_id,$user_id)");
+			
+?>
+		<div id="notification">
+			<?php echo "$service_title has been added to your dashboard"; ?>
+		</div>
+<?php
+	}	
+	$results = $wpdb->query($query);
+}
+?>		

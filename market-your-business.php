@@ -61,16 +61,6 @@ $image_path = site_url ( 'wp-content/themes/' . $theme . '/images/discover/marke
 
 ?>
 
-<!-- Navigation Bar -->
-<div id="nav">
-	<ul>
-		<li class="active"><a href="">Getting Started</a></li>
-
-		<li><a href="<?php echo get_page_link( get_page_by_title(dashboard)->ID ); ?>">Dashboard</a></li>
-
-	</ul>
-</div>
-
 <div id="default_container3">
 
 	<img class="service_title" src="<?php echo $image_path; ?>title.png" />

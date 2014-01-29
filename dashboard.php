@@ -7,20 +7,15 @@
  */
 $current_user = wp_get_current_user ();
 $user_id = isset ( $current_user->ID ) ? $current_user->ID : 0;
-if (! $user_id > 0)
-{
-	wp_redirect ( esc_url ( site_url ( 'home' ) ) );
-}
 
 get_header ();
-add_filter ( 'show_admin_bar', '__return_false' );
 
-$query = $wpdb->prepare ( "Select * From " . $wpdb->prefix . "services" );
+$query = $wpdb->prepare ( "SELECT * FROM " . $wpdb->prefix . "services" );
 // $results = $wpdb->query($query);
 $services = $wpdb->get_results ( $query );
 
 /* Check what services a user has in their dashboard and load them */
-$query = $wpdb->prepare ( "Select * From " . $wpdb->prefix . "users_services WHERE user_id= $user_id" );
+$query = $wpdb->prepare ( "SELECT * FROM " . $wpdb->prefix . "users_services WHERE user_id=$user_id" );
 $user_services = $wpdb->get_results ( $query );
 
 $theme = get_template ();

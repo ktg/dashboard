@@ -67,14 +67,6 @@ $image_path=site_url('wp-content/themes/'.$theme.'/images/discover/sell/');
 
 ?>
 
-<!-- Navigation Bar -->
-<div id="nav">
- <ul>
-   <li class="active"><a href="">1. Getting Started</a></li>
-   <li><a href="<?php echo get_page_link( get_page_by_title(dashboard)->ID ); ?>">2. Dashboard</a></li>
-  
- </ul>
-</div>
 
     <div id="default_container3">
 
