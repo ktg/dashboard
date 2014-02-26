@@ -79,7 +79,7 @@ if (isset ( $_POST ['task'] ) && $_POST ['task'] == 'register')
 	}
 }
 
-get_header();
+get_header('wide');
 ?>
 
 <div id="container">
