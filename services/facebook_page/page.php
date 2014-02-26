@@ -18,11 +18,16 @@ $facebook = new Facebook(array(
         'allowSignedRequest' => false,
 ));
 
-//$access_token = $facebook->getAccessToken();
+$access_token = $facebook->getAccessToken();
+
+echo $access_token;
+
 //$appsecret_proof = hash_hmac('sha256', $access_token, $app_secret);
 
 // Get User ID
 $user = $facebook->getUser();
+
+echo $user;
 
 //$facebook->api("/$user/permissions");
 
