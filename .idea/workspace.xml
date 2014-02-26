@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header-wide.php" afterPath="$PROJECT_DIR$/header-wide.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +87,7 @@
       <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="13" selection-start="753" selection-end="753" vertical-scroll-proportion="0.39144737" vertical-offset="198" max-vertical-offset="1110">
+            <state line="53" column="81" selection-start="999" selection-end="999" vertical-scroll-proportion="0.65460527" vertical-offset="198" max-vertical-offset="1110">
               <folding />
             </state>
           </provider>
@@ -616,7 +613,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="753" selection-end="753" vertical-scroll-proportion="0.39144737" vertical-offset="198" max-vertical-offset="1110">
+        <state line="53" column="81" selection-start="999" selection-end="999" vertical-scroll-proportion="0.65460527" vertical-offset="198" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>

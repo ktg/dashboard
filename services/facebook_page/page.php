@@ -51,7 +51,7 @@ if(!$user)
 <?php
     if(!$user)
     {
-        <div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div>
+        ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
     }
 ?>
 	<div id="fb-root"></div>
