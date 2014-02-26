@@ -32,7 +32,7 @@ if(!$user)
 {
     $params = array(
         'scope' => 'read_stream, friends_likes',
-        //'redirect_uri' => site_url('/callback.php')
+        'redirect_uri' => site_url()
     );
 
     $loginURL = $facebook->getLoginUrl($params);
@@ -48,21 +48,24 @@ if(!$user)
 </head>
 
 <body>
-<?php
-    if(!$user)
-    {
-        ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
-    }
-?>
 	<div id="fb-root"></div>
 	<div id="container">
 
 		<div id="header">
 			<img id="heading" />
 
+            <div>Facebook Page</div>
+
 			<div id="delete"></div>
 
 		</div>
+
+        <?php
+            if(!$user)
+            {
+                ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
+            }
+        ?>
 
 	</div>
 </body>
