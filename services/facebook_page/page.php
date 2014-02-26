@@ -22,19 +22,12 @@ $access_token = $facebook->getAccessToken();
 
 echo $access_token;
 
-//$appsecret_proof = hash_hmac('sha256', $access_token, $app_secret);
-
-$ret = $facebook->api(, $method, $params);
-
-
 // Get User ID
 $user = $facebook->getUser();
 
 echo $user;
 
-//$facebook->api("/$user/permissions");
-
-// TODO log user result
+//$ret = $facebook->api("/$user/permissions", $method, $params);
 
 if(!$user)
 {
