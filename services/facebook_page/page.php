@@ -35,9 +35,7 @@ if(!$user)
         //'redirect_uri' => site_url('/callback.php')
     );
 
-    $loginUrl = $facebook->getLoginUrl($params);
-
-    $_SESSION['redirect'] = $loginUrl;
+    $loginURL = $facebook->getLoginUrl($params);
 }
 
 
@@ -53,7 +51,8 @@ if(!$user)
 <?php
     if(!$user)
     {
-        <div>
+        <div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div>
+    }
 ?>
 	<div id="fb-root"></div>
 	<div id="container">
