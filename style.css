@@ -18,7 +18,7 @@ CONTENTS:
 /* ---------------------------------------------------------------------------------------------------------- 
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-@import "../Thisis/css/reset.css";
+@import "css/reset.css";
 
 div,article,section,header,footer,nav,li {
 	position: relative;
@@ -180,7 +180,7 @@ Homepage -->#homepage_body {
 }
 
 .login_button {
-	background: url(../Thisis/images/homepage/btn_login_homepage.png)
+	background: url('images/homepage/btn_login_homepage.png')
 		no-repeat;
 	cursor: pointer;
 	width: 60px;
@@ -207,7 +207,7 @@ Homepage -->#homepage_body {
 	margin-left: 40px;
 	height: 366px;
 	width: 403px;
-	background-image: url(../Thisis/images/homepage/box_business.png);
+	background-image: url('images/homepage/box_business.png');
 }
 
 .business p {
@@ -394,7 +394,7 @@ Homepage -->#homepage_body {
 	margin-left: 31px;
 	width: 840px;
 	height: 35px;
-	background-image: url(../Thisis/images/services/information_bar.png);
+	background-image: url('images/services/information_bar.png');
 }
 
 #information_bar p {

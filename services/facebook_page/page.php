@@ -1,18 +1,46 @@
 <?php
 /*
- * Template Name: facebook-page @package WordPress
+ * Template Name: facebook-page
+ *
+ * @package WordPress
  */
-// $current_user = wp_get_current_user();
+session_start();
 
 require 'facebook/facebook.php';
 
+$app_id = '342794992525201';
+$app_secret = 'e69e8a79972fe7330a40d8ab1d68994f';
+
 $facebook = new Facebook(array(
-		'appId'  => '342794992525201',
-		'secret' => 'e69e8a79972fe7330a40d8ab1d68994f',
+        'appId'  => $app_id,
+        'secret' => $app_secret,
+        'fileUpload' => false,
+        'allowSignedRequest' => false,
 ));
+
+$access_token = $facebook->getAccessToken();
+$appsecret_proof = hash_hmac('sha256', $access_token, $app_secret);
 
 // Get User ID
 $user = $facebook->getUser();
+
+$facebook->api("/$user/permissions");
+
+// TODO log user result
+
+if(!$user)
+{
+    $params = array(
+        'scope' => 'read_stream, friends_likes',
+        //'redirect_uri' => site_url('/callback.php')
+    );
+
+    $loginUrl = $facebook->getLoginUrl($params);
+
+    $_SESSION['redirect'] = $loginUrl;
+}
+
+
 
 ?>
 
@@ -22,7 +50,11 @@ $user = $facebook->getUser();
 </head>
 
 <body>
-
+<?php
+    if(!$user)
+    {
+        <div>
+?>
 	<div id="fb-root"></div>
 	<div id="container">
 
