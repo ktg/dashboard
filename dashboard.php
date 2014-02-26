@@ -26,25 +26,6 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 <div id="default_container">
 	<div id="dashboard">
-		<div id="turn_inside_out">
-
-			<?php
-			if (count ( $user_services ) < 4)
-			{
-				?>
-            <a href="#" onclick="return TurnInsideOut()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
-			<?php
-			}
-			else
-			{
-				?>	
-			<a href="#" onclick="return TurnInsideOutTwice()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
-			<?php
-			}
-			?>		 
-    	</div>
-
-
 		<div id="services_container">
 			<?php
 			if ($user_services)
@@ -77,6 +58,24 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 			<iframe id="ifr" style="overflow: hidden; height: 100%; width: 100%" height="100%" width="100%" style="border-width:none; background:#eaeaea; "> </iframe>
 		</div>
 	</div>
+
+    <div id="turn_inside_out">
+
+        <?php
+        if (count ( $user_services ) < 4)
+        {
+            ?>
+        <a href="#" onclick="return TurnInsideOut()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
+        <?php
+        }
+        else
+        {
+            ?>
+        <a href="#" onclick="return TurnInsideOutTwice()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
+        <?php
+        }
+        ?>
+    </div>
 </div>
 
 <?php get_sidebar(); ?>
