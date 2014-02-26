@@ -347,8 +347,7 @@ Homepage -->#homepage_body {
 /* Dashboard */
 #dashboard {
     display: flex;
-	padding: 0;
-	padding-top: 20px;
+	padding: 20px;
 }
 
 #services_container {

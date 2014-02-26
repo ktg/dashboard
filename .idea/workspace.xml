@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="dashboard.iws" />
@@ -79,7 +78,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="350" column="22" selection-start="6307" selection-end="6307" vertical-scroll-proportion="0.4006772" vertical-offset="4895" max-vertical-offset="9975">
+            <state line="349" column="18" selection-start="6290" selection-end="6290" vertical-scroll-proportion="0.3837472" vertical-offset="4895" max-vertical-offset="9960">
               <folding />
             </state>
           </provider>
@@ -615,7 +614,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="22" selection-start="6307" selection-end="6307" vertical-scroll-proportion="0.4006772" vertical-offset="4895" max-vertical-offset="9975">
+        <state line="349" column="18" selection-start="6290" selection-end="6290" vertical-scroll-proportion="0.3837472" vertical-offset="4895" max-vertical-offset="9960">
           <folding />
         </state>
       </provider>
