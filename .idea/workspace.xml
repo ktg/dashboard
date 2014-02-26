@@ -87,7 +87,7 @@
       <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="35" selection-start="719" selection-end="719" vertical-scroll-proportion="0.29276314" vertical-offset="243" max-vertical-offset="1155">
+            <state line="34" column="67" selection-start="751" selection-end="751" vertical-scroll-proportion="0.29276314" vertical-offset="243" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -619,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="17" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="573" max-vertical-offset="1995">
@@ -636,13 +629,6 @@
     <entry file="file://$PROJECT_DIR$/header-wide.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
@@ -668,9 +654,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="35" selection-start="719" selection-end="719" vertical-scroll-proportion="0.29276314" vertical-offset="243" max-vertical-offset="1155">
+        <state line="34" column="67" selection-start="751" selection-end="751" vertical-scroll-proportion="0.29276314" vertical-offset="243" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>

@@ -32,7 +32,7 @@ if(!$user)
 {
     $params = array(
         'scope' => 'read_stream, friends_likes',
-        'redirect_uri' => site_url()
+        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
     );
 
     $loginURL = $facebook->getLoginUrl($params);
