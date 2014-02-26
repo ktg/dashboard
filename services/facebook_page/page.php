@@ -24,6 +24,9 @@ echo $access_token;
 
 //$appsecret_proof = hash_hmac('sha256', $access_token, $app_secret);
 
+$ret = $facebook->api(, $method, $params);
+
+
 // Get User ID
 $user = $facebook->getUser();
 
@@ -36,8 +39,8 @@ echo $user;
 if(!$user)
 {
     $params = array(
-        'scope' => 'read_stream, friends_likes',
-        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
+        'scope' => 'read_stream, friends_likes, manage_pages',
+        //'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
     );
 
     $loginURL = $facebook->getLoginUrl($params);
