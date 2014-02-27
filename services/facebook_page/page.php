@@ -74,7 +74,7 @@ else
         <?php
             if(!$user)
             {
-                ?><div><a target="_parent" href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
+                ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
             }
         ?>
 
