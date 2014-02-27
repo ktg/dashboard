@@ -25,11 +25,13 @@ echo $access_token;
 // Get User ID
 $user = $facebook->getUser();
 
+$user = $facebook->require_login();
+
 echo $user;
 
-$user_profile = $facebook->api('/me','GET');
+//$user_profile = $facebook->api('/me','GET');
 
-echo $user_profile;
+//echo $user_profile;
 
 //$ret = $facebook->api("/$user/permissions", "GET", $params);
 
@@ -37,7 +39,7 @@ if(!$user)
 {
     $params = array(
         'scope' => 'read_stream, friends_likes, manage_pages',
-        //'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
+        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
     );
 
     $loginURL = $facebook->getLoginUrl($params);
