@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
     </list>
     <ignored path="dashboard.iws" />
@@ -84,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="26" selection-start="943" selection-end="943" vertical-scroll-proportion="0.34210527" vertical-offset="408" max-vertical-offset="1320">
+            <state line="39" column="80" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -138,10 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1680">
+            <state line="119" column="0" selection-start="3198" selection-end="3198" vertical-scroll-proportion="1.9572369" vertical-offset="0" max-vertical-offset="2115">
               <folding />
             </state>
           </provider>
@@ -174,8 +175,8 @@
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/header-wide.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/services/facebook_page/page.php" />
       </list>
     </option>
@@ -633,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2835">
@@ -670,7 +664,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="26" selection-start="943" selection-end="943" vertical-scroll-proportion="0.34210527" vertical-offset="408" max-vertical-offset="1320">
+        <state line="39" column="80" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="3198" selection-end="3198" vertical-scroll-proportion="1.9572369" vertical-offset="0" max-vertical-offset="2115">
           <folding />
         </state>
       </provider>

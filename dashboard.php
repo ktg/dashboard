@@ -23,7 +23,6 @@ $services_path = site_url ( 'wp-content/themes/' . $theme . '/services/' );
 $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashboard_view/' );
 
 ?>
-
 <div id="default_container">
 	<div id="dashboard">
 		<div id="services_container">
@@ -41,7 +40,7 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 							$service_page = $service_path . "page.php";
 							?>
 
-			<a href="#" class="dashboard_icon_a" onclick="return LoadIFrame('<?php echo $service_page; ?>')">
+			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service_page; ?>')">
 				<img class="dashboard_icon"	src="<?php echo $icon;?>" alt="<?php echo $service->title;?>" />
 			</a>
  			<?php
@@ -55,7 +54,7 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 		<div id="display_view" style="margin: 0px; padding: 0px; overflow: hidden">
 			<!--width="494px" marginwidth="0" marginheight="0" -->
-			<iframe id="ifr" style="overflow: hidden; height: 100%; width: 100%" height="100%" width="100%" style="border-width:none; background:#eaeaea; "> </iframe>
+			<div id="service_page" style="overflow: hidden; height: 100%; width: 100%" height="100%" width="100%" style="border-width:none; background:#eaeaea; "> </div>
 		</div>
 	</div>
 
@@ -83,10 +82,40 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 
 <script type="text/javascript">
-function LoadIFrame(pg)
+function load_page(pg)
 {
-	var ifr = document.getElementById("ifr");
-    ifr.src = pg;
+	document.getElementById("service_page").innerHtml = 'Fetching data...';
+    if (window.XMLHttpRequest)
+    {
+        req = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject)
+    {
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    if (req != undefined)
+    {
+        req.onreadystatechange = function() {load_done(url);};
+        req.open("GET", url, true);
+        req.send("");
+    }
+}
+
+function load_done(url)
+{
+    if (req.readyState == 4)
+    {
+        // only if req is "loaded"
+        if (req.status == 200)
+        {
+            // only if "OK"
+            document.getElementById("service_page").innerHTML = req.responseText;
+        }
+        else
+        {
+            document.getElementById("service_page").innerHTML = "Load Error:\n"+ req.status + "\n" +req.statusText;
+        }
+    }
 }
 
 function TurnInsideOut()
