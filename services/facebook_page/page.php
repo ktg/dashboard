@@ -27,7 +27,7 @@ $user = $facebook->getUser();
 
 echo $user;
 
-//$user_profile = $facebook->api('/me','GET');
+
 
 //echo $user_profile;
 
@@ -41,6 +41,12 @@ if(!$user)
     );
 
     $loginURL = $facebook->getLoginUrl($params);
+}
+else
+{
+    $user_profile = $facebook->api('/me','GET');
+
+    echo $user_profile;
 }
 
 
