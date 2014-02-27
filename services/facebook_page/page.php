@@ -37,7 +37,7 @@ if(!$user)
 {
     $params = array(
         'scope' => 'read_stream, friends_likes, manage_pages',
-        'redirect_uri' => 'http://www.wornchaos.org/dash/wp-content/themes/dashboard/services/facebook_page/page.php'
+        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'
     );
 
     $loginURL = $facebook->getLoginUrl($params);
@@ -68,7 +68,7 @@ if(!$user)
         <?php
             if(!$user)
             {
-                ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
+                ?><div><a target="_parent" href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
             }
         ?>
 
