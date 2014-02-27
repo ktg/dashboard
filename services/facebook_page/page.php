@@ -46,7 +46,7 @@ else
 {
     $user_profile = $facebook->api('/me','GET');
 
-    echo $user_profile;
+    print_r($user_profile);
 }
 
 
