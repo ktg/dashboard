@@ -25,8 +25,6 @@ echo $access_token;
 // Get User ID
 $user = $facebook->getUser();
 
-$user = $facebook->require_login();
-
 echo $user;
 
 //$user_profile = $facebook->api('/me','GET');
@@ -39,7 +37,7 @@ if(!$user)
 {
     $params = array(
         'scope' => 'read_stream, friends_likes, manage_pages',
-        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard/'
+        'redirect_uri' => 'http://www.wornchaos.org/dash/wp-content/themes/dashboard/services/facebook_page/page.php'
     );
 
     $loginURL = $facebook->getLoginUrl($params);
