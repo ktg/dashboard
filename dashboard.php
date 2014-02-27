@@ -40,7 +40,7 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 							$service_page = $service_path . "page.php";
 							?>
 
-			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service_page; ?>')">
+			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service->key; ?>')">
 				<img class="dashboard_icon"	src="<?php echo $icon;?>" alt="<?php echo $service->title;?>" />
 			</a>
  			<?php
@@ -82,8 +82,34 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 
 <script type="text/javascript">
-function load_page(url)
+
+function load_page(service_key)
 {
+    var url;
+    <?php
+        if ($user_services)
+        {
+            foreach ($user_services as $us)
+            {
+                foreach ($services as $service)
+                {
+                    if ($us->service_id == $service->id)
+                    {
+                        $service_path = $services_path . $service->key . "/";
+                        $service_page = $service_path . "page.php";
+                        echo "url = ".
+                        ?>
+                        if(service_key == '<?php echo $service->key ?>')
+                        {
+                            url = <?php echo $service_page ?>;
+                        }
+                        <?php
+                    }
+                }
+            }
+        }
+    ?>
+
 	document.getElementById("service_page").innerHtml = 'Fetching data...';
     var req;
     if (window.XMLHttpRequest)

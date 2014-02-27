@@ -18,66 +18,30 @@ $facebook = new Facebook(array(
         'allowSignedRequest' => false,
 ));
 
-$access_token = $facebook->getAccessToken();
-
-echo $access_token;
-
-// Get User ID
 $user = $facebook->getUser();
-
-echo $user;
-
-
-
-//echo $user_profile;
-
-//$ret = $facebook->api("/$user/permissions", "GET", $params);
-
-if(!$user)
-{
-    $params = array(
-        'scope' => 'read_stream, friends_likes, manage_pages',
-        'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard#facebook_page'
-    );
-
-    $loginURL = $facebook->getLoginUrl($params);
-}
-else
-{
-    $user_profile = $facebook->api('/me','GET');
-
-    print_r($user_profile);
-}
-
-
-
 ?>
+<div id="header">
+    <div>Facebook Page</div>
 
-<html>
-<head>
-<link href="css/style.css" type="text/css" rel="stylesheet" />
-</head>
+    <div id="delete"></div>
+</div>
 
-<body>
-	<div id="fb-root"></div>
-	<div id="container">
+<?php
+    if(!$user)
+    {
+        $params = array(
+            'scope' => 'read_stream, friends_likes, manage_pages',
+            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard#facebook_page'
+        );
 
-		<div id="header">
-			<img id="heading" />
+        $loginURL = $facebook->getLoginUrl($params);
 
-            <div>Facebook Page</div>
+        ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
+    }
+    else
+    {
+        $user_profile = $facebook->api('/me','GET');
 
-			<div id="delete"></div>
-
-		</div>
-
-        <?php
-            if(!$user)
-            {
-                ?><div><a href="<?php echo $loginURL ?>">Login to Facebook</a></div><?php
-            }
-        ?>
-
-	</div>
-</body>
-</html>
+        print_r($user_profile);
+    }
+?>

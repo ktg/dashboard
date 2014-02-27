@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,7 +88,7 @@
       <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="80" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1320">
+            <state line="21" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -141,7 +142,7 @@
       <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="53" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.41118422" vertical-offset="1035" max-vertical-offset="2130">
+            <state line="105" column="29" selection-start="3072" selection-end="3072" vertical-scroll-proportion="1.1480263" vertical-offset="528" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
@@ -258,6 +259,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="facebook_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,14 +686,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="80" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1320">
+        <state line="21" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="53" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.41118422" vertical-offset="1035" max-vertical-offset="2130">
+        <state line="105" column="29" selection-start="3072" selection-end="3072" vertical-scroll-proportion="1.1480263" vertical-offset="528" max-vertical-offset="2520">
           <folding />
         </state>
       </provider>
