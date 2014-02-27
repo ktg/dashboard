@@ -82,9 +82,10 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 
 
 <script type="text/javascript">
-function load_page(pg)
+function load_page(url)
 {
 	document.getElementById("service_page").innerHtml = 'Fetching data...';
+    var req;
     if (window.XMLHttpRequest)
     {
         req = new XMLHttpRequest();
@@ -95,13 +96,13 @@ function load_page(pg)
     }
     if (req != undefined)
     {
-        req.onreadystatechange = function() {load_done(url);};
+        req.onreadystatechange = function() {load_done(req);};
         req.open("GET", url, true);
         req.send("");
     }
 }
 
-function load_done(url)
+function load_done(req)
 {
     if (req.readyState == 4)
     {
