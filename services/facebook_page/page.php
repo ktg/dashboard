@@ -27,7 +27,11 @@ $user = $facebook->getUser();
 
 echo $user;
 
-//$ret = $facebook->api("/$user/permissions", $method, $params);
+$user_profile = $facebook->api('/me','GET');
+
+echo $user_profile;
+
+//$ret = $facebook->api("/$user/permissions", "GET", $params);
 
 if(!$user)
 {
