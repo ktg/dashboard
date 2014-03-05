@@ -13,9 +13,7 @@ $app_secret = 'e69e8a79972fe7330a40d8ab1d68994f';
 
 $facebook = new Facebook(array(
         'appId'  => $app_id,
-        'secret' => $app_secret,
-        'fileUpload' => false,
-        'allowSignedRequest' => false,
+        'secret' => $app_secret
 ));
 
 $user = $facebook->getUser();
