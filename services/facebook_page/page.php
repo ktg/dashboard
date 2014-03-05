@@ -1,19 +1,9 @@
 <?php
-/*
- * Template Name: facebook-page
- *
- * @package WordPress
- */
-session_start();
-
 require 'facebook/facebook.php';
 
-$app_id = '342794992525201';
-$app_secret = 'e69e8a79972fe7330a40d8ab1d68994f';
-
 $facebook = new Facebook(array(
-        'appId'  => $app_id,
-        'secret' => $app_secret
+        'appId'  => '342794992525201',
+        'secret' => 'e69e8a79972fe7330a40d8ab1d68994f'
 ));
 
 $user = $facebook->getUser();
@@ -32,7 +22,7 @@ echo $facebook->getAccessToken();
     {
         $params = array(
             'scope' => 'read_stream, friends_likes, manage_pages',
-            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'
+//            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'
         );
 
         $loginURL = $facebook->getLoginUrl($params);
