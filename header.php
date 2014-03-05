@@ -78,6 +78,6 @@ if(isset($_POST['wp-submit']) && $_POST['wp-submit']=='Add to Dashboard' && $use
 }
 ?>		
 
-<?php if(!is_page(dashboard)): ?>
+<?php if(!is_page('dashboard')): ?>
 <div><?php echo $pagename ?></div>
 <?php endif; ?>
