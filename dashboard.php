@@ -52,27 +52,8 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 		</div>
 
 
-		<div id="display_view" style="margin: 0px; padding: 0px; overflow: hidden">
-			<!--width="494px" marginwidth="0" marginheight="0" -->
-			<div id="service_page" style="overflow: hidden; height: 100%; width: 100%" height="100%" width="100%" style="border-width:none; background:#eaeaea; ">
-			<?php
-			    if($_GET["page"] && $user_services)
-			    {
-                    foreach ($user_services as $us)
-                    {
-                        foreach ($services as $service)
-                        {
-                            if ($us->service_id == $service->id && $service->key == $_GET["page"])
-                            {
-                                $service_path = 'services/' . $service->key . "/";
-                                $service_page = $service_path . "page.php";
-                                include $service_page;
-                            }
-                        }
-                    }
-			    }
-			?>
-			</div>
+		<div id="display_view">
+			<div id="service_page" height="100%" width="100%"></div>
 		</div>
 	</div>
 

@@ -16,6 +16,18 @@ $facebook = new Facebook(array(
         'secret' => $app_secret
 ));
 
+if($_GET["code"])
+{
+    $facebook->setAccessToken($_GET["code"]);
+    if(!$facebook->setExtendedAccessToken())
+    {
+        echo "Failed to extend token";
+    }
+
+    echo "Signed: ".$facebook->getSignedRequest();
+    // TODO Store in database?
+}
+
 $user = $facebook->getUser();
 ?>
 <div id="header">
@@ -29,7 +41,7 @@ $user = $facebook->getUser();
     {
         $params = array(
             'scope' => 'read_stream, friends_likes, manage_pages',
-            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard?page=facebook_page'
+            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'
         );
 
         $loginURL = $facebook->getLoginUrl($params);

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
     </list>
     <ignored path="dashboard.iws" />
@@ -69,7 +70,7 @@
       <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="294" selection-end="294" vertical-scroll-proportion="0.24617068" vertical-offset="0" max-vertical-offset="914">
+            <state line="26" column="18" selection-start="481" selection-end="481" vertical-scroll-proportion="0.42669585" vertical-offset="0" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -78,7 +79,7 @@
       <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="49" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2850">
+            <state line="154" column="8" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
               <folding />
             </state>
           </provider>
@@ -204,6 +205,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="]" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -691,14 +693,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="49" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2850">
+        <state line="154" column="8" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="294" selection-end="294" vertical-scroll-proportion="0.24617068" vertical-offset="0" max-vertical-offset="914">
+        <state line="26" column="18" selection-start="481" selection-end="481" vertical-scroll-proportion="0.42669585" vertical-offset="0" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
