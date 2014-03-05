@@ -34,22 +34,22 @@ add_filter( 'show_admin_bar', '__return_false' );
 		</div>
 
 		<div id="logout_section">logged in as &quot;<?php echo $current_user->display_name; ?>&quot;&nbsp;
-			<a href="<?php echo wp_logout_url(home)?>" title="Logout">Logout</a>
+			<a href="<?php echo wp_logout_url('home')?>" title="Logout">Logout</a>
 		</div>
 	</div>
 
 	<div id="main" class="site-main">
 	
 		<div id="nav">
-			<?php if(is_page(dashboard)): ?>
-			<a href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a>
+			<?php if(is_page('dashboard')): ?>
+			<a href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Getting Started</a>
 			<a class="active">Dashboard</a>		
 			<?php elseif($post->post_parent): ?>
-			<a class="active" href="<?php echo get_page_link(get_page_by_title(discover)->ID); ?>">Getting Started</a>
-			<a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a>
+			<a class="active" href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Getting Started</a>
+			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
 			<?php else: ?>				
 			<a class="active">Getting Started</a>
-			<a href="<?php echo get_page_link(get_page_by_title(dashboard)->ID); ?>">Dashboard</a>
+			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
 			<?php endif; ?>
 		</div>	
 

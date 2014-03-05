@@ -6,21 +6,21 @@
  * @package WordPress
  */
 $current_user = wp_get_current_user ();
-$user_id = isset ( $current_user->ID ) ? $current_user->ID : 0;
+$user_id = isset($current_user->ID) ? $current_user->ID : 0;
 
-get_header ();
+get_header();
 
-$query = $wpdb->prepare ( "SELECT * FROM " . $wpdb->prefix . "services" );
+$query = $wpdb->prepare("SELECT * FROM " . $wpdb->prefix . "services");
 // $results = $wpdb->query($query);
 $services = $wpdb->get_results ( $query );
 
 /* Check what services a user has in their dashboard and load them */
-$query = $wpdb->prepare ( "SELECT * FROM " . $wpdb->prefix . "users_services WHERE user_id=$user_id" );
+$query = $wpdb->prepare ("SELECT * FROM " . $wpdb->prefix . "users_services WHERE user_id=%s", $user_id);
 $user_services = $wpdb->get_results ( $query );
 
 $theme = get_template ();
-$services_path = site_url ( 'wp-content/themes/' . $theme . '/services/' );
-$dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashboard_view/' );
+$services_path = site_url ('wp-content/themes/' . $theme . '/services/');
+$dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashboard_view/');
 
 ?>
 <div id="default_container">
