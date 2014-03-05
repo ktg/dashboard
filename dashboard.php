@@ -43,10 +43,6 @@ $dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashbo
 							{
 							    include $service_include;
 							}
-							else
-							{
-							    echo "No include";
-							}
 							?>
 
 			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service->key; ?>')">

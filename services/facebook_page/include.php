@@ -8,6 +8,4 @@ $facebook = new Facebook(array(
 
 $user = $facebook->getUser();
 
-echo $user;
-echo $facebook->getAccessToken();
 ?>
