@@ -38,8 +38,10 @@ $dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashbo
 							$service_path = $services_path . $service->key . "/";
 							$icon = $service_path . "images/icon.png";
 							$service_include = "services/" . $service->key . "/include.php";
-							echo $service_include;
-							include $service_include;
+                            if(file_exists($service_include))
+                            {
+							    include $service_include;
+							}
 							$service_page = $service_path . "page.php";
 							?>
 
