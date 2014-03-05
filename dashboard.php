@@ -97,6 +97,10 @@ function load_page(service_key)
                     {
                         $service_path = $services_path . $service->key . "/";
                         $service_page = $service_path . "page.php";
+                        if($_GET["code"])
+                        {
+                            $service_page = $service_page . "?code=" . $_GET["code"];
+                        }
                         //echo "url = ".
                         ?>
                         if(service_key == '<?php echo $service->key ?>')
