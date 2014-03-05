@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/facebook_page/include.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,19 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="2" selection-start="456" selection-end="456" vertical-scroll-proportion="0.3938731" vertical-offset="0" max-vertical-offset="914">
+            <state line="0" column="0" selection-start="0" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="include.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/facebook_page/include.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="41" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="1096" max-vertical-offset="2535">
+            <state line="47" column="50" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.5733042" vertical-offset="181" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
@@ -121,9 +131,9 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/services/facebook_page/page.php" />
         <option value="$PROJECT_DIR$/services/facebook_page/include.php" />
         <option value="$PROJECT_DIR$/dashboard.php" />
-        <option value="$PROJECT_DIR$/services/facebook_page/page.php" />
       </list>
     </option>
   </component>
@@ -688,16 +698,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="41" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="1096" max-vertical-offset="2535">
+        <state line="0" column="0" selection-start="0" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/include.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="456" selection-end="456" vertical-scroll-proportion="0.3938731" vertical-offset="0" max-vertical-offset="914">
+        <state line="12" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="50" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.5733042" vertical-offset="181" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
