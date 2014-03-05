@@ -37,7 +37,7 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 						{				
 							$service_path = $services_path . $service->key . "/";
 							$icon = $service_path . "images/icon.png";
-							$service_include = $service_path . "include.php";
+							$service_include = "services/" . $service->key . "include.php";
 							if(file_exists($service_include))
 							{
 							    include $service_include;
@@ -101,11 +101,6 @@ function load_page(service_key)
                     {
                         $service_path = $services_path . $service->key . "/";
                         $service_page = $service_path . "page.php";
-                        if($_GET["code"])
-                        {
-                            $service_page = $service_page . "?code=" . $_GET["code"];
-                        }
-                        //echo "url = ".
                         ?>
                         if(service_key == '<?php echo $service->key ?>')
                         {
