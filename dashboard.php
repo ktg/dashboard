@@ -64,7 +64,7 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
                         {
                             if ($us->service_id == $service->id && $service->key == $_GET["page"])
                             {
-                                $service_path = $services_path . $service->key . "/";
+                                $service_path = 'services/' . $service->key . "/";
                                 $service_page = $service_path . "page.php";
                                 include $service_page;
                             }
