@@ -113,6 +113,11 @@ function load_page(service_key)
         }
     ?>
 
+    load_url(url);
+}
+
+function load_url(url)
+{
 	document.getElementById("service_page").innerHtml = 'Fetching data...';
     var req;
     if (window.XMLHttpRequest)
@@ -149,18 +154,12 @@ function load_done(req)
 }
 
 function TurnInsideOut()
-{	
-	var ifr;
-    ifr = document.getElementById("ifr");
-    ifr.style.display="block";
-	ifr.src="<?php echo $service_page_path;?>dash-website/dash-website0.html";
+{
+    load_url("<?php echo $service_path;?>dash-website/dash-website0.html");
 }
 
 function TurnInsideOutTwice()
 {
-	var ifr;
-    ifr = document.getElementById("ifr");
-    ifr.style.display="block";
-	ifr.src="<?php echo $service_page_path;?>dash-website/dash-website.html";
+    load_url("<?php echo $service_path;?>dash-website/dash-website.html");
 }
 </script>
