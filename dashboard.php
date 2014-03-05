@@ -38,8 +38,15 @@ $dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashbo
 							$service_path = $services_path . $service->key . "/";
 							$icon = $service_path . "images/icon.png";
 							$service_page = $service_path . "page.php";
-							$service_include = $service_path . "/include.php";
-						    include $service_include;
+							$service_include = $service_path . "include.php";
+							if(is_file($service_include))
+							{
+							    include $service_include;
+							}
+							else
+							{
+							    echo "No include";
+							}
 							?>
 
 			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service->key; ?>')">
