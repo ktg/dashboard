@@ -41,6 +41,7 @@ $dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashbo
 							echo $service_include;
 							if(file_exists($service_include))
 							{
+							    echo "included";
 							    include $service_include;
 							}
 							$service_page = $service_path . "page.php";
