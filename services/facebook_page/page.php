@@ -16,19 +16,10 @@ $facebook = new Facebook(array(
         'secret' => $app_secret
 ));
 
-if($_GET["code"])
-{
-    $facebook->setAccessToken($_GET["code"]);
-    if(!$facebook->setExtendedAccessToken())
-    {
-        echo "Failed to extend token";
-    }
-
-    echo "Signed: ".$facebook->getSignedRequest();
-    // TODO Store in database?
-}
-
 $user = $facebook->getUser();
+
+echo $user;
+echo $facebook->getAccessToken();
 ?>
 <div id="header">
     <div>Facebook Page</div>
