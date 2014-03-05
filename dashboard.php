@@ -37,6 +37,11 @@ $dashboard_view_path = site_url ( 'wp-content/themes/' . $theme . '/images/dashb
 						{				
 							$service_path = $services_path . $service->key . "/";
 							$icon = $service_path . "images/icon.png";
+							$service_include = $service_path . "include.php";
+							if(file_exists($service_include))
+							{
+							    include $service_include;
+							}
 							$service_page = $service_path . "page.php";
 							?>
 
