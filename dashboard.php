@@ -101,7 +101,7 @@ function load_page(service_key)
                         ?>
                         if(service_key == '<?php echo $service->key ?>')
                         {
-                            url = <?php echo $service_page ?>;
+                            url = "<?php echo $service_page ?>";
                         }
                         <?php
                     }
