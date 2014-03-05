@@ -31,7 +31,7 @@ $user = $facebook->getUser();
     {
         $params = array(
             'scope' => 'read_stream, friends_likes, manage_pages',
-            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard#facebook_page'
+            'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard?page=facebook_page'
         );
 
         $loginURL = $facebook->getLoginUrl($params);
