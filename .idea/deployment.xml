@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="wornchaos-dashboard">
+    <serverData>
+      <paths name="wornchaos-dashboard">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content/themes/dashboard" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

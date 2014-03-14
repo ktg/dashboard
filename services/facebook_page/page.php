@@ -1,8 +1,5 @@
 <?php
-    require "include.php";
-
-    
-
+    require "actions.php";
 ?>
 <div id="header">
     <div>Facebook Page</div>

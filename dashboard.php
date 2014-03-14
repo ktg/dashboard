@@ -1,169 +1,136 @@
 <?php
-
 /**
  * Template Name: dashboard
  *
  * @package WordPress
  */
-$current_user = wp_get_current_user ();
+function addAnalytics($actions, $name, $value, $service)
+{
+	$analytics_key = null;
+	$analytics_action = null;
+	foreach ($actions as $action)
+	{
+		if (isset($action['id']) && $action['id'] == 'analytics')
+		{
+			$analytics_key = array_search($action, $actions);
+			$analytics_action = $action;
+			break;
+		}
+	}
+
+	if (!isset($analytics_action))
+	{
+		$analytics_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
+		                          'service' => 'analytics',
+		                          'id' => 'analytics',
+		                          'title' => "Analytics",
+		                          'desc' => 'Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.',
+		                          'items' => "<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>
+	google.load('visualization', '1', {packages:['corechart']});
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Site');
+		data.addColumn('number', 'Visits');
+		data.addColumn({type:'string', role:'style'});  // interval role col.
+		data.addColumn({type:'string', role:'annotation'}); // annotation role col.
+
+		// additions
+
+		var options = {
+			//title: 'Visits'
+		};
+
+		var chart = new google.visualization.BarChart(document.getElementById('analytics_chart'));
+		chart.draw(data, options);
+	}
+</script><div id='analytics_chart' style='width: 800px;'></div>");
+	}
+
+	$analytics_action['items'] = str_replace("// additions", "data.addRow(['$name', $value, 'opacity: 0.8', '$service ($value)']);\n// additions", $analytics_action['items']);
+
+	if (isset($analytics_key))
+	{
+		$actions[$analytics_key] = $analytics_action;
+	}
+	else
+	{
+		array_push($actions, $analytics_action);
+	}
+	return $actions;
+}
+
+$current_user = wp_get_current_user();
 $user_id = isset($current_user->ID) ? $current_user->ID : 0;
 
 get_header();
 
-$query = $wpdb->prepare("SELECT * FROM " . $wpdb->prefix . "services");
-// $results = $wpdb->query($query);
-$services = $wpdb->get_results ( $query );
+$user_services_table = $wpdb->prefix . "users_services";
+$query = $wpdb->prepare("SELECT * FROM $user_services_table WHERE user_id=%s", $user_id);
+$services = $wpdb->get_results($query);
 
-/* Check what services a user has in their dashboard and load them */
-$query = $wpdb->prepare ("SELECT * FROM " . $wpdb->prefix . "users_services WHERE user_id=%s", $user_id);
-$user_services = $wpdb->get_results ( $query );
+$theme = get_template();
+$services_path = site_url('wp-content/themes/' . $theme . '/services/');
+$dashboard_view_path = site_url('wp-content/themes/' . $theme . '/images/dashboard_view/');
 
-$theme = get_template ();
-$services_path = site_url ('wp-content/themes/' . $theme . '/services/');
-$dashboard_view_path = site_url ('wp-content/themes/' . $theme . '/images/dashboard_view/');
+$actions = array();
+
+if (isset($services))
+{
+	foreach ($services as $service)
+	{
+		$service_path = $services_path . $service->service_key . "/";
+		$icon = $service_path . "images/icon.png";
+		$service_page = $service_path . "page.php";
+		$service_include = "wp-content/themes/$theme/services/" . $service->service_key . "/actions.php";
+		if (is_file($service_include))
+		{
+			include $service_include;
+		}
+	}
+}
 
 ?>
-<div id="default_container">
 	<div id="dashboard">
-		<div id="services_container">
-			<?php
-			if ($user_services)
-			{
-				foreach ($user_services as $us)
-				{
-					foreach ($services as $service)
-					{
-						if ($us->service_id == $service->id)
-						{				
-							$service_path = $services_path . $service->key . "/";
-							$icon = $service_path . "images/icon.png";
-							$service_page = $service_path . "page.php";
-							$service_include = 'wp-content/themes/' . $theme . '/services/' .$service->key . "/include.php";
-							if(is_file($service_include))
-							{
-							    include $service_include;
-							}
-							?>
-
-			<a href="#" class="dashboard_icon_a" onclick="return load_page('<?php echo $service->key; ?>')">
-				<img class="dashboard_icon"	src="<?php echo $icon;?>" alt="<?php echo $service->title;?>" />
-			</a>
- 			<?php
-						}
-					}
-				}
-			}
+		<?php
+		foreach ($actions as $action)
+		{
 			?>
-		</div>
+			<div class="action">
+				<img class="action_icon" src="<?php echo $action['icon'] ?>" title="<?php echo $action['service']; ?>"/>
 
+				<div>
+					<div class="action_title"><?php echo $action['title'] ?></div>
+					<div class="action_desc"><?php echo $action['desc'] ?></div>
+					<div><?php echo $action['items']; ?></div>
+				</div>
+			</div>
 
-		<div id="display_view">
-			<div id="service_page" height="100%" width="100%"></div>
-		</div>
+		<?php
+		}
+		?>
 	</div>
 
-    <div id="turn_inside_out">
+	<div id="turn_inside_out">
 
-        <?php
-        if (count ( $user_services ) < 4)
-        {
-            ?>
-        <a href="#" onclick="return TurnInsideOut()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
-        <?php
-        }
-        else
-        {
-            ?>
-        <a href="#" onclick="return TurnInsideOutTwice()"><img src="<?php echo $dashboard_view_path;?>turn_into_webpage.png" /></a>
-        <?php
-        }
-        ?>
-    </div>
-</div>
+		<?php
+		if (count($services) < 4)
+		{
+			?>
+			<a href="#" onclick="return TurnInsideOut()"><img
+					src="<?php echo $dashboard_view_path; ?>turn_into_webpage.png"/></a>
+		<?php
+		}
+		else
+		{
+			?>
+			<a href="#" onclick="return TurnInsideOutTwice()"><img
+					src="<?php echo $dashboard_view_path; ?>turn_into_webpage.png"/></a>
+		<?php
+		}
+		?>
+	</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-
-<script type="text/javascript">
-
-function load_page(service_key)
-{
-    var url;
-    <?php
-        if ($user_services)
-        {
-            foreach ($user_services as $us)
-            {
-                foreach ($services as $service)
-                {
-                    if ($us->service_id == $service->id)
-                    {
-                        $service_path = $services_path . $service->key . "/";
-                        $service_page = $service_path . "page.php";
-                        if($_GET["code"])
-                        {
-                            $service_page = "$service_page?code=$_GET[code]&state=$_GET[state]";
-                        }
-                        ?>
-                        if(service_key == '<?php echo $service->key ?>')
-                        {
-                            url = "<?php echo $service_page ?>";
-                        }
-                        <?php
-                    }
-                }
-            }
-        }
-    ?>
-
-    load_url(url);
-}
-
-function load_url(url)
-{
-	document.getElementById("service_page").innerHtml = 'Fetching data...';
-    var req;
-    if (window.XMLHttpRequest)
-    {
-        req = new XMLHttpRequest();
-    }
-    else if (window.ActiveXObject)
-    {
-        req = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    if (req != undefined)
-    {
-        req.onreadystatechange = function() {load_done(req);};
-        req.open("GET", url, true);
-        req.send("");
-    }
-}
-
-function load_done(req)
-{
-    if (req.readyState == 4)
-    {
-        // only if req is "loaded"
-        if (req.status == 200)
-        {
-            // only if "OK"
-            document.getElementById("service_page").innerHTML = req.responseText;
-        }
-        else
-        {
-            document.getElementById("service_page").innerHTML = "Load Error:\n"+ req.status + "\n" +req.statusText;
-        }
-    }
-}
-
-function TurnInsideOut()
-{
-    load_url("<?php echo $service_path;?>dash-website/dash-website0.html");
-}
-
-function TurnInsideOutTwice()
-{
-    load_url("<?php echo $service_path;?>dash-website/dash-website.html");
-}
-</script>

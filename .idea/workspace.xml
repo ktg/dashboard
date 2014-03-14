@@ -2,9 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/google_analytics/actions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/actions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/list_services.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/set_url.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/30.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discover/70.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/analytics/css/service-analytics.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/account/fb_connect.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/account/fb_logout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/account/post_status.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/css/service-facebook.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/images/servicetitle_facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/images/unlink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/functions/display_functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/advanced-store-locator-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/carousel-wpress-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/domains-checker-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/facebook-client-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/facebook-connect-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/fb-gallery-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/icons/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/icons/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/icons/comments.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/icons/like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/mobile-builder-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/graph/mobile-store-locator-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/class/Fb_ypbox.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/graph/icons/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/graph/icons/facebook32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/js/jquery.prettydate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/js/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/js/timeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/include/webzone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/presentation/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/presentation/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/include/webzone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/page.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/business_community/icon_credly.png" afterPath="$PROJECT_DIR$/services/credly/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/business_community/title.png" afterPath="$PROJECT_DIR$/images/discover/business_community.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/communicating/icon_email.png" afterPath="$PROJECT_DIR$/services/email/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/communicating/icon_facebook.png" afterPath="$PROJECT_DIR$/services/facebook_page/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/communicating/icon_facebook_page.png" afterPath="$PROJECT_DIR$/services/facebook_page/images/discover_old.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/communicating/icon_twitter.png" afterPath="$PROJECT_DIR$/services/twitter/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/communicating/title.png" afterPath="$PROJECT_DIR$/images/discover/communicating.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/market/icon_googleplaces.png" afterPath="$PROJECT_DIR$/services/google_places/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/market/icon_tripadvisor.png" afterPath="$PROJECT_DIR$/services/trip_advisor/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/market/icon_website.png" afterPath="$PROJECT_DIR$/services/website/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/market/icon_yell.png" afterPath="$PROJECT_DIR$/services/yell/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/market/title.png" afterPath="$PROJECT_DIR$/images/discover/market.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/packages/icon_collectplus.png" afterPath="$PROJECT_DIR$/services/collect/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/packages/title.png" afterPath="$PROJECT_DIR$/images/discover/packages.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/payment/icon_paypal.png" afterPath="$PROJECT_DIR$/services/paypal/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/payment/title.png" afterPath="$PROJECT_DIR$/images/discover/payment.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/sell/icon_ebay.png" afterPath="$PROJECT_DIR$/services/ebay/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/sell/icon_etsy.png" afterPath="$PROJECT_DIR$/services/etsy/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/sell/title.png" afterPath="$PROJECT_DIR$/images/discover/sell.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/who/icon_customerbase.png" afterPath="$PROJECT_DIR$/services/customer_base/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/who/icon_googleanalytics.png" afterPath="$PROJECT_DIR$/services/google_analytics/images/discover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/discover/who/title.png" afterPath="$PROJECT_DIR$/images/discover/analytics.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/analytics/images/analytics_concept.png" afterPath="$PROJECT_DIR$/services/google_analytics/images/analytics_concept.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/analytics/images/delete.png" afterPath="$PROJECT_DIR$/services/google_analytics/images/delete.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/analytics/images/icon.png" afterPath="$PROJECT_DIR$/services/google_analytics/images/icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/analytics/images/servicetitle_analytics.png" afterPath="$PROJECT_DIR$/services/google_analytics/images/servicetitle_analytics.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/analytics/page.php" afterPath="$PROJECT_DIR$/services/google_analytics/page.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/services/facebook/include/library/Fb_box/version-13may13.txt" afterPath="$PROJECT_DIR$/services/facebook_page/actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/website/images/icon.png" afterPath="$PROJECT_DIR$/services/website/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/backend.css" afterPath="$PROJECT_DIR$/css/backend.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/business-community.php" afterPath="$PROJECT_DIR$/business-community.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communicate-with-customers.php" afterPath="$PROJECT_DIR$/communicate-with-customers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.iml" afterPath="$PROJECT_DIR$/dashboard.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/include.php" afterPath="$PROJECT_DIR$/services/facebook_page/include.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.sql" afterPath="$PROJECT_DIR$/dashboard.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discover.php" afterPath="$PROJECT_DIR$/discover.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market-your-business.php" afterPath="$PROJECT_DIR$/market-your-business.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online-payment.php" afterPath="$PROJECT_DIR$/online-payment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="$PROJECT_DIR$/services/facebook_page/page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sell-online.php" afterPath="$PROJECT_DIR$/sell-online.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send-packages.php" afterPath="$PROJECT_DIR$/send-packages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/who-your-customers-are.php" afterPath="$PROJECT_DIR$/who-your-customers-are.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,37 +179,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
+      <file leaf-file-name="list_services.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/list_services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.049234137" vertical-offset="0" max-vertical-offset="914">
+            <state line="4" column="0" selection-start="96" selection-end="153" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="810">
+              <folding>
+                <marker date="1394635554000" expanded="true" signature="594:668" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1394635554000" expanded="true" signature="856:927" placeholder="INSERT INTO ..." />
+                <marker date="1394635554000" expanded="true" signature="1046:1127" placeholder="..." />
+                <marker date="1394635554000" expanded="true" signature="1189:1251" placeholder="..." />
+                <marker date="1394635554000" expanded="true" signature="1301:1350" placeholder="SELECT * FRO..$services_table WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="117" selection-start="4591" selection-end="4591" vertical-scroll-proportion="-23.583334" vertical-offset="1159" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="include.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/facebook_page/include.php">
+      <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/google_analytics/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
+            <state line="92" column="91" selection-start="2964" selection-end="2964" vertical-scroll-proportion="-24.125" vertical-offset="801" max-vertical-offset="1755">
+              <folding>
+                <marker date="1394808464000" expanded="true" signature="539:609" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="29" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="2610">
-              <folding />
+            <state line="35" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.73324025" vertical-offset="0" max-vertical-offset="2115">
+              <folding>
+                <marker date="1394809369000" expanded="true" signature="1076:1672" placeholder="..." />
+                <marker date="1394809369000" expanded="true" signature="1200:1663" placeholder="{...}" />
+                <marker date="1394809369000" expanded="true" signature="1510:1536" placeholder="{...}" />
+                <marker date="1394809369000" expanded="true" signature="1706:1719" placeholder="..." />
+                <marker date="1394809369000" expanded="true" signature="2265:2316" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header-wide.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header-wide.php">
+      <file leaf-file-name="set_url.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/website/set_url.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1230">
+            <state line="12" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
+              <folding>
+                <marker date="1394796799000" expanded="true" signature="326:396" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/website/actions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="48" selection-start="623" selection-end="623" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="705">
+              <folding>
+                <marker date="1394798457000" expanded="true" signature="176:246" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1394798457000" expanded="true" signature="448:500" placeholder="UPDATE $user..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <marker date="1394636367000" expanded="true" signature="140:529" placeholder="..." />
+                <marker date="1394636367000" expanded="true" signature="419:478" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="communicate-with-customers.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/communicate-with-customers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="900">
+              <folding>
+                <marker date="1394635307000" expanded="true" signature="340:1322" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="466:1315" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="594:1284" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="625:1272" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="756:816" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="888:961" placeholder="..." />
+                <marker date="1394635307000" expanded="true" signature="1220:1259" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="discover.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/discover.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="2325">
               <folding />
             </state>
           </provider>
@@ -107,7 +293,7 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="29" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-34.73077" vertical-offset="297" max-vertical-offset="1320">
+            <state line="44" column="21" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -120,8 +306,17 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="rsync -av ~/Dropbox/projects/dashboard/ kglover@wornchaos.org:~/wornchaos.org/dash/wp-content/themes/dashboard/" />
+      <command text="rsync -av /Users/kevin/Dropbox/projects/dashboard/ kglover@wornchaos.org:~/wornchaos.org/dash/wp-content/themes/dashboard/" />
+    </commandsHistory>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -129,19 +324,54 @@
         <option value="$PROJECT_DIR$/services/facebook_page/callback.php" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/header-wide.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/services/facebook_page/include.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/services/facebook_page/page.php" />
+        <option value="$PROJECT_DIR$/dashboard.sql" />
+        <option value="$PROJECT_DIR$/service.php" />
+        <option value="$PROJECT_DIR$/add_service.php" />
+        <option value="$PROJECT_DIR$/css/backend.css" />
+        <option value="$PROJECT_DIR$/business-community.php" />
+        <option value="$PROJECT_DIR$/market-your-business.php" />
+        <option value="$PROJECT_DIR$/who-your-customers-are.php" />
+        <option value="$PROJECT_DIR$/sell-online.php" />
+        <option value="$PROJECT_DIR$/send-packages.php" />
+        <option value="$PROJECT_DIR$/online-payment.php" />
+        <option value="$PROJECT_DIR$/communicate-with-customers.php" />
+        <option value="$PROJECT_DIR$/discover.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/list_services.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/services/google_analytics/analytics.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/services/website/set_url.php" />
+        <option value="$PROJECT_DIR$/services/website/actions.php" />
+        <option value="$PROJECT_DIR$/services/google_analytics/actions.php" />
+        <option value="$PROJECT_DIR$/services/facebook_page/actions.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1916" />
     <option name="height" value="1058" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -215,14 +445,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebook_page" />
+              <option name="myItemId" value="website" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -233,6 +460,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -247,138 +477,42 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="]" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/credly/images" />
+      <recent name="$PROJECT_DIR$/services/website" />
       <recent name="$PROJECT_DIR$/services/facebook_page" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/paypal/images" />
+      <recent name="$PROJECT_DIR$/services/collect/images" />
+      <recent name="$PROJECT_DIR$/services/collect" />
+      <recent name="$PROJECT_DIR$/services/etsy/images" />
+      <recent name="$PROJECT_DIR$/services/ebay/images" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -417,28 +551,30 @@
     <frame x="0" y="22" width="1916" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16914894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20456906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18522428" sideWeight="0.3606383" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16358839" sideWeight="0.6393617" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10885806" sideWeight="0.36006826" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15314835" sideWeight="0.63822526" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -457,60 +593,19 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dashboard" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dashboard" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business-community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="18" selection-start="6290" selection-end="6290" vertical-scroll-proportion="0.0" vertical-offset="4220" max-vertical-offset="9960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2835" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="17" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="573" max-vertical-offset="1995" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header-wide.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1230">
@@ -521,13 +616,14 @@
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="29" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2520">
-          <folding />
+          <folding>
+            <marker date="1394809369000" expanded="true" signature="1076:1672" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="1200:1663" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1510:1536" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1706:1719" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="2265:2316" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="6" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business-community.php">
@@ -547,11 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="2835" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="30" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="525" />
@@ -579,13 +670,14 @@
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="29" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2520">
-          <folding />
+          <folding>
+            <marker date="1394809369000" expanded="true" signature="1076:1672" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="1200:1663" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1510:1536" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1706:1719" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="2265:2316" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="6" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business-community.php">
@@ -648,34 +740,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="9960" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business-community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="6" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="17" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="573" max-vertical-offset="1995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2835" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="18" selection-start="6290" selection-end="6290" vertical-scroll-proportion="0.0" vertical-offset="4220" max-vertical-offset="9960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header-wide.php">
@@ -685,38 +752,211 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="126" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/facebook/facebook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/servicetitle_facebook.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/delete.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/discover/market.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="1" selection-start="3329" selection-end="3329" vertical-scroll-proportion="3.1893063" vertical-offset="673" max-vertical-offset="2970">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market-your-business.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="27" selection-start="419" selection-end="419" vertical-scroll-proportion="-9.083333" vertical-offset="82" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/concept.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-online.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="22" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-0.0" vertical-offset="870" max-vertical-offset="960">
+          <folding>
+            <element signature="e#8#70#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.04486252" vertical-offset="299" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send-packages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="95" selection-start="581" selection-end="581" vertical-scroll-proportion="0.41244572" vertical-offset="60" max-vertical-offset="960">
+          <folding>
+            <element signature="e#8#72#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/who-your-customers-are.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.39073807" vertical-offset="0" max-vertical-offset="960">
+          <folding>
+            <element signature="e#7#85#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business-community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.86975396" vertical-offset="329" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communicate-with-customers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="900">
+          <folding>
+            <marker date="1394635307000" expanded="true" signature="340:1322" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="466:1315" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="594:1284" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="625:1272" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="756:816" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="888:961" placeholder="..." />
+            <marker date="1394635307000" expanded="true" signature="1220:1259" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="96" selection-end="153" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <marker date="1394635554000" expanded="true" signature="594:668" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1394635554000" expanded="true" signature="856:927" placeholder="INSERT INTO ..." />
+            <marker date="1394635554000" expanded="true" signature="1046:1127" placeholder="..." />
+            <marker date="1394635554000" expanded="true" signature="1189:1251" placeholder="..." />
+            <marker date="1394635554000" expanded="true" signature="1301:1350" placeholder="SELECT * FRO..$services_table WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/google_analytics/images/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="354" column="28" selection-start="6940" selection-end="6940" vertical-scroll-proportion="-12.576923" vertical-offset="4983" max-vertical-offset="9780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/website/set_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
+          <folding>
+            <marker date="1394796799000" expanded="true" signature="326:396" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.72697" vertical-offset="5160" max-vertical-offset="12825">
+        <state line="35" column="76" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.6351351" vertical-offset="55" max-vertical-offset="795">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <marker date="1394636367000" expanded="true" signature="140:529" placeholder="..." />
+            <marker date="1394636367000" expanded="true" signature="419:478" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="29" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-34.73077" vertical-offset="297" max-vertical-offset="1320">
+        <state line="44" column="21" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/website/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="623" selection-end="623" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="705">
+          <folding>
+            <marker date="1394798457000" expanded="true" signature="176:246" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1394798457000" expanded="true" signature="448:500" placeholder="UPDATE $user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/google_analytics/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="91" selection-start="2964" selection-end="2964" vertical-scroll-proportion="-24.125" vertical-offset="801" max-vertical-offset="1755">
+          <folding>
+            <marker date="1394808464000" expanded="true" signature="539:609" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="117" selection-start="4591" selection-end="4591" vertical-scroll-proportion="-23.583334" vertical-offset="1159" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="29" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="2610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/include.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.049234137" vertical-offset="0" max-vertical-offset="914">
-          <folding />
+        <state line="35" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.73324025" vertical-offset="0" max-vertical-offset="2115">
+          <folding>
+            <marker date="1394809369000" expanded="true" signature="1076:1672" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="1200:1663" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1510:1536" placeholder="{...}" />
+            <marker date="1394809369000" expanded="true" signature="1706:1719" placeholder="..." />
+            <marker date="1394809369000" expanded="true" signature="2265:2316" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -796,6 +1036,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

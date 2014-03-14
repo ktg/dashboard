@@ -4,7 +4,6 @@ Description: 	Theme for a local community based system called 'This is..' for th
 Version: 		1.0
 Author: 		Mark Davies
 */
-
 /*
 ===========================
 CONTENTS:
@@ -14,38 +13,37 @@ CONTENTS:
 03 Media queries 
 ===========================
 */
-
-/* ---------------------------------------------------------------------------------------------------------- 
+/* ----------------------------------------------------------------------------------------------------------
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 @import "css/reset.css";
 
-div,article,section,header,footer,nav,li {
-	position: relative;
-	/* For absolutely positioning elements within containers (add more to the list if need be) */
+div, article, section, header, footer, nav, li {
+    position: relative;
+    /* For absolutely positioning elements within containers (add more to the list if need be) */
 }
 
 .group:after {
-	display: block;
-	height: 0;
-	clear: both;
-	content: ".";
-	visibility: hidden; /* For clearing */
+    display: block;
+    height: 0;
+    clear: both;
+    content: ".";
+    visibility: hidden; /* For clearing */
 }
 
 body {
-	background: #fff;
-	/* Don't forget to style your body to avoid user overrides */
+    background: #fff;
+    /* Don't forget to style your body to avoid user overrides */
 }
 
 ::-moz-selection {
-	background: #ff0;
-	color: #333;
+    background: #ff0;
+    color: #333;
 }
 
 ::selection {
-	background: #ff0;
-	color: #333;
+    background: #ff0;
+    color: #333;
 }
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -61,14 +59,14 @@ body {
 30 / 16 = 		1.875em 		(30px equivalent)
 
 */
-body,input,textarea {
-	/* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
-	
+body, input, textarea {
+    /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
+
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-weight: bold;
-	/* This helps to identify headings at the initial build stage, but you should write something more precise later on */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    /* This helps to identify headings at the initial build stage, but you should write something more precise later on */
 }
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -76,584 +74,574 @@ h1,h2,h3,h4,h5,h6 {
 ---------------------------------------------------------------------------------------------------------- */
 
 /* 400 and up */
-@media screen and (min-width:400px) {
-	{ /* Place your styles here for all widths greater than 400px */
+@media screen and (min-width: 400px) { {
+    /* Place your styles here for all widths greater than 400px */
 }
 
 }
 
 /* Retina Display */
-@media screen and (-webkit-min-device-pixel-ratio:2) {
-	{ /* Place your styles here for all 'Retina' screens */
+@media screen and (-webkit-min-device-pixel-ratio: 2) { {
+    /* Place your styles here for all 'Retina' screens */
 }
 
 }
+
 * {
-	padding: 0;
-	margin: 0;
-	outline: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
 }
 
 body {
-	font-size: 14px;
-	font-family: 'Roboto', Lucida "Lucida Sans Unicode", "Lucida Grande",
-		sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	background-color: #3c3c3c; /*#a3ccd4;*/
-	margin: 0px auto;
-	height: 100%;
-	width: 960px;
-	padding
-	20px;
+    font-size: 14px;
+    font-family: 'Roboto', Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    background-color: #3c3c3c; /*#a3ccd4;*/
+    margin: 0px auto;
+    height: 100%;
+    width: 960px;
+    padding: 20px;
 }
 
 h1 {
-	font-family: "Times New Roman", Times, serif;
-	color: #2e2e2e;
-	font-size: 28px;
-	margin-left: 80px;
+    font-family: "Times New Roman", Times, serif;
+    color: #2e2e2e;
+    font-size: 28px;
+    margin-left: 80px;
 }
 
 h2 {
-	font-family: Impact, Charcoal, sans-serif;
-	color: #2e2e2e;
-	font-size: 16px;
-	display: none;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #2e2e2e;
+    font-size: 16px;
+    display: none;
 }
 
 h3 {
-	font-size: 12px;
-	display: none;
+    font-size: 12px;
+    display: none;
 }
 
 p {
-	color: #2e2e2e;
-	font-size: 12px;
+    color: #2e2e2e;
+    font-size: 12px;
 }
 
 .entry-title {
-	display: none;
+    display: none;
 }
 
-<!--
-Homepage -->#homepage_body {
-	font-size: 14px;
-	line-height: 18px;
-	background-color: #4188a7; /*#e2e8ec;*/
-	margin: 0 auto;
-	height: 100%;
-	width: 100%;
-	background-repeat: repeat-x;
-	text-align: center;
+#homepage_body {
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #4188a7; /*#e2e8ec;*/
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-x;
+    text-align: center;
 }
 
 #container {
-	margin: 0 auto;
-	height: 100%;
-	width: 960px;
-	min-height: 100%;
-	padding
-	20px,20px,0px,20px;
+    margin: 0 auto;
+    height: 100%;
+    width: 960px;
+    min-height: 100%;
+    padding: 20px 20px 0 20px;
 }
 
 #homepage_header {
-	height: 150px;
-	width: 960px;
-	background-color: #4188a7;
+    height: 150px;
+    width: 960px;
+    background-color: #4188a7;
 }
 
 #homepage_logo {
-	position: absolute;
-	text-align: center;
-	margin-top: 20px;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #login_section {
-	float: right;
-	font-size: 12px;
-	color: #4d4d4d;
-	margin-top: 74px;
+    float: right;
+    font-size: 12px;
+    color: #4d4d4d;
+    margin-top: 74px;
 }
 
 #login_section input {
-	margin-top: 0px;
-	margin-right: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
 }
 
 .login_button {
-	background: url('images/homepage/btn_login_homepage.png')
-		no-repeat;
-	cursor: pointer;
-	width: 60px;
-	height: 25px;
-	border: none;
+    background: url('images/homepage/btn_login_homepage.png') no-repeat;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+    border: none;
 }
 
 /* HOME PAGE BANNER	*/
 #homepage_banner {
-	height: 307px;
-	width: 960px;
+    height: 307px;
+    width: 960px;
 }
 
 /* BUSINESS AND CONSUMER SECTIONS */
 #sign_up_container {
-	margin-top: 80px;
-	height: 535px;
-	width: 483px;
-	background-color: #eaeaea;
+    margin-top: 80px;
+    height: 535px;
+    width: 483px;
+    background-color: #eaeaea;
 }
 
 .business {
-	float: left;
-	margin-left: 40px;
-	height: 366px;
-	width: 403px;
-	background-image: url('images/homepage/box_business.png');
+    float: left;
+    margin-left: 40px;
+    height: 366px;
+    width: 403px;
+    background-image: url('images/homepage/box_business.png');
 }
 
 .business p {
-	color: #4d4d4d;
-	margin-left: 30px;
-	padding: 60px 30px 0px 0;
-	text-align: left;
-	width: 390px;
-	font-size: 12px;
+    color: #4d4d4d;
+    margin-left: 30px;
+    padding: 60px 30px 0px 0;
+    text-align: left;
+    width: 390px;
+    font-size: 12px;
 }
 
 .business form {
-	margin-left: 30px;
-	padding: 20px 30px 0px 0;
-	text-align: left;
+    margin-left: 30px;
+    padding: 20px 30px 0px 0;
+    text-align: left;
 }
 
 .signup_form {
-	margin: 0 auto; width 400px;
-	padding: 14px;
+    margin: 0 auto;
+    width: 400px;
+    padding: 14px;
 }
 
 /* ----------- sign_up ----------- */
 #signup {
-	
+
 }
 
 #signup label {
-	display: block;
-	font-weight: medium;
-	color: #4d4d4d;
-	text-align: right;
-	width: 120px;
-	float: left;
+    display: block;
+    font-weight: normal;
+    color: #4d4d4d;
+    text-align: right;
+    width: 120px;
+    float: left;
 }
 
 #signup .small {
-	color: #666666;
-	display: block;
-	font-size: 11px;
-	font-weight: normal;
-	text-align: right;
-	width: 120px;
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 120px;
 }
 
 #signup input {
-	float: left;
-	font-size: 12px;
-	padding: 4px 2px;
-	border: solid 1px #aacfe4;
-	width: 200px;
-	margin: 2px 0 20px 10px;
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    border: solid 1px #aacfe4;
+    width: 200px;
+    margin: 2px 0 20px 10px;
 }
 
 #signup .pass {
-	color: #666666;
-	font-size: 11px;
-	font-weight: normal;
-	padding-left: 10px;
-	padding-top: 20px;
+    color: #666666;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 20px;
 }
 
 #signup button {
-	clear: both;
-	margin-left: 130px;
-	width: 125px;
-	height: 31px;
-	background: #84dfe3;
-	text-align: center;
-	cursor: pointer;
-	line-height: 31px;
-	color: #4d4d4d;
-	font-size: 11px;
-	font-weight: bold;
-	border: none;
+    clear: both;
+    margin-left: 130px;
+    width: 125px;
+    height: 31px;
+    background: #84dfe3;
+    text-align: center;
+    cursor: pointer;
+    line-height: 31px;
+    color: #4d4d4d;
+    font-size: 11px;
+    font-weight: bold;
+    border: none;
 }
 
 #default_container {
-	min-height: 100%;
-	background: #eee;
+    min-height: 100%;
+    background: #eee;
 }
 
 #header {
-	background: #4188a7;
-	padding: 30px 25px;
+    background: #4188a7;
+    padding: 30px 25px;
 }
 
 #logo {
-	margin-top: 20px;
-	color: #eee;
+    margin-top: 20px;
+    color: #eee;
 }
 
 /* LOGIN SECTION */
 #logout_section {
-	font-size: 12px;
-	color: #ccc;
-	text-align: right;
+    font-size: 12px;
+    color: #ccc;
+    text-align: right;
 }
 
 #logout_section a {
-	color: #ffffff;
+    color: #ffffff;
 }
 
 /* Navigation Bar */
 #nav {
-	background: #15526D;
-	font-size: 14px;
-	display: -webkit-flex;	
-	display: flex;
-	color: #fff;
+    background: #15526D;
+    font-size: 14px;
+    display: -webkit-flex;
+    display: flex;
+    color: #fff;
 }
 
 #nav a {
-	display: inline-block;
-	text-decoration: none;
-	color: #fff;
-	padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 35px;
 }
 
 #nav .active {
-	background: #4188a7;
+    background: #4188a7;
 }
 
 #turn_inside_out {
-	width: 374px; /*374px;*/
-	height: 40px;
-	padding: 0;
+    width: 374px; /*374px;*/
+    height: 40px;
+    padding: 0;
 }
 
 #turn_inside_out img {
-	width: 221px;
-	height: 35px;
-	text-align: right;
-	float: left;
+    width: 221px;
+    height: 35px;
+    text-align: right;
+    float: left;
 }
 
 /* Dashboard */
 #dashboard {
+    padding: 20px;
+    background: #EEE;
+}
+
+.action {
     display: flex;
-	padding: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px #888888;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.action_icon {
+    margin-right: 10px;
+    min-width: 45px;
+}
+
+.action_title {
+
+}
+
+.action_desc {
+    color: #888;
 }
 
 #services_container {
-	display: inline;
-	height: 636px;
-	max-width: 374px;
-	text-align: left;
-	float: left;
+    display: inline;
+    height: 636px;
+    max-width: 374px;
+    text-align: left;
+    float: left;
 }
 
 .dashboard_icon {
-	display: inline-block;
+    display: inline-block;
 }
 
 .dashboard_icon_a:HOVER {
-	opacity: 1.0;
+    opacity: 1.0;
 }
 
 .dashboard_icon_a {
-	height: 116px;
-	width: 116px;
-	display: inline-block;
-	opacity: 0.2;
+    height: 116px;
+    width: 116px;
+    display: inline-block;
+    opacity: 0.2;
 }
 
 #display_view {
-	display: inline;
-	float: right;
-	/*height:925px;*/
-	height: 100%;
-	width: 494px;
-	background-color: #eaeaea;
+    display: inline;
+    float: right;
+    /*height:925px;*/
+    height: 100%;
+    width: 494px;
+    background-color: #eaeaea;
 }
 
 /*  Services */
 #listofservices_container {
-	margin-top: 80px;
-	height: 947px;
+    margin-top: 80px;
+    height: 947px;
 }
 
 #information_bar {
-	position: absolute;
-	margin-top: 70px;
-	margin-left: 31px;
-	width: 840px;
-	height: 35px;
-	background-image: url('images/services/information_bar.png');
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 31px;
+    width: 840px;
+    height: 35px;
+    background-image: url('images/services/information_bar.png');
 }
 
 #information_bar p {
-	width: 840px;
-	padding: 10px 0px 00px 0px;
-	margin-left: 20px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
-		Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #fff;
+    width: 840px;
+    padding: 10px 0px 00px 0px;
+    margin-left: 20px;
+    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #fff;
 }
 
 #service_added_notification {
-	text-align: center;
-	color: #65904d;
-	font-weight: bold;
+    text-align: center;
+    color: #65904d;
+    font-weight: bold;
 }
 
 #list_of_services {
-	position: absolute;
-	width: 840px;
-	height: 770px;
-	background: #e4e3e3;
-	margin-top: 140px;
-	margin-left: 32px;
+    position: absolute;
+    width: 840px;
+    height: 770px;
+    background: #e4e3e3;
+    margin-top: 140px;
+    margin-left: 32px;
 }
 
 #list_of_services ul {
-	padding: 10px 0px 00px 0px;
-	margin-left: 31px;
-	margin: top:2px;
-	list-style-type: :disc;
-	text-align: left;
-	width: 840px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
-		Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #4d4d4d;
+    padding: 10px 0px 00px 0px;
+    margin-left: 31px;
+    margin-top: 2px;
+    list-style-type: disc;
+    text-align: left;
+    width: 840px;
+    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #4d4d4d;
 }
 
 #list_of_services li {
-	font-weight: medium;
-	width: 770px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
-		Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #4d4d4d;
-	border: 1px solid black;
-	height: 65px;
+    font-weight: normal;
+    width: 770px;
+    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #4d4d4d;
+    border: 1px solid black;
+    height: 65px;
 }
 
 #list_of_services li p {
-	width: 420px;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
-		Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #4d4d4d;
-	height: 65px;
-	position: absolute;
-	margin-left: 180px;
-	margin-top: -50px;
+    width: 420px;
+    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #4d4d4d;
+    height: 65px;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -50px;
 }
 
 #list_of_services li img {
-	width: 73px;
-	height: 73px;
+    width: 73px;
+    height: 73px;
 }
 
 #list_of_services input {
-	width: 55px;
-	height: 30px;
-	color: #4d4d4d;
-	background-color: #CCC;
-	text-align: center;
-	font-size: 10px;
-	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
+    width: 55px;
+    height: 30px;
+    color: #4d4d4d;
+    background-color: #CCC;
+    text-align: center;
+    font-size: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 #list_of_services a {
-	width: 55px;
-	height: 30px;
-	color: #4d4d4d;
-	background-color: #CCC;
-	text-align: center;
-	font-size: 10px;
-	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
-	text-decoration: none;
-	vertical-align: middle;
-	top: 50%;
+    width: 55px;
+    height: 30px;
+    color: #4d4d4d;
+    background-color: #CCC;
+    text-align: center;
+    font-size: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    top: 50%;
 }
 
 #default_container2 {
-	min-height: 100%;
-	background-color: #eaeaea;
-}
-
-#discover_container {
-	position: relative;
-	padding: 0;
-	background-color: #eaeaea;
-	text-align: center;
-	height: 1300px;
+    min-height: 100%;
+    background-color: #eaeaea;
 }
 
 .discover_title {
-	width: 270px;
-	height: 48px;
-	float: left;
-	margin-top: 20px;
-	margin-left: -325px;
+    width: 270px;
+    height: 48px;
+    float: left;
+    margin-top: 20px;
+    margin-left: -325px;
 }
 
 #steps_container {
-	position: absolute;
-	margin : 50px 30px;
-	width: 843px;
-	margin: 50px 30px;
-	display: -webkit-flex;	
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;	
+    padding: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #eaeaea;
 }
 
 #step {
-	float: left;
-	width: 400px;
-	margin-top: 50px;
+    float: left;
+    width: 400px;
+    margin: 20px;
 }
 
 #step_detail {
-	width: 400px;
+    width: 400px;
 }
 
 #step_detail img {
-	float: left;
+    float: left;
 }
 
 #step_detail div {
-	font-size: 12px;
-	float: right;
-	color: #505461;
-	width: 280px;
-	text-align: justify;
+    font-size: 12px;
+    float: right;
+    color: #505461;
+    width: 280px;
+    text-align: justify;
 }
 
 .findmore {
-	background-color: #D9D9D9;
-	padding: 7px 20px;
-	text-decoration: none;
-	color: #555;
-	display: inline-block;
+    background-color: #D9D9D9;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #555;
+    display: inline-block;
 }
 
 #market_container {
-	position: relative;
-	margin-top: 80px;
-	background-color: #eaeaea;
+    position: relative;
+    margin-top: 80px;
+    background-color: #eaeaea;
 }
 
-#default_container3 {
-	position: relative;
-	height: 947px;
-	min-height: 100%;
-	background-color: #eaeaea;
+#discover_container {
+    background-color: #eaeaea;
 }
 
 .service_title {
-	width: 314px;
-	height: 48px;
-	float: left;
-	margin-top: 10px;
-	position: relative;
-	margin-left: -325px;
-	margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-#service_area {
-	position: absolute;
-	margin-top: 20px;
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-#service_box {
-	max-width: 213px;
-	margin-top: 120px;
-	padding: 10px;
-	display: inline;
-	float: left;
-	margin-left: 10px;
-	position: relative;
+.service_box {
+    padding: 18px;
 }
 
-#service_box h1 {
-	font-size: 12px;
-	font-weight: bold;
-	font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif,
-		Verdana, Arial, Helvetica, sans-serif;
-	text-align: justify;
-	width: 194px;
-	color: #505461;
+.service_box h1 {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 194px;
+    color: #505461;
 }
 
-#service_box p {
-	margin-top: 10px;
-	color: #505461;
-	text-align: justify;
-	width: 194px;
-	height: 120px;
+.service_box p {
+    margin-top: 10px;
+    color: #505461;
+    text-align: justify;
+    width: 194px;
+    height: 80px;
 }
 
 .service_icon {
-	width: 194px;
-	height: 116px;
-	display: inline-block;
-	/*margin: 0 auto;*/
+    width: 194px;
+    height: 116px;
 }
 
 .btn_service_tutorial {
-	color: #505461;
-	background-color: #d9d9d9;
-	width: 73px;
-	height: 22px;
-	font-size: 11px;
-	text-decoration: none;
-	margin-top: 10px;
+    color: #505461;
+    background-color: #d9d9d9;
+    width: 73px;
+    height: 22px;
+    font-size: 11px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 .btn_service_add {
-	color: #505461;
-	background-color: #d9d9d9;
-	width: 115px;
-	height: 22px;
-	font-size: 11px;
-	text-decoration: none;
-	margin-top: 10px;
+    color: #505461;
+    background-color: #d9d9d9;
+    width: 115px;
+    height: 22px;
+    font-size: 11px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 #notification {
-	text-align: center;
-	color: #65904d;
-	font-weight: bold;
+    text-align: center;
+    color: #65904d;
+    font-weight: bold;
 }
 
 #footer {
-	position: absolute;
-	background: #778695;
-	bottom: 0%;
-	width: 960px;
-	height: 30px;
+    position: absolute;
+    background: #778695;
+    bottom: 0%;
+    width: 960px;
+    height: 30px;
 }
 
 #footer p {
-	color: #445b72;
-	font-size: 9px;;
+    color: #445b72;
+    font-size: 9px;;
 }
 
 #clear {
-	clear: both;
+    clear: both;
 }

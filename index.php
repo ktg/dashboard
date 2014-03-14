@@ -4,7 +4,6 @@
  *
  * @package WordPress
  */
-
 define('WP_USE_THEMES', true);
 
 get_header(); ?>
