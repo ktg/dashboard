@@ -37,15 +37,16 @@ foreach($service as $website)
 	$client->setScopes(array('https://www.googleapis.com/auth/analytics.readonly'));
 	$client->setUseObjects(true);
 
-	if (isset($_GET['code']))
+	$analytics = new Google_AnalyticsService($client);
+
+	if (isset($_SESSION['ga_token']))
+	{
+		$client->setAccessToken($_SESSION['ga_token']);
+	}
+	else if (isset($_GET['code']))
 	{
 		$client->authenticate();
-		$_SESSION['token'] = $client->getAccessToken();
-	}
-
-	if (isset($_SESSION['token']))
-	{
-		$client->setAccessToken($_SESSION['token']);
+		$_SESSION['ga_token'] = $client->getAccessToken();
 	}
 
 	if (!$client->getAccessToken())
@@ -62,7 +63,6 @@ foreach($service as $website)
 	}
 	else if(!empty($website->token))
 	{
-		$analytics = new Google_AnalyticsService($client);
 		$accounts = $analytics->management_accounts->listManagementAccounts();
 
 		$found = false;

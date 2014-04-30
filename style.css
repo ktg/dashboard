@@ -1,363 +1,235 @@
-/*
-Theme Name: 	Dashboard
-Description: 	Theme for a local community based system called 'This is..' for the project 'Scaling the Rural Enterprise'
-Version: 		1.0
-Author: 		Mark Davies
-*/
-/*
-===========================
-CONTENTS:
-
-01 Sensible defaults
-02 Typography
-03 Media queries 
-===========================
-*/
-/* ----------------------------------------------------------------------------------------------------------
-01 Sensible defaults ----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-@import "css/reset.css";
-
-div, article, section, header, footer, nav, li {
-    position: relative;
-    /* For absolutely positioning elements within containers (add more to the list if need be) */
-}
-
-.group:after {
-    display: block;
-    height: 0;
-    clear: both;
-    content: ".";
-    visibility: hidden; /* For clearing */
-}
-
 body {
-    background: #fff;
-    /* Don't forget to style your body to avoid user overrides */
-}
-
-::-moz-selection {
-    background: #ff0;
-    color: #333;
-}
-
-::selection {
-    background: #ff0;
-    color: #333;
-}
-
-/* ---------------------------------------------------------------------------------------------------------- 
-02 Typography -----------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-/*
-
-14 / 16	= 		0.875em 		(14px equivalent)
-16 / 16	= 		1em 			(16px equivalent)
-18 / 16 = 		1.125em 		(18px equivalent)
-21 / 16 = 		1.3125em 		(21px equivalent)
-24 / 16 = 		1.5em 			(24px equivalent)
-30 / 16 = 		1.875em 		(30px equivalent)
-
-*/
-body, input, textarea {
-    /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    /* This helps to identify headings at the initial build stage, but you should write something more precise later on */
-}
-
-/* ---------------------------------------------------------------------------------------------------------- 
-03 Media queries (using a mobile-first approach) ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/* 400 and up */
-@media screen and (min-width: 400px) { {
-    /* Place your styles here for all widths greater than 400px */
-}
-
-}
-
-/* Retina Display */
-@media screen and (-webkit-min-device-pixel-ratio: 2) { {
-    /* Place your styles here for all 'Retina' screens */
-}
-
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    outline: 0;
-}
-
-body {
-    font-size: 14px;
-    font-family: 'Roboto', Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    background-color: #3c3c3c; /*#a3ccd4;*/
-    margin: 0px auto;
-    height: 100%;
-    width: 960px;
-    padding: 20px;
-}
-
-h1 {
-    font-family: "Times New Roman", Times, serif;
-    color: #2e2e2e;
-    font-size: 28px;
-    margin-left: 80px;
-}
-
-h2 {
-    font-family: Impact, Charcoal, sans-serif;
-    color: #2e2e2e;
-    font-size: 16px;
-    display: none;
-}
-
-h3 {
-    font-size: 12px;
-    display: none;
+	font-size: 14px;
+	font-family: 'Roboto', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	background-color: #333;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 960px;
+	padding: 20px;
 }
 
 p {
-    color: #2e2e2e;
-    font-size: 12px;
-}
-
-.entry-title {
-    display: none;
-}
-
-#homepage_body {
-    font-size: 14px;
-    line-height: 18px;
-    background-color: #4188a7; /*#e2e8ec;*/
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    background-repeat: repeat-x;
-    text-align: center;
-}
-
-#container {
-    margin: 0 auto;
-    height: 100%;
-    width: 960px;
-    min-height: 100%;
-    padding: 20px 20px 0 20px;
-}
-
-#homepage_header {
-    height: 150px;
-    width: 960px;
-    background-color: #4188a7;
-}
-
-#homepage_logo {
-    position: absolute;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#login_section {
-    float: right;
-    font-size: 12px;
-    color: #4d4d4d;
-    margin-top: 74px;
-}
-
-#login_section input {
-    margin-top: 0px;
-    margin-right: 10px;
-}
-
-.login_button {
-    background: url('images/homepage/btn_login_homepage.png') no-repeat;
-    cursor: pointer;
-    width: 60px;
-    height: 25px;
-    border: none;
-}
-
-/* HOME PAGE BANNER	*/
-#homepage_banner {
-    height: 307px;
-    width: 960px;
-}
-
-/* BUSINESS AND CONSUMER SECTIONS */
-#sign_up_container {
-    margin-top: 80px;
-    height: 535px;
-    width: 483px;
-    background-color: #eaeaea;
-}
-
-.business {
-    float: left;
-    margin-left: 40px;
-    height: 366px;
-    width: 403px;
-    background-image: url('images/homepage/box_business.png');
-}
-
-.business p {
-    color: #4d4d4d;
-    margin-left: 30px;
-    padding: 60px 30px 0px 0;
-    text-align: left;
-    width: 390px;
-    font-size: 12px;
-}
-
-.business form {
-    margin-left: 30px;
-    padding: 20px 30px 0px 0;
-    text-align: left;
-}
-
-.signup_form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 14px;
-}
-
-/* ----------- sign_up ----------- */
-#signup {
-
-}
-
-#signup label {
-    display: block;
-    font-weight: normal;
-    color: #4d4d4d;
-    text-align: right;
-    width: 120px;
-    float: left;
-}
-
-#signup .small {
-    color: #666666;
-    display: block;
-    font-size: 11px;
-    font-weight: normal;
-    text-align: right;
-    width: 120px;
-}
-
-#signup input {
-    float: left;
-    font-size: 12px;
-    padding: 4px 2px;
-    border: solid 1px #aacfe4;
-    width: 200px;
-    margin: 2px 0 20px 10px;
-}
-
-#signup .pass {
-    color: #666666;
-    font-size: 11px;
-    font-weight: normal;
-    padding-left: 10px;
-    padding-top: 20px;
-}
-
-#signup button {
-    clear: both;
-    margin-left: 130px;
-    width: 125px;
-    height: 31px;
-    background: #84dfe3;
-    text-align: center;
-    cursor: pointer;
-    line-height: 31px;
-    color: #4d4d4d;
-    font-size: 11px;
-    font-weight: bold;
-    border: none;
-}
-
-#default_container {
-    min-height: 100%;
-    background: #eee;
+	color: #222;
+	font-size: 12px;
 }
 
 #header {
-    background: #4188a7;
-    padding: 30px 25px;
+	background: #48a;
+	padding: 30px 25px;
 }
 
-#logo {
-    margin-top: 20px;
-    color: #eee;
+#site_title {
+	margin-top: 20px;
+	color: #eee;
+	font-size: 30px; font-family: Arial;
+	text-shadow: 0 1px 1px #000;
+}
+
+#site_subtitle {
+
+}
+
+#login_section {
+	float: right;
+}
+
+.login_input {
+	display: block;
+	border: none;
+	margin-top: 4px;
+	padding: 3px;
+}
+
+.login_button {
+	background: #adf;
+	border: none;
+	box-shadow: 0 1px 1px #123;
+	display: block;
+	float: right;
+	padding: 3px 7px;
+}
+
+#nav {
+	background: #156;
+	font-size: 14px;
+	display: -webkit-flex;
+	display: flex;
+	color: #fff;
+}
+
+#nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 35px;
+}
+
+#nav .active {
+	background: #48a;
+}
+
+#container {
+	background-color: #eee;
+	min-height: 100%;
+	padding: 20px;
+}
+
+
+.entry-title {
+	display: none;
+}
+
+#homepage_body {
+	font-size: 14px;
+	line-height: 18px;
+	background: #48a;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+#homepage_header {
+	height: 150px;
+	width: 960px;
+	background: #48a;
+}
+
+
+
+/* HOME PAGE BANNER	*/
+#homepage_banner {
+	height: 307px;
+	width: 960px;
+}
+
+.business {
+	float: left;
+	margin-left: 40px;
+	height: 366px;
+	width: 403px;
+	background-image: url('images/homepage/box_business.png');
+}
+
+.business p {
+	color: #444;
+	margin-left: 30px;
+	padding: 60px 30px 0 0;
+	text-align: left;
+	width: 390px;
+	font-size: 12px;
+}
+
+.business form {
+	margin-left: 30px;
+	padding: 20px 30px 0 0;
+	text-align: left;
+}
+
+
+
+#signup_text {
+	text-align: center;
+}
+
+.signup_form {
+	margin: 0 auto;
+	width: 400px;
+	padding: 14px;
+}
+
+#signup label {
+	display: inline-block;
+	font-weight: normal;
+	color: #444;
+	text-align: right;
+	width: 120px;
+}
+
+#signup .small {
+	color: #666;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	width: 120px;
+}
+
+#signup input {
+	font-size: 12px;
+	padding: 4px 2px;
+	border: solid 1px #ace;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
+
+#signup .pass {
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+#signup button {
+	clear: both;
+	margin-left: 130px;
+	width: 125px;
+	height: 31px;
+	background: #8de;
+	text-align: center;
+	cursor: pointer;
+	line-height: 31px;
+	color: #4d4d4d;
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
 }
 
 /* LOGIN SECTION */
 #logout_section {
-    font-size: 12px;
-    color: #ccc;
-    text-align: right;
+	font-size: 12px;
+	color: #ccc;
+	text-align: right;
 }
 
 #logout_section a {
-    color: #ffffff;
+	color: #fff;
 }
 
-/* Navigation Bar */
-#nav {
-    background: #15526D;
-    font-size: 14px;
-    display: -webkit-flex;
-    display: flex;
-    color: #fff;
-}
-
-#nav a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 35px;
-}
-
-#nav .active {
-    background: #4188a7;
-}
 
 #turn_inside_out {
-    width: 374px; /*374px;*/
-    height: 40px;
-    padding: 0;
+	width: 374px;
+	height: 40px;
+	padding: 0;
 }
 
 #turn_inside_out img {
-    width: 221px;
-    height: 35px;
-    text-align: right;
-    float: left;
+	width: 221px;
+	height: 35px;
+	text-align: right;
+	float: left;
 }
 
 /* Dashboard */
 #dashboard {
-    padding: 20px;
-    background: #EEE;
+	padding: 20px;
+	background: #eee;
 }
 
 .action {
-    display: flex;
-    padding: 10px;
-    background: white;
-    border-radius: 2px;
-    box-shadow: 0 2px 1px #888888;
-    margin-bottom: 20px;
-    align-items: flex-start;
+	display: flex;
+	padding: 10px;
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 2px 1px #888;
+	margin-bottom: 20px;
+	align-items: flex-start;
 }
 
 .action_icon {
-    margin-right: 10px;
-    min-width: 45px;
+	margin-right: 10px;
+	min-width: 45px;
 }
 
 .action_title {
@@ -365,283 +237,459 @@ p {
 }
 
 .action_desc {
-    color: #888;
-}
-
-#services_container {
-    display: inline;
-    height: 636px;
-    max-width: 374px;
-    text-align: left;
-    float: left;
+	color: #888;
 }
 
 .dashboard_icon {
-    display: inline-block;
+	display: inline-block;
 }
 
 .dashboard_icon_a:HOVER {
-    opacity: 1.0;
+	opacity: 1.0;
 }
 
 .dashboard_icon_a {
-    height: 116px;
-    width: 116px;
-    display: inline-block;
-    opacity: 0.2;
+	height: 116px;
+	width: 116px;
+	display: inline-block;
+	opacity: 0.2;
 }
 
 #display_view {
-    display: inline;
-    float: right;
-    /*height:925px;*/
-    height: 100%;
-    width: 494px;
-    background-color: #eaeaea;
-}
-
-/*  Services */
-#listofservices_container {
-    margin-top: 80px;
-    height: 947px;
+	display: inline;
+	float: right;
+	height: 100%;
+	width: 494px;
+	background-color: #eaeaea;
 }
 
 #information_bar {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 31px;
-    width: 840px;
-    height: 35px;
-    background-image: url('images/services/information_bar.png');
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 31px;
+	width: 840px;
+	height: 35px;
+	background-image: url('images/services/information_bar.png');
 }
 
 #information_bar p {
-    width: 840px;
-    padding: 10px 0px 00px 0px;
-    margin-left: 20px;
-    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    color: #fff;
+	width: 840px;
+	padding: 10px 0 0 0;
+	margin-left: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fff;
 }
 
 #service_added_notification {
-    text-align: center;
-    color: #65904d;
-    font-weight: bold;
+	text-align: center;
+	color: #65904d;
+	font-weight: bold;
 }
 
 #list_of_services {
-    position: absolute;
-    width: 840px;
-    height: 770px;
-    background: #e4e3e3;
-    margin-top: 140px;
-    margin-left: 32px;
+	position: absolute;
+	width: 840px;
+	height: 770px;
+	background: #e4e3e3;
+	margin-top: 140px;
+	margin-left: 32px;
 }
 
 #list_of_services ul {
-    padding: 10px 0px 00px 0px;
-    margin-left: 31px;
-    margin-top: 2px;
-    list-style-type: disc;
-    text-align: left;
-    width: 840px;
-    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #4d4d4d;
+	padding: 10px 0 0 0;
+	margin-left: 31px;
+	margin-top: 2px;
+	list-style-type: disc;
+	text-align: left;
+	width: 840px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4d4d4d;
 }
 
 #list_of_services li {
-    font-weight: normal;
-    width: 770px;
-    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #4d4d4d;
-    border: 1px solid black;
-    height: 65px;
+	font-weight: normal;
+	width: 770px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4d4d4d;
+	border: 1px solid black;
+	height: 65px;
 }
 
 #list_of_services li p {
-    width: 420px;
-    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    color: #4d4d4d;
-    height: 65px;
-    position: absolute;
-    margin-left: 180px;
-    margin-top: -50px;
+	width: 420px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #4d4d4d;
+	height: 65px;
+	position: absolute;
+	margin-left: 180px;
+	margin-top: -50px;
 }
 
 #list_of_services li img {
-    width: 73px;
-    height: 73px;
+	width: 73px;
+	height: 73px;
 }
 
 #list_of_services input {
-    width: 55px;
-    height: 30px;
-    color: #4d4d4d;
-    background-color: #CCC;
-    text-align: center;
-    font-size: 10px;
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+	width: 55px;
+	height: 30px;
+	color: #4d4d4d;
+	background-color: #ccc;
+	text-align: center;
+	font-size: 10px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
 }
 
 #list_of_services a {
-    width: 55px;
-    height: 30px;
-    color: #4d4d4d;
-    background-color: #CCC;
-    text-align: center;
-    font-size: 10px;
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-    text-decoration: none;
-    vertical-align: middle;
-    top: 50%;
-}
-
-#default_container2 {
-    min-height: 100%;
-    background-color: #eaeaea;
+	width: 55px;
+	height: 30px;
+	color: #4d4d4d;
+	background-color: #ccc;
+	text-align: center;
+	font-size: 10px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+	vertical-align: middle;
+	top: 50%;
 }
 
 .discover_title {
-    width: 270px;
-    height: 48px;
-    float: left;
-    margin-top: 20px;
-    margin-left: -325px;
+	width: 270px;
+	height: 48px;
+	float: left;
+	margin-top: 20px;
+	margin-left: -325px;
 }
 
-#steps_container {
-    padding: 20px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background-color: #eaeaea;
+.steps {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-#step {
-    float: left;
-    width: 400px;
-    margin: 20px;
+.step {
+	float: left;
+	width: 400px;
+	margin: 20px;
 }
 
-#step_detail {
-    width: 400px;
+.step_detail {
+	width: 400px;
 }
 
-#step_detail img {
-    float: left;
+.step_detail img {
+	float: left;
 }
 
-#step_detail div {
-    font-size: 12px;
-    float: right;
-    color: #505461;
-    width: 280px;
-    text-align: justify;
+.step_detail div {
+	font-size: 12px;
+	float: right;
+	color: #505461;
+	width: 280px;
+	text-align: justify;
 }
 
 .findmore {
-    background-color: #D9D9D9;
-    padding: 7px 20px;
-    text-decoration: none;
-    color: #555;
-    display: inline-block;
+	background-color: #ddd;
+	padding: 7px 20px;
+	text-decoration: none;
+	color: #555;
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
 }
 
-#market_container {
-    position: relative;
-    margin-top: 80px;
-    background-color: #eaeaea;
-}
-
-#discover_container {
-    background-color: #eaeaea;
+.findmore:HOVER {
+	background-color: #bbb;
 }
 
 .service_title {
-    margin-top: 50px;
-    margin-bottom: 30px;
+	margin: 20px 0 20px -20px;
+	color: white;
+	padding: 15px;
+	width: 280px;
+	font-weight: 100;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .service_list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
 }
 
 .service_box {
-    padding: 18px;
+	padding: 18px;
 }
 
 .service_box h1 {
-    font-size: 12px;
-    font-weight: bold;
-    font-family: Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-    text-align: justify;
-    width: 194px;
-    color: #505461;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+	width: 194px;
+	color: #505461;
 }
 
 .service_box p {
-    margin-top: 10px;
-    color: #505461;
-    text-align: justify;
-    width: 194px;
-    height: 80px;
+	margin-top: 10px;
+	color: #505461;
+	text-align: justify;
+	width: 194px;
+	height: 80px;
 }
 
 .service_icon {
-    width: 194px;
-    height: 116px;
+	width: 194px;
+	height: 116px;
 }
 
-.btn_service_tutorial {
-    color: #505461;
-    background-color: #d9d9d9;
-    width: 73px;
-    height: 22px;
-    font-size: 11px;
-    text-decoration: none;
-    margin-top: 10px;
+.service_buttons {
+	display: flex;
+	justify-content: space-between;
 }
 
-.btn_service_add {
-    color: #505461;
-    background-color: #d9d9d9;
-    width: 115px;
-    height: 22px;
-    font-size: 11px;
-    text-decoration: none;
-    margin-top: 10px;
+.service_button {
+	color: #505461;
+	background: #ddd;
+	font-size: 11px;
+	text-decoration: none;
+	margin: 10px 0 0;
+	border: 0;
+	cursor: pointer;
+	padding: 4px 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.service_button:hover {
+	background: #bbb;
 }
 
 #notification {
-    text-align: center;
-    color: #65904d;
-    font-weight: bold;
+	text-align: center;
+	color: #65904d;
+	font-weight: bold;
 }
 
 #footer {
-    position: absolute;
-    background: #778695;
-    bottom: 0%;
-    width: 960px;
-    height: 30px;
+	position: absolute;
+	background: #778695;
+	bottom: 0;
+	width: 960px;
+	height: 30px;
 }
 
 #footer p {
-    color: #445b72;
-    font-size: 9px;;
+	color: #445b72;
+	font-size: 9px;;
 }
 
 #clear {
-    clear: both;
+	clear: both;
+}
+
+.field {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 6px;
+}
+
+.field_name {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-weight: bold;
+	color: #444;
+	width: 25%;
+	text-align: right;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.field_input {
+	font-family: Verdana, Arial, sans-serif;
+	border: 1px solid #999;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	padding: 5px 10px;
+	border-radius: 3px;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.field_input:disabled {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	border-color: #CCC;
+}
+
+.field_input:disabled:hover {
+	border-color: #CCC;
+}
+
+.field_input:hover {
+	border-color: #666;
+}
+
+.field_input:focus {
+	outline: medium none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+	border-color: #666;
+}
+
+
+.field_date {
+	text-align: right;
+}
+
+.field_item {
+	display: inline-block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin-right: 25%;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 50%;
+}
+
+.field_info {
+	font-size: smaller;
+	color: #555;
+	margin: 0 25%;
+	padding: 0 11px;
+	font-style: italic;
+	text-align: justify;
+}
+
+.field_error {
+	margin: 0 25%;
+	text-align: center;
+	padding: 5px;
+	padding-left: 34px;
+	background: #FFC url(../images/error.png) 10px center no-repeat;
+	border-radius: 3px;
+}
+
+.field_button {
+	margin-right: 25%;
+}
+
+input[type="checkbox"].field_input {
+	display: none;
+}
+
+input[type="checkbox"].field_input + label {
+	cursor: pointer;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+
+input[type="checkbox"].field_input:disabled + label {
+	cursor: default;
+	color: #BBB;
+}
+
+input[type="checkbox"].field_input + label span {
+	display:inline-block;
+	width:19px;
+	height:18px;
+	font-family: Verdana, Arial, sans-serif;
+	border: 1px solid #999;
+	border-radius: 3px;
+	margin: 0 8px 0 0;
+	vertical-align:middle;
+}
+
+input[type="checkbox"].field_input:enabled + label:hover span {
+	border-color: #666;
+}
+
+input[type="checkbox"].field_input:disabled + label span {
+	background: #DDD;
+	border: 1px solid #CCC;
+}
+
+input[type="checkbox"].field_input:checked + label span {
+	background: #DDD url(../images/check.png) 4px 6px no-repeat;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+input[type="file"].field_input::-webkit-file-upload-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid #888;
+	border-radius: 2px;
+	color: #222;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background: -webkit-linear-gradient(#EEE, #BBB);
+}
+
+select.field_input:hover {
+	background: url(../images/select2.png) right 8px center no-repeat;
+}
+
+select.field_input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url(../images/select.png) right 8px center no-repeat;
+}
+
+@media all and (max-width: 600px) {
+	.field_input {
+		margin-right: 0;
+	}
+
+	.field_button {
+		margin-right: 0;
+	}
+
+	.field_info {
+		margin-right: 0;
+	}
+
+	.field_item {
+		margin-right: 0;
+	}
+
+	.field_error {
+		margin-right: 0;
+	}
+
+	input[type="checkbox"].field_input + label
+	{
+		margin-right: 0;
+	}
 }
