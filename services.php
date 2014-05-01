@@ -39,7 +39,7 @@ $services = $wpdb->get_results($query);
 				foreach ($services as $service)
 				{
 					?>
-					<form name="loginform" action="" method="post">
+					<form name="loginform" action="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>" method="post">
 						<div class="service_box">
 							<img class="service_icon"
 							     src="<?php echo $image_path . "services/" . $service->key . "/images/discover.png"; ?>" />
