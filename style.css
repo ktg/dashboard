@@ -21,7 +21,8 @@ p {
 #site_title {
 	margin-top: 20px;
 	color: #eee;
-	font-size: 30px; font-family: Arial;
+	font-size: 30px;
+	font-family: Arial, sans-serif;
 	text-shadow: 0 1px 1px #000;
 }
 
@@ -36,17 +37,21 @@ p {
 .login_input {
 	display: block;
 	border: none;
-	margin-top: 4px;
-	padding: 3px;
+	margin-top: 5px;
+	padding: 3px 6px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .login_button {
 	background: #adf;
 	border: none;
 	box-shadow: 0 1px 1px #123;
-	display: block;
-	float: right;
+	display: inline-block;
 	padding: 3px 7px;
+	margin: 3px 0 0 15px;
 }
 
 #nav {
@@ -74,119 +79,6 @@ p {
 	padding: 20px;
 }
 
-
-.entry-title {
-	display: none;
-}
-
-#homepage_body {
-	font-size: 14px;
-	line-height: 18px;
-	background: #48a;
-	margin: 0 auto;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-}
-
-#homepage_header {
-	height: 150px;
-	width: 960px;
-	background: #48a;
-}
-
-
-
-/* HOME PAGE BANNER	*/
-#homepage_banner {
-	height: 307px;
-	width: 960px;
-}
-
-.business {
-	float: left;
-	margin-left: 40px;
-	height: 366px;
-	width: 403px;
-	background-image: url('images/homepage/box_business.png');
-}
-
-.business p {
-	color: #444;
-	margin-left: 30px;
-	padding: 60px 30px 0 0;
-	text-align: left;
-	width: 390px;
-	font-size: 12px;
-}
-
-.business form {
-	margin-left: 30px;
-	padding: 20px 30px 0 0;
-	text-align: left;
-}
-
-
-
-#signup_text {
-	text-align: center;
-}
-
-.signup_form {
-	margin: 0 auto;
-	width: 400px;
-	padding: 14px;
-}
-
-#signup label {
-	display: inline-block;
-	font-weight: normal;
-	color: #444;
-	text-align: right;
-	width: 120px;
-}
-
-#signup .small {
-	color: #666;
-	display: block;
-	font-size: 11px;
-	font-weight: normal;
-	text-align: right;
-	width: 120px;
-}
-
-#signup input {
-	font-size: 12px;
-	padding: 4px 2px;
-	border: solid 1px #ace;
-	width: 200px;
-	margin: 2px 0 20px 10px;
-}
-
-#signup .pass {
-	color: #666;
-	font-size: 11px;
-	font-weight: normal;
-	padding-left: 10px;
-	padding-top: 20px;
-}
-
-#signup button {
-	clear: both;
-	margin-left: 130px;
-	width: 125px;
-	height: 31px;
-	background: #8de;
-	text-align: center;
-	cursor: pointer;
-	line-height: 31px;
-	color: #4d4d4d;
-	font-size: 11px;
-	font-weight: bold;
-	border: none;
-}
-
-/* LOGIN SECTION */
 #logout_section {
 	font-size: 12px;
 	color: #ccc;
@@ -196,7 +88,6 @@ p {
 #logout_section a {
 	color: #fff;
 }
-
 
 #turn_inside_out {
 	width: 374px;
@@ -225,6 +116,7 @@ p {
 	box-shadow: 0 2px 1px #888;
 	margin-bottom: 20px;
 	align-items: flex-start;
+	position: relative;
 }
 
 .action_icon {
@@ -240,51 +132,36 @@ p {
 	color: #888;
 }
 
-.dashboard_icon {
-	display: inline-block;
-}
-
-.dashboard_icon_a:HOVER {
-	opacity: 1.0;
-}
-
-.dashboard_icon_a {
-	height: 116px;
-	width: 116px;
-	display: inline-block;
-	opacity: 0.2;
-}
-
-#display_view {
-	display: inline;
-	float: right;
-	height: 100%;
-	width: 494px;
-	background-color: #eaeaea;
-}
-
-#information_bar {
+.action_menu {
+	display: none;
 	position: absolute;
-	margin-top: 70px;
-	margin-left: 31px;
-	width: 840px;
-	height: 35px;
-	background-image: url('images/services/information_bar.png');
+	right: 0;
+	top: 0;
 }
 
-#information_bar p {
-	width: 840px;
-	padding: 10px 0 0 0;
-	margin-left: 20px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #fff;
+.action_menu_icon {
+	float:right;
 }
 
-#service_added_notification {
-	text-align: center;
-	color: #65904d;
-	font-weight: bold;
+.map {
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	border: 0;
+}
+
+.link_icon {
+	vertical-align: bottom;
+	margin-right: 3px;
+}
+
+.profile {
+	display: flex;
+}
+
+.profile_item {
+	flex: 1;
+	padding: 5px;
 }
 
 #list_of_services {
@@ -344,29 +221,6 @@ p {
 	float: right;
 	margin-top: 20px;
 	margin-right: 20px;
-}
-
-#list_of_services a {
-	width: 55px;
-	height: 30px;
-	color: #4d4d4d;
-	background-color: #ccc;
-	text-align: center;
-	font-size: 10px;
-	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
-	text-decoration: none;
-	vertical-align: middle;
-	top: 50%;
-}
-
-.discover_title {
-	width: 270px;
-	height: 48px;
-	float: left;
-	margin-top: 20px;
-	margin-left: -325px;
 }
 
 .steps {
@@ -480,19 +334,6 @@ p {
 	font-weight: bold;
 }
 
-#footer {
-	position: absolute;
-	background: #778695;
-	bottom: 0;
-	width: 960px;
-	height: 30px;
-}
-
-#footer p {
-	color: #445b72;
-	font-size: 9px;;
-}
-
 #clear {
 	clear: both;
 }
@@ -513,7 +354,6 @@ p {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-weight: bold;
 	color: #444;
 	width: 25%;
 	text-align: right;
@@ -527,16 +367,15 @@ p {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 	padding: 5px 10px;
 	border-radius: 3px;
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
 	-webkit-flex: 1;
 	-moz-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	margin-right: 25%;
+	width: 50%;
 }
 
 .field_input:disabled {
@@ -558,49 +397,23 @@ p {
 	border-color: #666;
 }
 
-
-.field_date {
+.field_submit {
 	text-align: right;
-}
-
-.field_item {
-	display: inline-block;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: flex;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	margin-right: 25%;
-	-webkit-flex: 1;
-	-moz-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	width: 50%;
-}
-
-.field_info {
-	font-size: smaller;
-	color: #555;
-	margin: 0 25%;
-	padding: 0 11px;
-	font-style: italic;
-	text-align: justify;
-}
-
-.field_error {
-	margin: 0 25%;
-	text-align: center;
-	padding: 5px;
-	padding-left: 34px;
-	background: #FFC url(../images/error.png) 10px center no-repeat;
-	border-radius: 3px;
 }
 
 .field_button {
 	margin-right: 25%;
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 0;
+	margin-top: 10px;
+	background: #58b;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+.field_button:hover {
+	background: #69c;
 }
 
 input[type="checkbox"].field_input {

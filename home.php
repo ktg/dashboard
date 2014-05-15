@@ -66,27 +66,26 @@ if (isset ($_POST ['task']) && $_POST ['task'] == 'register')
 get_header('login');
 ?>
 
-			<div id="signup_text">
+			<div style="text-align: center; margin-bottom: 20px;">
 				<h1>It's free to sign up</h1>
 
-				<p>The Dashboard is a prototype developed by the University of Nottingham for the RCUK funded project
-					'Scaling the Rural Divide'.</p>
+				<div>The Dashboard is a prototype developed by the University of Nottingham for the RCUK funded project
+					'Scaling the Rural Divide'.</div>
 
-				<p>Sign up to the Dashboard for <b>free</b> and connect your business to the world wide web.</p>
+				<div>Sign up to the Dashboard for <b>free</b> and connect your business to the world wide web.</div>
 			</div>
 
-			<div id="signup" class="signup_form">
 				<form name="register" method="post">
-					<div><label for="userLogin">Username</label>
-					<input type="text" name="username" size="20" placeholder="Username" required="true"/></div>
-					<div><label for="userEmail">Email</label>
-					<input type="email" name="email_reg" size="20" placeholder="Email" required="true"/></div>
-					<div><label for="userPassword">Password</label>
-					<input type="password" name="pwd1_reg" required="true"/></div>
-					<div><label for="userPasswordReenter">Confirm Password</label>
-					<input type="password" name="pwd2_reg" required="true"/></div>
+					<div class="field"><label class="field_name" for="userLogin">Username</label>
+					<input class="field_input" type="text" name="username" size="20" placeholder="Username" required="true"/></div>
+					<div class="field"><label class="field_name" for="userEmail">Email</label>
+					<input class="field_input" type="email" name="email_reg" size="20" placeholder="Email" required="true"/></div>
+					<div class="field"><label class="field_name" for="userPassword">Password</label>
+					<input class="field_input" type="password" name="pwd1_reg" required="true"/></div>
+					<div class="field"><label class="field_name" for="userPasswordReenter">Confirm Password</label>
+					<input class="field_input" type="password" name="pwd2_reg" required="true"/></div>
 
-					<div class=err>
+					<div class="err">
 						<?php if ($success != "")
 						{
 							echo $success;
@@ -96,14 +95,7 @@ get_header('login');
 						} ?>
 					</div>
 
-
-					<!-- <span class="pass"> (A password will be emailed to you) </span> -->
-					<!--   <input type="hidden" name="redirect_to" value="" /> -->
-					<!--<button type="submit" >Sign up</button>-->
-					<button type="submit" name="btnregister">Create My Account</button>
+					<div class="field_submit"><button class="field_button" type="submit">Create Account</button></div>
 					<input type="hidden" name="task" value="register"/>
-
-					<div class="spacer"></div>
 				</form>
-			</div>
 <?php get_footer(); ?>

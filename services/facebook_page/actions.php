@@ -96,8 +96,8 @@ else
 				array_push($actions, $action);
 			}
 
-			$actions = addAnalytics($actions, $page_details['name'], $page_details['were_here_count'], "Facebook Page");
-			$actions = addSocial($actions, "FaceBook", $page_details['likes'], '');
+			array_push($analytics, array('name' => $page_details['name'], 'value' => $page_details['were_here_count'], 'service' => 'Facebook Page'));
+			array_push($social, array('name' => "FaceBook", 'value' => $page_details['likes'], ''));
 		}
 	}
 }

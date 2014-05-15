@@ -4,154 +4,7 @@
  *
  * @package WordPress
  */
-function time_elapsed_string($datetime, $full = false)
-{
-	$now = new DateTime();
-	$ago = new DateTime($datetime);
-	$diff = $now->diff($ago);
-
-	$diff->w = floor($diff->d / 7);
-	$diff->d -= $diff->w * 7;
-
-	$string = array('y' => 'year',
-	                'm' => 'month',
-	                'w' => 'week',
-	                'd' => 'day',
-	                'h' => 'hour',
-	                'i' => 'minute',
-	                's' => 'second',);
-	foreach ($string as $k => &$v)
-	{
-		if ($diff->$k)
-		{
-			$v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
-		}
-		else
-		{
-			unset($string[$k]);
-		}
-	}
-
-	if (!$full)
-	{
-		$string = array_slice($string, 0, 1);
-	}
-	return $string ? implode(', ', $string) : 'just now';
-}
-
-function addAnalytics($actions, $name, $value, $service)
-{
-	$analytics_key = null;
-	$analytics_action = null;
-	foreach ($actions as $action)
-	{
-		if (isset($action['id']) && $action['id'] == 'analytics')
-		{
-			$analytics_key = array_search($action, $actions);
-			$analytics_action = $action;
-			break;
-		}
-	}
-
-	if (!isset($analytics_action))
-	{
-		$analytics_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
-		                          'service' => 'analytics',
-		                          'id' => 'analytics',
-		                          'title' => "Analytics",
-		                          'desc' => 'Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.',
-		                          'items' => "<script type='text/javascript' src='https://www.google.com/jsapi'></script>
-<script type='text/javascript'>
-	google.load('visualization', '1', {packages:['corechart']});
-	google.setOnLoadCallback(drawChart);
-	function drawChart() {
-		var data = new google.visualization.DataTable();
-		data.addColumn('string', 'Site');
-		data.addColumn('number', 'Visits');
-		data.addColumn({type:'string', role:'style'});
-		data.addColumn({type:'string', role:'annotation'});
-
-		// additions
-
-		var options = {
-			//title: 'Visits'
-		};
-
-		var chart = new google.visualization.BarChart(document.getElementById('analytics_chart'));
-		chart.draw(data, options);
-	}
-</script><div id='analytics_chart' style='width: 800px;'></div>");
-	}
-
-	$analytics_action['items'] = str_replace("// additions", "data.addRow(['$name', $value, 'opacity: 0.8', '$service ($value)']);\n// additions", $analytics_action['items']);
-
-	if (isset($analytics_key))
-	{
-		$actions[$analytics_key] = $analytics_action;
-	}
-	else
-	{
-		array_push($actions, $analytics_action);
-	}
-	return $actions;
-}
-
-function addSocial($actions, $name, $value, $service)
-{
-	$analytics_key = null;
-	$analytics_action = null;
-	foreach ($actions as $action)
-	{
-		if (isset($action['id']) && $action['id'] == 'social')
-		{
-			$analytics_key = array_search($action, $actions);
-			$analytics_action = $action;
-			break;
-		}
-	}
-
-	if (!isset($analytics_action))
-	{
-		$analytics_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
-		                          'service' => 'social',
-		                          'id' => 'social',
-		                          'title' => "Social",
-		                          'desc' => '',
-		                          'items' => "<script type='text/javascript' src='https://www.google.com/jsapi'></script>
-<script type='text/javascript'>
-	google.load('visualization', '1', {packages:['corechart']});
-	google.setOnLoadCallback(drawChart);
-	function drawChart() {
-		var data = new google.visualization.DataTable();
-		data.addColumn('string', 'Site');
-		data.addColumn('number', 'Followers');
-		data.addColumn({type:'string', role:'style'});
-		data.addColumn({type:'string', role:'annotation'});
-
-		// additions
-
-		var options = {
-			//title: 'Visits'
-		};
-
-		var chart = new google.visualization.BarChart(document.getElementById('social_chart'));
-		chart.draw(data, options);
-	}
-</script><div id='social_chart' style='width: 800px;'></div>");
-	}
-
-	$analytics_action['items'] = str_replace("// additions", "data.addRow(['$name', $value, 'opacity: 0.8', '$service ($value)']);\n// additions", $analytics_action['items']);
-
-	if (isset($analytics_key))
-	{
-		$actions[$analytics_key] = $analytics_action;
-	}
-	else
-	{
-		array_push($actions, $analytics_action);
-	}
-	return $actions;
-}
+include_once "graphing.php";
 
 get_header();
 
@@ -207,6 +60,8 @@ $services_path = site_url('wp-content/themes/' . $theme . '/services/');
 $dashboard_view_path = site_url('wp-content/themes/' . $theme . '/images/dashboard_view/');
 
 $actions = array();
+$analytics = array();
+$social = array();
 
 if (isset($services))
 {
@@ -223,42 +78,53 @@ if (isset($services))
 	}
 }
 
+if (!empty($analytics))
+{
+	$analytics_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
+		'service' => 'analytics',
+		'id' => 'analytics',
+		'title' => "Analytics",
+		'desc' => 'Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.',
+		'items' => graph('analytics_graph', 'Visits', $analytics));
+
+	array_push($actions, $analytics_action);
+}
+
+if (!empty($social))
+{
+	$social_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
+		'service' => 'social',
+		'id' => 'social',
+		'title' => "Social",
+		'desc' => '',
+		'items' => graph('social_graph', 'Followers', $social));
+
+	array_push($actions, $social_action);
+}
 ?>
 	<div id="dashboard">
 		<?php
+		$menu_id = 0;
 		foreach ($actions as $action)
 		{
+			$menu_id += 1;
 			?>
 			<div class="action">
-				<img class="action_icon" src="<?php echo $action['icon'] ?>" title="<?php echo $action['service']; ?>"/>
+				<img class="action_icon" src="<?php echo $action['icon'] ?>"
+				     title="<?php echo $action['service']; ?>" />
 
 				<div>
+					<img class="action_menu_icon" />
+
+					<div id="action_menu_<?php echo $menu_id; ?>" class="action_menu">
+						<div><a href="">Remove <?php echo $action['service'] ?></a></div>
+					</div>
 					<div class="action_title"><?php echo $action['title'] ?></div>
 					<div class="action_desc"><?php echo $action['desc'] ?></div>
 					<div><?php echo $action['items']; ?></div>
 				</div>
 			</div>
 
-		<?php
-		}
-		?>
-	</div>
-
-	<div id="turn_inside_out">
-
-		<?php
-		if (count($services) < 4)
-		{
-			?>
-			<a href="#" onclick="return TurnInsideOut()"><img
-					src="<?php echo $dashboard_view_path; ?>turn_into_webpage.png"/></a>
-		<?php
-		}
-		else
-		{
-			?>
-			<a href="#" onclick="return TurnInsideOutTwice()"><img
-					src="<?php echo $dashboard_view_path; ?>turn_into_webpage.png"/></a>
 		<?php
 		}
 		?>

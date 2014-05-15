@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/list_services.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services.php" afterPath="$PROJECT_DIR$/services.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/shop/images/discover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/facebook_page/images/link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/twitter/images/link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/images/link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphing.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/twitter/profile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/profile.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_analytics/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/css/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/css/service-profile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/servicetitle_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/page.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/actions.php" afterPath="$PROJECT_DIR$/services/facebook_page/actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/google_analytics/actions.php" afterPath="$PROJECT_DIR$/services/google_analytics/actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/twitter/actions.php" afterPath="$PROJECT_DIR$/services/twitter/actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/profile.php" afterPath="$PROJECT_DIR$/services/facebook_page/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +83,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -72,80 +95,40 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.416666" vertical-offset="914" max-vertical-offset="1830">
-              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+            <state vertical-scroll-proportion="-117.69231" vertical-offset="0" max-vertical-offset="3222">
+              <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
               <folding>
-                <marker date="1398691824000" expanded="true" signature="2761:2812" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-                <marker date="1398691824000" expanded="true" signature="3517:3550" placeholder="..." />
+                <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/twitter/twitter/twitter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="73.38461" vertical-offset="3996" max-vertical-offset="5184">
+              <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/facebook_page/profile.php">
+        <entry file="file://$PROJECT_DIR$/services/website/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1320">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.0769231" vertical-offset="0" max-vertical-offset="180">
+              <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/twitter/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53424656" vertical-offset="195" max-vertical-offset="1050">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-              <folding>
-                <marker date="1398946873000" expanded="true" signature="481:530" placeholder="SELECT * FRO..$services_table WHERE..." />
-                <marker date="1398946873000" expanded="true" signature="618:1383" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="757:1383" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="956:1383" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="988:1383" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="1022:1073" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="1136:1198" placeholder="..." />
-                <marker date="1398946873000" expanded="true" signature="1236:1383" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.416667" vertical-offset="740" max-vertical-offset="1470">
-              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1710">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="510">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="540">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,43 +137,59 @@
       <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1635">
-              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+            <state vertical-scroll-proportion="-27.0" vertical-offset="1062" max-vertical-offset="1962">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="100" />
               <folding>
-                <marker date="1396534846000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
+                <marker date="1400072871000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discover.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/discover.php">
+      <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="1965">
-              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state vertical-scroll-proportion="-9.692307" vertical-offset="810" max-vertical-offset="2196">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <marker date="1400149185000" expanded="true" signature="752:804" placeholder="UPDATE $user..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1997" max-vertical-offset="9252">
+              <caret line="141" column="17" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/facebook_page/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.269231" vertical-offset="131" max-vertical-offset="756">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="4065">
-              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="161" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.41935483" vertical-offset="1800" max-vertical-offset="2466">
+              <caret line="113" column="65" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
               <folding>
-                <marker date="1396528327000" expanded="true" signature="1787:2336" placeholder="..." />
-                <marker date="1396528327000" expanded="true" signature="1911:2327" placeholder="{...}" />
-                <marker date="1396528327000" expanded="true" signature="2174:2200" placeholder="{...}" />
-                <marker date="1396528327000" expanded="false" signature="2370:2383" placeholder="..." />
-                <marker date="1396528327000" expanded="true" signature="3526:4075" placeholder="..." />
-                <marker date="1396528327000" expanded="true" signature="3650:4066" placeholder="{...}" />
-                <marker date="1396528327000" expanded="true" signature="3916:3942" placeholder="{...}" />
-                <marker date="1396528327000" expanded="false" signature="4106:4119" placeholder="..." />
-                <marker date="1396528327000" expanded="true" signature="4915:4989" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-                <marker date="1396528327000" expanded="true" signature="5134:5180" placeholder="SELECT * FRO..$services_table WHERE..." />
-                <marker date="1396528327000" expanded="true" signature="5333:5404" placeholder="INSERT INTO ..." />
-                <marker date="1396528327000" expanded="true" signature="5760:5811" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1400073727000" expanded="true" signature="545:619" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1400073727000" expanded="true" signature="764:810" placeholder="SELECT * FRO..$services_table WHERE..." />
+                <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
+                <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
+                <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -221,7 +220,6 @@
         <option value="$PROJECT_DIR$/dashboard.sql" />
         <option value="$PROJECT_DIR$/service.php" />
         <option value="$PROJECT_DIR$/add_service.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/services/google_analytics/analytics.php" />
         <option value="$PROJECT_DIR$/services/website/set_url.php" />
         <option value="$PROJECT_DIR$/services/website/actions.php" />
@@ -238,14 +236,11 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/header-login.php" />
         <option value="$PROJECT_DIR$/discover.php" />
-        <option value="$PROJECT_DIR$/services/google_analytics/actions.php" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/list_services.php" />
         <option value="$PROJECT_DIR$/services/twitter/twitter/OAuth.php" />
         <option value="$PROJECT_DIR$/services/twitter/twitter/config.php" />
         <option value="$PROJECT_DIR$/services/twitter/twitter/twitter.class.php" />
         <option value="$PROJECT_DIR$/services/twitter/twitter/twitter.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/sell-online.php" />
         <option value="$PROJECT_DIR$/communicate-with-customers.php" />
         <option value="$PROJECT_DIR$/market-your-business.php" />
@@ -253,15 +248,23 @@
         <option value="$PROJECT_DIR$/business-community.php" />
         <option value="$PROJECT_DIR$/send-packages.php" />
         <option value="$PROJECT_DIR$/who-your-customers-are.php" />
-        <option value="$PROJECT_DIR$/services/facebook_page/actions.php" />
-        <option value="$PROJECT_DIR$/services/twitter/actions.php" />
         <option value="$PROJECT_DIR$/fields.css" />
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/external.php" />
-        <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/services/facebook_page/profile.php" />
         <option value="$PROJECT_DIR$/services.php" />
+        <option value="$PROJECT_DIR$/services/profile/css/jquery-ui.css" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/services/facebook_page/actions.php" />
+        <option value="$PROJECT_DIR$/services/google_analytics/actions.php" />
+        <option value="$PROJECT_DIR$/graphing.php" />
+        <option value="$PROJECT_DIR$/services/twitter/actions.php" />
+        <option value="$PROJECT_DIR$/services/facebook_page/profile.php" />
+        <option value="$PROJECT_DIR$/services/website/profile.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/services/twitter/profile.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
       </list>
     </option>
   </component>
@@ -319,16 +322,6 @@
       <sortByType ProjectPane="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,7 +368,51 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="facebook_page" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook_page" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,6 +420,16 @@
       </pane>
       <pane id="PackagesPane">
         <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -397,7 +444,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="Configurable.PHP.Servers" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.21615385" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -410,25 +457,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/services/twitter/twitter" />
-      <recent name="$PROJECT_DIR$/services/credly/images" />
+      <recent name="$PROJECT_DIR$/services/website/images" />
       <recent name="$PROJECT_DIR$/services/website" />
-      <recent name="$PROJECT_DIR$/services/facebook_page" />
+      <recent name="$PROJECT_DIR$/services/twitter/images" />
+      <recent name="$PROJECT_DIR$/services/twitter" />
+      <recent name="$PROJECT_DIR$/services/facebook_page/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/shop/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/services/twitter/twitter" />
       <recent name="$PROJECT_DIR$/services/paypal/images" />
-      <recent name="$PROJECT_DIR$/services/collect/images" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -448,6 +491,10 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -471,9 +518,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="0d2b532f-b94a-46c3-8935-faa63f7d8aee" server_name="kglover@wornchaos.org">
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -493,6 +537,9 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="0d2b532f-b94a-46c3-8935-faa63f7d8aee" server_name="kglover@wornchaos.org">
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -549,32 +596,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1916" height="1058" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19214876" sideWeight="0.4997319" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35433885" sideWeight="0.4997319" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5002681" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5002681" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10885806" sideWeight="0.36006826" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16595517" sideWeight="0.63822526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.36157024" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.63842976" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997934" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -609,41 +656,12 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="4065">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="161" selection-end-column="56" />
-          <folding>
-            <marker date="1396528327000" expanded="true" signature="1787:2336" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="1911:2327" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="2174:2200" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="2370:2383" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3526:4075" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3650:4066" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="3916:3942" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="4106:4119" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="4915:4989" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5134:5180" placeholder="SELECT * FRO..$services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5333:5404" placeholder="INSERT INTO ..." />
-            <marker date="1396528327000" expanded="true" signature="5760:5811" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="888" max-vertical-offset="1605">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1290">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
-            <marker date="1398691824000" expanded="true" signature="2761:2812" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-            <marker date="1398691824000" expanded="true" signature="3517:3550" placeholder="..." />
+            <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
           </folding>
         </state>
       </provider>
@@ -659,16 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1050">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <marker date="1398946873000" expanded="true" signature="481:530" placeholder="SELECT * FRO..$services_table WHERE..." />
-            <marker date="1398946873000" expanded="true" signature="618:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="757:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="956:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="988:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1022:1073" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1136:1198" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1236:1383" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1710">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="510">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="1965">
           <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,18 +706,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="4065">
           <caret line="159" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
-            <marker date="1396528327000" expanded="true" signature="1787:2336" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="1911:2327" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="2174:2200" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="2370:2383" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3526:4075" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3650:4066" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="3916:3942" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="4106:4119" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="4915:4989" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5134:5180" placeholder="SELECT * FRO..$services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5333:5404" placeholder="INSERT INTO ..." />
-            <marker date="1396528327000" expanded="true" signature="5760:5811" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="545:619" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="764:810" placeholder="SELECT * FRO..$services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
+            <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
+            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -838,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/google_analytics/actions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1755">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/twitter/twitter/OAuth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="2880" max-vertical-offset="15345">
@@ -873,20 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/twitter/twitter/twitter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1179" max-vertical-offset="4380">
-          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8210" max-vertical-offset="10500">
-          <caret line="526" column="43" selection-start-line="526" selection-start-column="43" selection-end-line="526" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
@@ -894,116 +872,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
+    <entry file="file://$PROJECT_DIR$/discover.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="888" max-vertical-offset="1605">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="1965">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="510">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1710">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1566" max-vertical-offset="1908">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/discover.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="1965">
-          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1764">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="4065">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="161" selection-end-column="56" />
+        <state vertical-scroll-proportion="-18.692308" vertical-offset="0" max-vertical-offset="594">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/google_analytics/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.576923" vertical-offset="1265" max-vertical-offset="2358">
+          <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
           <folding>
-            <marker date="1396528327000" expanded="true" signature="1787:2336" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="1911:2327" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="2174:2200" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="2370:2383" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3526:4075" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="3650:4066" placeholder="{...}" />
-            <marker date="1396528327000" expanded="true" signature="3916:3942" placeholder="{...}" />
-            <marker date="1396528327000" expanded="false" signature="4106:4119" placeholder="..." />
-            <marker date="1396528327000" expanded="true" signature="4915:4989" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5134:5180" placeholder="SELECT * FRO..$services_table WHERE..." />
-            <marker date="1396528327000" expanded="true" signature="5333:5404" placeholder="INSERT INTO ..." />
-            <marker date="1396528327000" expanded="true" signature="5760:5811" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073020000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$user_services_table WHERE..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/page.php">
+    <entry file="file://$PROJECT_DIR$/graphing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.5" vertical-offset="437" max-vertical-offset="1260">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.692307" vertical-offset="810" max-vertical-offset="2196">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1400149185000" expanded="true" signature="752:804" placeholder="UPDATE $user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/twitter/twitter/twitter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="73.38461" vertical-offset="3996" max-vertical-offset="5184">
+          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1635">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        <state vertical-scroll-proportion="-27.0" vertical-offset="1062" max-vertical-offset="1962">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="100" />
           <folding>
-            <marker date="1396534846000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
+            <marker date="1400072871000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="150" max-vertical-offset="1320">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.269231" vertical-offset="131" max-vertical-offset="756">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/website/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0769231" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.416666" vertical-offset="914" max-vertical-offset="1830">
-          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+        <state vertical-scroll-proportion="-117.69231" vertical-offset="0" max-vertical-offset="3222">
+          <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
           <folding>
-            <marker date="1398691824000" expanded="true" signature="2761:2812" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-            <marker date="1398691824000" expanded="true" signature="3517:3550" placeholder="..." />
+            <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/services/twitter/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.416667" vertical-offset="740" max-vertical-offset="1470">
-          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="85" />
+        <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="540">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53424656" vertical-offset="195" max-vertical-offset="1050">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1997" max-vertical-offset="9252">
+          <caret line="141" column="17" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/discover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41935483" vertical-offset="1800" max-vertical-offset="2466">
+          <caret line="113" column="65" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
           <folding>
-            <marker date="1398946873000" expanded="true" signature="481:530" placeholder="SELECT * FRO..$services_table WHERE..." />
-            <marker date="1398946873000" expanded="true" signature="618:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="757:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="956:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="988:1383" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1022:1073" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1136:1198" placeholder="..." />
-            <marker date="1398946873000" expanded="true" signature="1236:1383" placeholder="..." />
+            <marker date="1400073727000" expanded="true" signature="545:619" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="764:810" placeholder="SELECT * FRO..$services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
+            <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
+            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
           </folding>
         </state>
       </provider>

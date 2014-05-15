@@ -37,7 +37,7 @@ foreach($service as $website)
 	$client->setScopes(array('https://www.googleapis.com/auth/analytics.readonly'));
 	$client->setUseObjects(true);
 
-	$analytics = new Google_AnalyticsService($client);
+	$google_analytics = new Google_AnalyticsService($client);
 
 	if (isset($_SESSION['ga_token']))
 	{
@@ -63,48 +63,62 @@ foreach($service as $website)
 	}
 	else if(!empty($website->token))
 	{
-		$accounts = $analytics->management_accounts->listManagementAccounts();
-
-		$found = false;
-
-		foreach ($accounts->getItems() as $account)
+		try
 		{
-			$webproperties = $analytics->management_webproperties->listManagementWebproperties($account->getId());
-			foreach ($webproperties->getItems() as $webProperty)
+			$accounts = $google_analytics->management_accounts->listManagementAccounts();
+
+			$found = false;
+
+			foreach ($accounts->getItems() as $account)
 			{
-				if($webProperty->getWebsiteUrl() == $website->token)
+				$webproperties = $google_analytics->management_webproperties->listManagementWebproperties($account->getId());
+				foreach ($webproperties->getItems() as $webProperty)
 				{
-					$found = true;
-					$profiles = $analytics->management_profiles->listManagementProfiles($account->getId(), $webProperty->getId());
-
-					foreach ($profiles->getItems() as $profile)
+					if($webProperty->getWebsiteUrl() == $website->token)
 					{
-						$results = $analytics->data_ga->get('ga:' . $profile->getId(), '2013-03-10', '2014-03-10', 'ga:visits');
+						$found = true;
+						$profiles = $google_analytics->management_profiles->listManagementProfiles($account->getId(), $webProperty->getId());
 
-						$profileName = $results->getProfileInfo()->getProfileName();
-						$url = $webProperty->getWebsiteUrl();
-						$rows = $results->getRows();
-						$visits = $rows[0][0];
-						if (!isset($visits))
+						foreach ($profiles->getItems() as $profile)
 						{
-							$visits = 0;
-						}
+							$results = $google_analytics->data_ga->get('ga:' . $profile->getId(), '2013-03-10', '2014-03-10', 'ga:visits');
 
-						$actions = addAnalytics($actions, "$profileName", $visits, "Website");
+							$profileName = $results->getProfileInfo()->getProfileName();
+							$url = $webProperty->getWebsiteUrl();
+							$rows = $results->getRows();
+							$visits = $rows[0][0];
+							if (!isset($visits))
+							{
+								$visits = 0;
+							}
+
+							array_push($analytics, array('name' => $profileName, 'value' => $visits, 'service' => 'Website'));
+						}
 					}
 				}
 			}
-		}
 
-		if(!$found)
+			if(!$found)
+			{
+				$authUrl = $client->createAuthUrl();
+				$action = array('icon' => $icon,
+					'service' => 'Google Analytics',
+					'title' => 'Add Google Analytics to your Website',
+					'desc' => 'Create an analytics account for ' + $website->token,
+					'priority' => 10,
+					'items' => "<a href=\"$authUrl\">Connect to Google Analytics</a>",);
+
+				array_push($actions, $action);
+			}
+		}
+		catch(Google_ServiceException $e)
 		{
-			$authUrl = $client->createAuthUrl();
 			$action = array('icon' => $icon,
-			                'service' => 'Google Analytics',
-			                'title' => 'Add Google Analytics to your Website',
-			                'desc' => 'In order for the Dashboard to help you manage your analytics pages, you need to give Google permission for it to access your information.',
-			                'priority' => 10,
-			                'items' => "<a href=\"$authUrl\">Connect to Google Analytics</a>",);
+				'service' => 'Google Analytics',
+				'title' => 'No Google Analytics account',
+				'desc' => 'In order for the Dashboard to help you manage your analytics pages, you need to create a Google Analytics account.',
+				'priority' => 10,
+				'items' => "<a href=\"https://www.google.com/analytics/web/?hl=en\">Create Google Analytics Account</a>",);
 
 			array_push($actions, $action);
 		}

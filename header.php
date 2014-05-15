@@ -43,15 +43,15 @@ add_filter('show_admin_bar', '__return_false');
 			<?php
 			$redirect = esc_url(site_url('discover'));
 
-			$forgot_password_link = '<a href="' . wp_lostpassword_url() . '">forgot password?</a>';
+			$forgot_password_link = '<a style="font-size:smaller" href="' . wp_lostpassword_url() . '">forgot password?</a>';
 			?>
 
 			<form method="post" action="<?php echo esc_url(site_url('wp-login.php', 'login_post')); ?>">
 				<input type="text" size="25" name="log" class="login_input" placeholder="Username">
 				<input type="password" size="25" name="pwd" class="login_input" placeholder="Password">
-				<input type="submit" value="Login" class="login_button" id="submitLogin" name="wp-submit">
 				<input type="hidden" value="<?php echo $redirect; ?>" name="redirect_to">
 				<?php echo $forgot_password_link; ?>
+				<input type="submit" value="Login" class="login_button" id="submitLogin" name="wp-submit">
 			</form>
 
 		</div>
