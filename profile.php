@@ -125,7 +125,7 @@ if ($edit): ?>
 				echo "<div>$link</div>";
 			}
 
-			if ($edit):
+			if (empty($_GET['id'])):
 				?>
 				<div><a href="<?php echo get_page_link(get_page_by_title('profile')->ID); ?>?edit=true">Edit</a></div>
 			<?php

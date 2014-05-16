@@ -2,31 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/shop/images/discover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/facebook_page/images/link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/twitter/images/link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/images/link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/twitter/profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/website/profile.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_analytics/page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/css/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/css/service-profile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/images/servicetitle_profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/profile/page.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/actions.php" afterPath="$PROJECT_DIR$/services/facebook_page/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/google_analytics/actions.php" afterPath="$PROJECT_DIR$/services/google_analytics/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/twitter/actions.php" afterPath="$PROJECT_DIR$/services/twitter/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/collect/css/service-collectplus.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/collect/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/collect/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/css/service-credly.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/images/credly_concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/images/servicetitle_credly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/credly/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/css/service-customerbase.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/images/discover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/images/servicetitle_customerbase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/customer_base/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/dash-website/css/dash-website.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/dash-website/dash-website.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/dash-website/dash-website0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/dash-website/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/dash-website/images/concept0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/ebay/css/service-ebay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/ebay/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/ebay/images/servicetitle_ebay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/ebay/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/email/css/service-email.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/email/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/email/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/etsy/css/service-etsy.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/etsy/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/etsy/images/servicetitle_etsy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/etsy/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/discover_old.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/facebook_concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/servicetitle_facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/facebook_page/images/unlink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/flickr/css/service-flickr.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/flickr/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/flickr/images/servicetitle_flickr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/flickr/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_analytics/images/analytics_concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_analytics/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_analytics/images/servicetitle_analytics.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_places/css/service-googleplaces.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_places/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_places/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_places/images/servicetitle_googleplaces.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/google_places/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/instagram/css/service-instagram.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/instagram/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/instagram/images/servicetitle_instagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/instagram/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/paypal/css/service-paypal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/paypal/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/paypal/service-paypal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/trip_advisor/css/service-tripadvisor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/trip_advisor/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/trip_advisor/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/trip_advisor/images/servicetitle_tripadvisor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/trip_advisor/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/twitter/images/darker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/twitter/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/twitter/images/lighter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/twitter/images/servicetitle_twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/images/concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/images/concept0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/images/servicetitle_website.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/website/images/website_concept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/yell/css/service-yell.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/yell/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/yell/images/servicetitle_yell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/yell/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/youtube/css/service-youtube.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/youtube/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/services/youtube/page.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/profile.php" afterPath="$PROJECT_DIR$/services/facebook_page/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,8 +135,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -92,13 +144,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profile.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-117.69231" vertical-offset="0" max-vertical-offset="3222">
-              <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.5901926" vertical-offset="1967" max-vertical-offset="3222">
+              <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
               <folding>
-                <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+                <marker date="1400231390000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
               </folding>
             </state>
           </provider>
@@ -107,7 +159,7 @@
       <file leaf-file-name="twitter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/twitter/twitter/twitter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="73.38461" vertical-offset="3996" max-vertical-offset="5184">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="5256">
               <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
               <folding />
             </state>
@@ -117,7 +169,7 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/website/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0769231" vertical-offset="0" max-vertical-offset="180">
+            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
               <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
               <folding />
             </state>
@@ -127,7 +179,7 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/twitter/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="540">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -137,7 +189,7 @@
       <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.0" vertical-offset="1062" max-vertical-offset="1962">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="1962">
               <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="100" />
               <folding>
                 <marker date="1400072871000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
@@ -149,7 +201,7 @@
       <file leaf-file-name="actions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.692307" vertical-offset="810" max-vertical-offset="2196">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="2196">
               <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <marker date="1400149185000" expanded="true" signature="752:804" placeholder="UPDATE $user..." />
@@ -161,7 +213,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1997" max-vertical-offset="9252">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="9252">
               <caret line="141" column="17" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="17" />
               <folding />
             </state>
@@ -171,17 +223,17 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/facebook_page/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.269231" vertical-offset="131" max-vertical-offset="756">
+            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="756">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41935483" vertical-offset="1800" max-vertical-offset="2466">
+            <state vertical-scroll-proportion="-19.346153" vertical-offset="1531" max-vertical-offset="2466">
               <caret line="113" column="65" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
               <folding>
                 <marker date="1400073727000" expanded="true" signature="545:619" placeholder="SELECT * FRO..$user_services_table WHERE..." />
@@ -189,7 +241,6 @@
                 <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
                 <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
                 <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
-                <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -261,10 +312,10 @@
         <option value="$PROJECT_DIR$/services/twitter/actions.php" />
         <option value="$PROJECT_DIR$/services/facebook_page/profile.php" />
         <option value="$PROJECT_DIR$/services/website/profile.php" />
-        <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/services/twitter/profile.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
       </list>
     </option>
   </component>
@@ -322,6 +373,19 @@
       <sortByType ProjectPane="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,19 +482,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,6 +523,10 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -491,10 +546,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -518,6 +569,9 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="0d2b532f-b94a-46c3-8935-faa63f7d8aee" server_name="kglover@wornchaos.org">
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -537,9 +591,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="0d2b532f-b94a-46c3-8935-faa63f7d8aee" server_name="kglover@wornchaos.org">
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -661,7 +712,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1290">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
-            <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
+            <marker date="1400231390000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
           </folding>
         </state>
       </provider>
@@ -711,7 +762,6 @@
             <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
             <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
             <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
-            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -735,16 +785,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="9960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/servicetitle_facebook.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/facebook_page/images/delete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/images/concept.png">
@@ -890,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1566" max-vertical-offset="1908">
           <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1764">
           <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.692308" vertical-offset="0" max-vertical-offset="594">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,9 +956,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.576923" vertical-offset="1265" max-vertical-offset="2358">
           <caret line="87" column="56" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
-          <folding>
-            <marker date="1400073020000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,18 +964,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.5" vertical-offset="437" max-vertical-offset="1260">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1400073727000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/twitter/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.692307" vertical-offset="810" max-vertical-offset="2196">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="2196">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <marker date="1400149185000" expanded="true" signature="752:804" placeholder="UPDATE $user..." />
@@ -950,7 +980,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/twitter/twitter/twitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="73.38461" vertical-offset="3996" max-vertical-offset="5184">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="5256">
           <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
           <folding />
         </state>
@@ -958,7 +988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.0" vertical-offset="1062" max-vertical-offset="1962">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="1962">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="100" />
           <folding>
             <marker date="1400072871000" expanded="true" signature="396:448" placeholder="UPDATE $user..." />
@@ -968,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/facebook_page/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.269231" vertical-offset="131" max-vertical-offset="756">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="756">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
@@ -976,25 +1006,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/website/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0769231" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
           <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-117.69231" vertical-offset="0" max-vertical-offset="3222">
-          <caret line="170" column="42" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
-          <folding>
-            <marker date="1400156152000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/twitter/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
@@ -1015,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41935483" vertical-offset="1800" max-vertical-offset="2466">
+        <state vertical-scroll-proportion="-19.346153" vertical-offset="1531" max-vertical-offset="2466">
           <caret line="113" column="65" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
           <folding>
             <marker date="1400073727000" expanded="true" signature="545:619" placeholder="SELECT * FRO..$user_services_table WHERE..." />
@@ -1023,7 +1043,16 @@
             <marker date="1400073727000" expanded="true" signature="963:1034" placeholder="INSERT INTO ..." />
             <marker date="1400073727000" expanded="true" signature="1390:1441" placeholder="SELECT * FRO..$user_services_table WHERE..." />
             <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="..." />
-            <marker date="1400073727000" expanded="true" signature="2166:2349" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5901926" vertical-offset="1967" max-vertical-offset="3222">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+          <folding>
+            <marker date="1400231390000" expanded="true" signature="2931:2982" placeholder="SELECT * FRO..$user_services_table WHERE..." />
           </folding>
         </state>
       </provider>
