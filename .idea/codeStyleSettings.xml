@@ -80,6 +80,7 @@
           </indentOptions>
         </codeStyleSettings>
         <codeStyleSettings language="PHP">
+          <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
           <option name="BRACE_STYLE" value="2" />
           <option name="ELSE_ON_NEW_LINE" value="true" />
           <option name="SPECIAL_ELSE_IF_TREATMENT" value="true" />
@@ -95,7 +96,6 @@
       </value>
     </option>
     <option name="USE_PER_PROJECT_SETTINGS" value="true" />
-    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Kevin" />
   </component>
 </project>
 

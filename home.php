@@ -63,7 +63,7 @@ if (isset ($_POST ['task']) && $_POST ['task'] == 'register')
 	}
 }
 
-get_header('login');
+get_header();
 ?>
 
 			<div style="text-align: center; margin-bottom: 20px;">

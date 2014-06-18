@@ -4,7 +4,7 @@
  *
  * @package WordPress
  */
-get_header();
+get_header("private");
 
 $theme = get_template();
 $image_path = site_url("wp-content/themes/$theme/");

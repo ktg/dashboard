@@ -1,8 +1,5 @@
 <?php
-get_header();
-
-$current_user = wp_get_current_user();
-$user_id = isset($current_user->ID) ? $current_user->ID : 0;
+$user_id = get_current_user_id();
 
 foreach ($_POST as $POST_KEY => $POST_VALUE)
 {
@@ -19,8 +16,6 @@ if (isset($_GET['id']))
 }
 else
 {
-	$current_user = wp_get_current_user();
-	$user_id = isset($current_user->ID) ? $current_user->ID : 0;
 	if (isset($_GET['edit']))
 	{
 		$edit = $_GET['edit'];
@@ -30,6 +25,13 @@ else
 		$edit = false;
 	}
 }
+
+if($user_id == 0)
+{
+	wp_redirect(esc_url(home_url()));
+}
+
+get_header();
 
 $business_name = get_user_meta($user_id, 'business_name', true);
 $business_desc = get_user_meta($user_id, 'business_desc', true);
@@ -100,8 +102,8 @@ if ($edit): ?>
 			$services = $wpdb->get_results($query);
 
 			$theme = get_template();
-			$services_path = site_url('wp-content/themes/' . $theme . '/services/');
-			$dashboard_view_path = site_url('wp-content/themes/' . $theme . '/images/dashboard_view/');
+			$services_path = site_url("wp-content/themes/$theme/services/");
+			$dashboard_view_path = site_url("wp-content/themes/$theme/images/dashboard_view/");
 
 			$links = array();
 			$activities = array();
@@ -135,6 +137,32 @@ if ($edit): ?>
 		<div class="profile_item">
 			<?php
 
+			$args = array(
+				'post_type' => 'badge',
+			);
+			$loop = new WP_Query($args);
+
+			echo "<div style='display: flex'>";
+			while ($loop->have_posts())
+			{
+				$loop->the_post();
+				$post_ID = get_the_ID();
+				$members = get_post_meta($post_ID, 'members', true);
+
+				if (array_key_exists($user_id, $members) && $members[$user_id]['status'] == 'member')
+				{
+					echo '<a href="' . get_permalink() . '">';
+					the_post_thumbnail(array(100, 100));
+					echo '<div>';
+					the_title();
+					echo '</div>';
+					echo "</a>";
+				}
+
+			}
+			echo "</div>";
+			wp_reset_query();
+
 			uasort($activities, 'cmp');
 
 			foreach ($activities as $activity)
@@ -147,8 +175,8 @@ if ($edit): ?>
 							<img class="link_icon" src="<?php echo $activity['icon'] ?>"
 							     title="<?php echo $activity['service']; ?>" />
 							<?php
-								$dt = $activity['time'];
-								echo $activity['service'] . " &mdash; " .$dt->format("d M");
+							$dt = $activity['time'];
+							echo $activity['service'] . " &mdash; " . $dt->format("d M");
 							?>
 						</div>
 					</div>
@@ -163,8 +191,10 @@ if ($edit): ?>
 	</div>
 <? endif;
 
-function cmp($a, $b) {
-	if ($a == $b) {
+function cmp($a, $b)
+{
+	if ($a == $b)
+	{
 		return 0;
 	}
 

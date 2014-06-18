@@ -9,7 +9,7 @@ $title_path = site_url('wp-content/themes/' . $theme . '/images/discover/');
 
 $services = $wpdb->get_results("SELECT * FROM " . $wpdb->prefix . "services");
 
-get_header();
+get_header("private");
 ?>
 <div class="steps">
 	<div class="step">

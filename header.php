@@ -1,25 +1,6 @@
 <?php
-/**
- * @package WordPress
- * @subpackage Dashboard
- */
+$user_id = get_current_user_id();
 $current_user = wp_get_current_user();
-$user_id = isset($current_user->ID) ? $current_user->ID : 0;
-if ($user_id == 0)
-{
-	if (!is_front_page())
-	{
-		wp_redirect(esc_url(home_url()));
-	}
-}
-else
-{
-	if (is_front_page())
-	{
-		wp_redirect(esc_url(site_url('discover')));
-	}
-}
-
 add_filter('show_admin_bar', '__return_false');
 ?>
 <!DOCTYPE html>
@@ -74,14 +55,16 @@ add_filter('show_admin_bar', '__return_false');
 			<a href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Getting Started</a>
 			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
 			<a class="active">Profile</a>
-		<?php
-		elseif ($post->post_parent): ?>
+		<?php elseif (is_page('discover')): ?>
+			<a class="active">Getting Started</a>
+			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
+			<a href="<?php echo get_page_link(get_page_by_title('profile')->ID); ?>">Profile</a>
+		<?php elseif (isset($post) && $post->post_parent): ?>
 			<a class="active" href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Getting Started</a>
 			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
 			<a href="<?php echo get_page_link(get_page_by_title('profile')->ID); ?>">Profile</a>
-		<?php
-		else: ?>
-			<a class="active">Getting Started</a>
+		<?php else: ?>
+			<a href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Getting Started</a>
 			<a href="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>">Dashboard</a>
 			<a href="<?php echo get_page_link(get_page_by_title('profile')->ID); ?>">Profile</a>
 		<?php endif; ?>

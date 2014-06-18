@@ -70,6 +70,7 @@ class TwitterOAuth
 	/**
 	 * Get a request_token from Twitter
 	 *
+	 * @param $oauth_callback
 	 * @returns a key/value array containing oauth_token and oauth_token_secret
 	 */
 	function getRequestToken($oauth_callback)
@@ -105,6 +106,9 @@ class TwitterOAuth
 	/**
 	 * Make an HTTP request
 	 *
+	 * @param $url
+	 * @param $method
+	 * @param null $postfields
 	 * @return API results
 	 */
 	function http($url, $method, $postfields = NULL)
@@ -155,7 +159,9 @@ class TwitterOAuth
 	/**
 	 * Get the authorize URL
 	 *
-	 * @returns a string
+	 * @param $token
+	 * @param bool $sign_in_with_twitter
+	 * @returns string
 	 */
 	function getAuthorizeURL($token, $sign_in_with_twitter = TRUE)
 	{

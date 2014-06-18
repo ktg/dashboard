@@ -24,10 +24,12 @@ if (isset($_REQUEST['oauth_token']) && isset($_SESSION['twitter_token'])) // $_S
 	}
 }
 
+$icon = site_url("wp-content/themes/$theme/services/twitter/images/icon.png");
+
 if (empty($service->token))
 {
 	$twitter = new TwitterOAuth($API_key, $API_secret);
-	$request_token = $twitter->getRequestToken('');
+	$request_token = $twitter->getRequestToken('http://www.wornchaos.org/dash/dashboard');
 
 	$_SESSION['twitter_token'] = $token = $request_token['oauth_token'];
 	$_SESSION['twitter_token_secret'] = $request_token['oauth_token_secret'];
@@ -61,7 +63,7 @@ else
 	if (empty($user) || !empty($user->errors))
 	{
 		$twitter = new TwitterOAuth($API_key, $API_secret);
-		$request_token = $twitter->getRequestToken('');
+		$request_token = $twitter->getRequestToken('http://www.wornchaos.org/dash/dashboard');
 
 		$_SESSION['twitter_token'] = $token = $request_token['oauth_token'];
 		$_SESSION['twitter_token_secret'] = $request_token['oauth_token_secret'];
@@ -71,15 +73,12 @@ else
 			'title' => 'Connect the Dashboard to your Twitter',
 			'desc' => 'In order for the Dashboard to help you manage your Twitter, you need to give Twitter permission for it to access your information.',
 			'priority' => 10,
-			'items' => "<a href=\"$url\">Connect to Twitter</a>",);
+			'items' => "<a href='$url'>Connect to Twitter</a>",);
 
 		array_push($actions, $action);
 	}
 	else
 	{
-
-		$icon = site_url('wp-content/themes/' . $theme . '/services/twitter/images/icon.png');
-
 		if (isset($_POST['twitter_post']))
 		{
 			$twitter->post('statuses/update', array('status' => $_POST['twitter_post']));
