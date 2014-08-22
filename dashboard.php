@@ -6,8 +6,6 @@
  */
 include_once "graphing.php";
 
-get_header("private");
-
 $current_user = wp_get_current_user();
 $user_id = isset($current_user->ID) ? $current_user->ID : 0;
 
@@ -101,10 +99,20 @@ if (!empty($social))
 
 	array_push($actions, $social_action);
 }
+get_header("private");
+
 ?>
 	<div id="dashboard">
 		<?php
 		$menu_id = 0;
+		if(empty($actions))
+		{
+			?>
+			<div>
+				No actions available. <a href="<?php echo get_page_link(get_page_by_title('discover')->ID); ?>">Add some services</a>
+			</div>
+			<?php
+		}
 		foreach ($actions as $action)
 		{
 			$menu_id += 1;
@@ -114,13 +122,16 @@ if (!empty($social))
 				     title="<?php echo $action['service']; ?>" />
 
 				<div>
-					<img class="action_menu_icon" />
-
 					<div id="action_menu_<?php echo $menu_id; ?>" class="action_menu">
 						<div><a href="">Remove <?php echo $action['service'] ?></a></div>
 					</div>
 					<div class="action_title"><?php echo $action['title'] ?></div>
-					<div class="action_desc"><?php echo $action['desc'] ?></div>
+					<?php
+						if(array_key_exists('desc', $action))
+						{
+							?>					<div class="action_desc"><?php echo $action['desc'] ?></div><?php
+						}
+					?>
 					<div><?php echo $action['items']; ?></div>
 				</div>
 			</div>

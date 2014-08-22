@@ -3,7 +3,14 @@ $user_id = get_current_user_id();
 
 foreach ($_POST as $POST_KEY => $POST_VALUE)
 {
-	if (strpos($POST_KEY, 'business_') === 0)
+	if($_POST_KEY == 'business_image')
+	{
+		//error_log("Including " . ABSPATH . 'wp-admin/includes/admin.php');
+		//require_once(ABSPATH . 'wp-admin/includes/admin.php');
+		//$image_id = media_handle_upload('badge_image', $_POST['badge_id']);
+		//update_post_meta($_POST['badge_id'], '_thumbnail_id', $image_id);
+	}
+	else if (strpos($POST_KEY, 'business_') === 0)
 	{
 		update_user_meta($user_id, $POST_KEY, $POST_VALUE);
 	}
@@ -45,11 +52,15 @@ if (empty($business_name) && empty($_GET['id']))
 }
 
 if ($edit): ?>
-	<form method="post">
+	<form method="post" enctype='multipart/form-data'>
 		<div class="field">
 			<div class="field_name">Business Name</div>
 			<input class="field_input" placeholder="Business Name" required="true"
 			       name="business_name" value="<?php echo $business_name; ?>" />
+		</div>
+		<div class="field">
+			<div class="field_name">Logo</div>
+			<input type="file" class="field_input" name="business_image" />
 		</div>
 		<div class="field">
 			<div class="field_name">Description</div>
@@ -148,10 +159,11 @@ if ($edit): ?>
 				$loop->the_post();
 				$post_ID = get_the_ID();
 				$members = get_post_meta($post_ID, 'members', true);
+				$author_ID = get_the_author_meta("ID");
 
-				if (array_key_exists($user_id, $members) && $members[$user_id]['status'] == 'member')
+				if ((is_array($members) && array_key_exists($user_id, $members) && $members[$user_id]['status'] == 'member') || $author_ID == $user_id)
 				{
-					echo '<a href="' . get_permalink() . '">';
+					echo '<a href="' . get_permalink() . '" style="margin-right: 10px; margin-bottom: 10px;">';
 					the_post_thumbnail(array(100, 100));
 					echo '<div>';
 					the_title();

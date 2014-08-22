@@ -1,5 +1,5 @@
 <?php
-$icon = site_url("wp-content/themes/$theme/services/facebook_page/images/icon.png");
+$icon = site_url("wp-content/themes/$theme/services/badges/images/icon.png");
 $user_id = get_current_user_id();
 $loop = new WP_Query(array('post_type' => 'badge'));
 
@@ -13,33 +13,32 @@ if (isset($_POST['action']))
 			'post_date' => date('Y-m-d H:i:s'),
 			'post_status' => 'publish',
 			'post_title' => $_POST['badge_name'],
-			'post_type' => 'badge'
+			'post_type' => 'badge',
+			'post_content' => $_POST['badge_content']
 		);
 
-		wp_insert_post($post);
-	}
-	else if($_POST['action'] == 'add_badge_image' && isset($_POST['badge_image_url']) && isset($_POST['badge']))
-	{
+		$post_id = wp_insert_post($post);
 
-
-		$wp_filetype = wp_check_filetype(basename($filename), null );
-		$attachment = array(
-			'post_mime_type' => $wp_filetype['type'],
-			'post_title' => preg_replace('/\.[^.]+$/', '', basename($filename)),
-			'post_content' => '',
-			'post_status' => 'inherit'
-		);
-		$attach_id = wp_insert_attachment( $attachment, $filename, $post_id );
-		// you must first include the image.php file
-		// for the function wp_generate_attachment_metadata() to work
-		require_once(ABSPATH . "wp-admin" . '/includes/image.php');
-		$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
-		if (wp_update_attachment_metadata( $attach_id,  $attach_data )) {
-			// set as featured image
-			return update_post_meta($post_id, '_thumbnail_id', $attach_id);
+		if(isset( $_POST['badge_image_nonce'], $_FILES['badge_image']) && $_FILES['badge_image']['error'] == 0 && wp_verify_nonce( $_POST['badge_image_nonce'], 'badge_image' ))
+		{
+			error_log("Including " . ABSPATH . 'wp-admin/includes/admin.php');
+			require_once(ABSPATH . 'wp-admin/includes/admin.php');
+			$image_id = media_handle_upload('badge_image', $post_id);
+			update_post_meta($post_id, '_thumbnail_id', $image_id);
 		}
 
+		$permalink = get_permalink( $post_id );
 
+		wp_redirect( $permalink );
+		exit;
+	}
+	else if($_POST['action'] == 'add_badge_image' && isset( $_POST['badge_image_nonce'], $_POST['badge_id'] )
+		&& wp_verify_nonce( $_POST['badge_image_nonce'], 'badge_image' ))
+	{
+		error_log("Including " . ABSPATH . 'wp-admin/includes/admin.php');
+		require_once(ABSPATH . 'wp-admin/includes/admin.php');
+		$image_id = media_handle_upload('badge_image', $_POST['badge_id']);
+		update_post_meta($_POST['badge_id'], '_thumbnail_id', $image_id);
 	}
 }
 
@@ -68,9 +67,9 @@ while ($loop->have_posts())
 				$action = array('icon' => $icon,
 					'service' => 'badge',
 					'title' => "Display $title badge on your website",
-					'desc' => 'Copy and paste the information below into your website.',
+					'desc' => 'Copy and paste the information below into your website to add this badge to your website.',
 					'priority' => 10,
-					'items' => "<textarea><a href='$link?member_id=$user_id'><img src='$image[0]'/><div>$title</div></a></textarea>");
+					'items' => "<textarea style='width:100%'><a href='$link?member_id=$user_id'><img src='$image[0]'/><div>$title</div></a></textarea>");
 
 				array_push($actions, $action);
 			}
@@ -81,15 +80,17 @@ while ($loop->have_posts())
 	{
 		foreach ($members as $user => $member)
 		{
+			$profile_link = get_page_link(get_page_by_title('profile')->ID);
+			$badge_link = get_permalink();
 			if($member['status'] == 'pending')
 			{
 				$business_name = get_user_meta($user, 'business_name', true);
 				$action = array('icon' => $icon,
 					'service' => 'badge',
 					'title' => "$business_name wants to be able to use your $title badge",
-					'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
+					'desc' => "<a href='$profile_link?id=$user'>$business_name</a> wants to join your badge scheme, <a href='$badge_link'>$title</a>. If order for them to use it, you need to give them permission.",
 					'priority' => 10,
-					'items' => "<a href=\"$link?action=accept&member_id=$user_id\">Accept $business_name</a>. <a href=\"$link?action=remove&member_id=$user_id\">Remove</a>",);
+					'items' => "<a href=\"$link?action=accept&member_id=$user\">Accept $business_name</a>. <a href=\"$link?action=remove&member_id=$user_id\">Remove</a>",);
 
 				array_push($actions, $action);
 			}
@@ -97,23 +98,26 @@ while ($loop->have_posts())
 
 		if(!has_post_thumbnail())
 		{
+			$nonce = wp_nonce_field( 'badge_image', 'badge_image_nonce', true, false );
 			$action = array('icon' => $icon,
 				'service' => 'badge',
 				'title' => "Add image to $title",
-				'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
+				//'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
 				'priority' => 10,
-				'items' => "<form action='' method='post'><input type='hidden' name='action' value='add_badge_image'><input type='hidden' name='badge' value='$post_ID'><input name='badge_image_url' /><input type='submit' value='Post' /></form>",);
+				'items' => "<form action='' method='post' enctype='multipart/form-data'>$nonce<input type='hidden' name='action' value='add_badge_image'><input type='hidden' name='badge_id' value='$post_ID'><input type='file' name='badge_image' multiple='false' /><input type='submit' value='Add Image' /></form>",);
 
 			array_push($actions, $action);
 		}
 	}
 }
 
+$nonce = wp_nonce_field( 'badge_image', 'badge_image_nonce', true, false );
+
 $action = array('icon' => $icon,
 	'service' => 'badge',
 	'title' => "Create a Badge",
-	'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
+	//'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
 	'priority' => 10,
-	'items' => "<form action='' method='post'><input type='hidden' name='action' value='add_badge'><input name='badge_name' placeholder='Badge Name' size='60' /><input type='submit' value='Post' /></form>",);
+	'items' => "<form action='#' method='post' enctype='multipart/form-data'><div><input type='hidden' name='action' value='add_badge'>$nonce<input name='badge_name' placeholder='Badge Name' size='60' /></div><div><span style='font-size: 8pt;margin: 4px;color: #777;'>Badge icon</span> <input type='file' name='badge_image' multiple='false' /></div><div><input name='badge_content' placeholder='Badge Description' size='60' /></div><input type='submit' value='Post' /></form>",);
 
 array_push($actions, $action);

@@ -82,7 +82,7 @@ else
 		if (isset($_POST['twitter_post']))
 		{
 			$twitter->post('statuses/update', array('status' => $_POST['twitter_post']));
-			echo $twitter->http_code;
+			//echo $twitter->http_code;
 			//$twitter->send($_POST['twitter_post']);
 		}
 
@@ -98,14 +98,20 @@ else
 		}
 		else
 		{
-			$last_post_time = time_elapsed_string($user->status->created_at);
-			$action = array('icon' => $icon,
-				'service' => 'twitter',
-				'title' => "Post about PlaceBooks",
-				'desc' => "You haven't posted in $last_post_time. Regularly post content to twitter in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.",
-				'items' => "<form action='' method='post'><input name='twitter_post' placeholder='What have you been up to?' size='60' /><input type='submit' value='Post' /></form>",);
+			$datetime = new DateTime($user->status->created_at);
+			$time = time() - $datetime->getTimestamp();
 
-			array_push($actions, $action);
+			if($time > 576000)
+			{
+				$last_post_time = human_time_string($datetime->getTimestamp());
+				$action = array('icon' => $icon,
+					'service' => 'twitter',
+					'title' => "Post about PlaceBooks",
+					'desc' => "You haven't posted in $last_post_time. Regularly post content to twitter in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.",
+					'items' => "<form action='' method='post'><input name='twitter_post' placeholder='What have you been up to?' size='60' /><input type='submit' value='Post' /></form>",);
+
+				array_push($actions, $action);
+			}
 		}
 
 		array_push($social, array('name' => "Twitter", 'value' => $user->followers_count, 'service' => ''));
