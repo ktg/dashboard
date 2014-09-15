@@ -52,7 +52,7 @@ if (empty($business_name) && empty($_GET['id']))
 }
 
 if ($edit): ?>
-	<form method="post" enctype='multipart/form-data'>
+	<form action="<?php echo get_page_link(get_page_by_title('profile')->ID); ?>" method="post" enctype='multipart/form-data'>
 		<div class="field">
 			<div class="field_name">Business Name</div>
 			<input class="field_input" placeholder="Business Name" required="true"
@@ -103,7 +103,7 @@ if ($edit): ?>
 			?>
 
 			<div><?php echo $business_desc; ?></div>
-			<div><?php echo $business_address; ?></div>
+			<div style="white-space: pre-wrap;"><?php echo $business_address; ?></div>
 			<div><?php echo $business_phone; ?></div>
 			<div><?php echo $business_email; ?></div>
 			<?php

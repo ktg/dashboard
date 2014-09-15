@@ -5,7 +5,7 @@ $facebook = new Facebook(array('appId' => '342794992525201', 'secret' => 'e69e8a
 
 //FacebookSession::setDefaultApplication('342794992525201', 'e69e8a79972fe7330a40d8ab1d68994f');
 
-$icon = site_url('wp-content/themes/' . $theme . '/services/facebook_page/images/icon.png');
+$icon = site_url("wp-content/themes/$theme/services/facebook_page/images/icon.png");
 
 $user = $facebook->getUser();
 if(empty($service->token) && $user != null)
@@ -88,24 +88,44 @@ else
 				}
 				else
 				{
-					$last_post = $post_details['data'][0];
-					$datetime = new DateTime($last_post['created_time']);
-					$time = time() - $datetime->getTimestamp();
-
-					print_r($post_details);
-
-					if ($time > 576000)
+					$last_post_create = "";
+					foreach($post_details['data'] as $post)
 					{
+						if(array_key_exists('message', $post))
+						{
+							$last_post_create = $post['created_time'];
+							break;
+						}
+					}
 
-						$last_post_time = time_elapsed_string($last_post['created_time']);
-
+					if($last_post_create == "")
+					{
 						$action = array('icon' => $icon,
 							'service' => 'facebook',
 							'title' => "Post about $page_details[name]",
-							'desc' => "You haven't posted in $last_post_time. Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.",
+							'desc' => "You haven't posted to Facebook yet. Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.",
 							'items' => "<form action='' method='post'><input type='hidden' name='facebook_page' value='$page[id]'><input name='facebook_post' placeholder='What have you been up to?' size='60' /><input type='submit' value='Post' /></form>",);
 
 						array_push($actions, $action);
+					}
+					else
+					{
+						$datetime = new DateTime($last_post_create);
+						$time = time() - $datetime->getTimestamp();
+
+						if ($time > 576000)
+						{
+
+							$last_post_time = time_elapsed_string($last_post_create);
+
+							$action = array('icon' => $icon,
+								'service' => 'facebook',
+								'title' => "Post about $page_details[name]",
+								'desc' => "You haven't posted in $last_post_time. Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.",
+								'items' => "<form action='' method='post'><input type='hidden' name='facebook_page' value='$page[id]'><input name='facebook_post' placeholder='What have you been up to?' size='60' /><input type='submit' value='Post' /></form>",);
+
+							array_push($actions, $action);
+						}
 					}
 				}
 
@@ -116,16 +136,22 @@ else
 	}
 	catch(FacebookApiException $e)
 	{
-		$loginURL = $facebook->getLoginUrl( array('scope' => 'read_stream, friends_likes, manage_pages, publish_actions')); //,'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'));
+		if($e->getType() == 'OAuthException')
+		{
+			$loginURL = $facebook->getLoginUrl(array('scope' => 'read_stream, friends_likes, manage_pages, publish_actions')); //,'redirect_uri' => 'http://www.wornchaos.org/dash/dashboard'));
 
-		$action = array('icon' => $icon,
-			'service' => 'facebook',
-			'title' => 'Connect the Dashboard to your Facebook Page',
-			'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
-			'priority' => 10,
-			'items' => "<a href=\"$loginURL\">Connect to Facebook</a>",);
+			$action = array('icon' => $icon,
+				'service' => 'facebook',
+				'title' => 'Connect the Dashboard to your Facebook Page',
+				'desc' => 'In order for the Dashboard to help you manage your Facebook pages, you need to give Facebook permission for it to access your information.',
+				'priority' => 10,
+				'items' => "<a href=\"$loginURL\">Connect to Facebook</a>",);
 
-		array_push($actions, $action);
+			$query = $wpdb->prepare("UPDATE $user_services_table SET token=%s WHERE id=%d", "", $service->id);
+			$result = $wpdb->get_results($query);
+
+			array_push($actions, $action);
+		}
 	}
 }
 ?>
