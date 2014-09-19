@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.295972" vertical-offset="0" max-vertical-offset="3672">
+            <state vertical-scroll-proportion="-116.30769" vertical-offset="0" max-vertical-offset="3672">
               <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
               <folding>
                 <marker date="1411126064000" expanded="true" signature="1222:1519" placeholder="CREATE TABLE..$services_table..." />
@@ -128,6 +127,16 @@
                 <marker date="1411126064000" expanded="true" signature="7884:7886" placeholder="..." />
                 <marker date="1411126064000" expanded="true" signature="7975:8037" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21105528" vertical-offset="0" max-vertical-offset="9414">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,7 +225,6 @@
         <option value="$PROJECT_DIR$/services/website/profile.php" />
         <option value="$PROJECT_DIR$/services/twitter/profile.php" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/sretoolkit-webbadge/functions.php" />
         <option value="$PROJECT_DIR$/sretoolkit-webbadge/scheme_image.php" />
         <option value="$PROJECT_DIR$/sretoolkit-webbadge/scheme_link.php" />
@@ -247,6 +255,7 @@
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/dashboard.sql" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -957,13 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9252">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../pad/src/main/assets/wikiMappings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72398686" vertical-offset="311" max-vertical-offset="1224">
@@ -1116,7 +1118,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.295972" vertical-offset="0" max-vertical-offset="3672">
+        <state vertical-scroll-proportion="-116.30769" vertical-offset="0" max-vertical-offset="3672">
           <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
           <folding>
             <marker date="1411126064000" expanded="true" signature="1222:1519" placeholder="CREATE TABLE..$services_table..." />
@@ -1127,6 +1129,14 @@
             <marker date="1411126064000" expanded="true" signature="7884:7886" placeholder="..." />
             <marker date="1411126064000" expanded="true" signature="7975:8037" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21105528" vertical-offset="0" max-vertical-offset="9414">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
