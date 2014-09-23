@@ -129,7 +129,7 @@ else
 					}
 				}
 
-				array_push($analytics, array('name' => $page_details['name'], 'value' => $page_details['were_here_count'], 'service' => 'Facebook Page'));
+				array_push($analytics, array('name' => 'FaceBook', 'value' => $page_details['were_here_count'], 'service' => ''));
 				array_push($social, array('name' => "FaceBook", 'value' => $page_details['likes'], ''));
 			}
 		}

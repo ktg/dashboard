@@ -163,7 +163,7 @@ if ($edit): ?>
 
 				if ((is_array($members) && array_key_exists($user_id, $members) && $members[$user_id]['status'] == 'member') || $author_ID == $user_id)
 				{
-					echo '<a href="' . get_permalink() . '" style="margin-right: 10px; margin-bottom: 10px;">';
+					echo '<a href="' . get_permalink() . '" style="margin-right: 10px; margin-bottom: 10px; text-align: center;">';
 					the_post_thumbnail(array(100, 100));
 					echo '<div>';
 					the_title();

@@ -38,15 +38,7 @@ $services = $wpdb->get_results($query);
 			{
 				foreach ($services as $service)
 				{
-					if(!file_exists("wp-content/themes/$theme/services/" . $service->key . "/actions.php"))
-					{
-						$style = " style ='opacity: 0.5;'";
-					}
-					else
-					{
-						$style = "";
-					}
-					?>
+				?>
 					<form name="loginform" action="<?php echo get_page_link(get_page_by_title('dashboard')->ID); ?>" method="post">
 						<div class="service_box"<?php echo $style;?>>
 							<img class="service_icon"
@@ -59,7 +51,13 @@ $services = $wpdb->get_results($query);
 							<div class="service_buttons">
 								<a class="service_button" href="<?php echo $service->tutorial_url; ?>">Tutorial</a>
 								<input type="hidden" name="service_key" value='<?php echo $service->key; ?>' />
-								<input type="submit" class="service_button" value="Add to Dashboard" />
+								<?php
+								if(file_exists("wp-content/themes/$theme/services/" . $service->key . "/actions.php"))
+								{
+									?><input type="submit" class="service_button" value="Add to Dashboard" /><?php
+								}
+								?>
+
 							</div>
 						</div>
 					</form>

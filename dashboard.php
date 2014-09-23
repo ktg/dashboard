@@ -81,8 +81,8 @@ if (!empty($analytics))
 	$analytics_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
 		'service' => 'analytics',
 		'id' => 'analytics',
-		'title' => "Analytics",
-		'desc' => 'Regularly post content to Facebook in order to build a relationship with your customers. Keep posts as short and concise as possible and begin a dialogue with your audience by asking them a question.',
+		'title' => "Service Visitors",
+		'desc' => '',
 		'items' => graph('analytics_graph', 'Visits', $analytics));
 
 	array_push($actions, $analytics_action);
@@ -93,8 +93,8 @@ if (!empty($social))
 	$social_action = array('icon' => site_url('wp-content/themes/dashboard/services/google_analytics/images/icon.png'),
 		'service' => 'social',
 		'id' => 'social',
-		'title' => "Social",
-		'desc' => '',
+		'title' => "Social Network Followers",
+		'desc' => "Follower count is one of the metrics to use to understand the impact of your social media marketing.",
 		'items' => graph('social_graph', 'Followers', $social));
 
 	array_push($actions, $social_action);

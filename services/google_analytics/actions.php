@@ -92,7 +92,7 @@ foreach($service as $website)
 								$visits = 0;
 							}
 
-							array_push($analytics, array('name' => $profileName, 'value' => $visits, 'service' => 'Website'));
+							array_push($analytics, array('name' => 'Website', 'value' => $visits, 'service' => ''));
 						}
 					}
 				}

@@ -80,6 +80,7 @@ function graph($id, $value, $data)
 		$dataString
 
 		var options = {
+			legend: 'none'
 			//title: 'Visits'
 		};
 		var chart = new google.visualization.BarChart(document.getElementById('$id'));
