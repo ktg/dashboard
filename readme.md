@@ -16,12 +16,18 @@ Installation
 Usage
 -----
 
+[] (https://raw.githubusercontent.com/ktg/dashboard/master/images/screenshots/discover.png)
+
 Getting Started is a categorized list of services that can potentially be useful to you and your business. Each service 
 has a short description and a link to a tutorial for getting started with the service. Some services can also be added 
 to the dashboard.
+
+[] (https://raw.githubusercontent.com/ktg/dashboard/master/images/screenshots/dashboard.png)
  
 For the supported services, the dashboard section provides a more guided experience with that service, giving a list of
 suggestions for how to set up and make the most out of each service. 
+
+[] (https://raw.githubusercontent.com/ktg/dashboard/master/images/screenshots/profile.png)
 
 Your profile is a public page that automatically gathers information from services added to the dashboard and presents
 it

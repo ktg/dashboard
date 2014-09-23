@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/dashboard_view/turn_into_webpage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/banner_homepage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/bg_homepage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/bg_homepage1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/box_business.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/box_business1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/box_consumer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/btn_login_homepage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/btn_search_current.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/btn_search_postcode.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/btn_signup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/homepage_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/input_business_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/input_business_username.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/input_password.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/input_username.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/logo_homepage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage/navigation_bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/homepage_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/icons/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/navigation_bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/navigation_selected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/old_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/old_logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/category_card.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/service_card.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/facebook_page/actions.php" afterPath="$PROJECT_DIR$/services/facebook_page/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/google_analytics/actions.php" afterPath="$PROJECT_DIR$/services/google_analytics/actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing.php" afterPath="$PROJECT_DIR$/graphing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services.php" afterPath="$PROJECT_DIR$/services.php" />
-    </list>
+    <list default="true" id="19c8a270-0e2f-4dbe-a21b-777590784018" name="Default" comment="" />
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -171,8 +135,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4437299" vertical-offset="0" max-vertical-offset="933">
-              <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.55948555" vertical-offset="0" max-vertical-offset="933">
+              <caret line="29" column="89" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -1251,8 +1215,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4437299" vertical-offset="0" max-vertical-offset="933">
-          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.55948555" vertical-offset="0" max-vertical-offset="933">
+          <caret line="29" column="89" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
           <folding />
         </state>
       </provider>
