@@ -1,3 +1,10 @@
+Dashboard
+---------
+
+The Dashboard is a website, which helps small businesses and sole traders to marketing themselves online. It allows you
+to discover web sites and services that might be useful for your business and manages your entire online content in one 
+simple interface - your own personal dashboard.
+
 Installation
 ------------
 
